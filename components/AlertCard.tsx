@@ -20,6 +20,7 @@ export default function AlertCard({ alert }: AlertCardProps) {
     geofence_entry: 'Geofence Entry',
     geofence_exit: 'Geofence Exit',
     long_idle: 'Long Idle',
+    maintenance: 'Maintenance',
   };
 
   const config = severityConfig[alert.severity];
