@@ -1,0 +1,488 @@
+[
+  {
+    "timestamp": "2025-11-14T09:00:00",
+    "latitude": 28.422112,
+    "longitude": 77.049377,
+    "speed": 0,
+    "location": "Mohan Nagar",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-14T09:10:00",
+    "latitude": 28.42317,
+    "longitude": 77.051043,
+    "speed": 1,
+    "location": "Mohan Nagar",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-14T09:20:00",
+    "latitude": 28.424213,
+    "longitude": 77.052432,
+    "speed": 1,
+    "location": "Mohan Nagar",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-14T09:30:00",
+    "latitude": 28.422007,
+    "longitude": 77.049479,
+    "speed": 2,
+    "location": "Mohan Nagar",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-14T09:40:00",
+    "latitude": 28.423168,
+    "longitude": 77.051098,
+    "speed": 1,
+    "location": "Mohan Nagar",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-14T09:50:00",
+    "latitude": 28.424315,
+    "longitude": 77.052509,
+    "speed": 1,
+    "location": "Mohan Nagar",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-14T10:00:00",
+    "latitude": 28.421912,
+    "longitude": 77.04958,
+    "speed": 2,
+    "location": "Mohan Nagar",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-14T10:10:00",
+    "latitude": 28.423173,
+    "longitude": 77.050859,
+    "speed": 1,
+    "location": "Mohan Nagar",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-14T10:20:00",
+    "latitude": 28.424441,
+    "longitude": 77.052384,
+    "speed": 1,
+    "location": "Mohan Nagar",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-14T10:30:00",
+    "latitude": 28.421965,
+    "longitude": 77.049355,
+    "speed": 2,
+    "location": "Mohan Nagar",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-14T10:40:00",
+    "latitude": 28.423175,
+    "longitude": 77.051046,
+    "speed": 1,
+    "location": "Mohan Nagar",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-14T10:50:00",
+    "latitude": 28.424332,
+    "longitude": 77.052544,
+    "speed": 1,
+    "location": "Mohan Nagar",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-14T11:00:00",
+    "latitude": 28.421919,
+    "longitude": 77.049532,
+    "speed": 2,
+    "location": "Mohan Nagar",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-14T11:10:00",
+    "latitude": 28.423128,
+    "longitude": 77.051066,
+    "speed": 1,
+    "location": "Mohan Nagar",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-14T11:20:00",
+    "latitude": 28.424166,
+    "longitude": 77.052378,
+    "speed": 1,
+    "location": "Mohan Nagar",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-14T11:30:00",
+    "latitude": 28.42197,
+    "longitude": 77.049544,
+    "speed": 2,
+    "location": "Mohan Nagar",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-14T11:40:00",
+    "latitude": 28.42309,
+    "longitude": 77.050934,
+    "speed": 1,
+    "location": "Mohan Nagar",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-14T11:50:00",
+    "latitude": 28.424371,
+    "longitude": 77.052342,
+    "speed": 1,
+    "location": "Mohan Nagar",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-14T12:00:00",
+    "latitude": 28.421931,
+    "longitude": 77.049587,
+    "speed": 2,
+    "location": "Mohan Nagar",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-14T12:10:00",
+    "latitude": 28.423065,
+    "longitude": 77.051065,
+    "speed": 1,
+    "location": "Mohan Nagar",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-14T12:20:00",
+    "latitude": 28.424361,
+    "longitude": 77.052487,
+    "speed": 1,
+    "location": "Mohan Nagar",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-14T12:30:00",
+    "latitude": 28.421971,
+    "longitude": 77.049467,
+    "speed": 2,
+    "location": "Mohan Nagar",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-14T12:40:00",
+    "latitude": 28.423092,
+    "longitude": 77.051117,
+    "speed": 1,
+    "location": "Mohan Nagar",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-14T12:50:00",
+    "latitude": 28.424353,
+    "longitude": 77.052496,
+    "speed": 1,
+    "location": "Mohan Nagar",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-14T13:00:00",
+    "latitude": 28.421893,
+    "longitude": 77.049396,
+    "speed": 2,
+    "location": "Mohan Nagar",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-14T13:10:00",
+    "latitude": 28.423219,
+    "longitude": 77.050974,
+    "speed": 1,
+    "location": "Mohan Nagar",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-14T13:20:00",
+    "latitude": 28.424368,
+    "longitude": 77.052473,
+    "speed": 1,
+    "location": "Mohan Nagar",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-14T13:30:00",
+    "latitude": 28.421988,
+    "longitude": 77.049622,
+    "speed": 2,
+    "location": "Mohan Nagar",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-14T13:40:00",
+    "latitude": 28.423128,
+    "longitude": 77.050896,
+    "speed": 1,
+    "location": "Mohan Nagar",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-14T13:50:00",
+    "latitude": 28.424218,
+    "longitude": 77.052537,
+    "speed": 1,
+    "location": "Mohan Nagar",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-14T14:00:00",
+    "latitude": 28.422076,
+    "longitude": 77.049436,
+    "speed": 2,
+    "location": "Mohan Nagar",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-14T14:10:00",
+    "latitude": 28.423148,
+    "longitude": 77.050892,
+    "speed": 1,
+    "location": "Mohan Nagar",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-14T14:20:00",
+    "latitude": 28.424305,
+    "longitude": 77.052353,
+    "speed": 1,
+    "location": "Mohan Nagar",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-14T14:30:00",
+    "latitude": 28.422029,
+    "longitude": 77.049627,
+    "speed": 2,
+    "location": "Mohan Nagar",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-14T14:40:00",
+    "latitude": 28.423173,
+    "longitude": 77.050935,
+    "speed": 1,
+    "location": "Mohan Nagar",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-14T14:50:00",
+    "latitude": 28.424279,
+    "longitude": 77.052336,
+    "speed": 1,
+    "location": "Mohan Nagar",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-14T15:00:00",
+    "latitude": 28.422022,
+    "longitude": 77.049369,
+    "speed": 2,
+    "location": "Mohan Nagar",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-14T15:10:00",
+    "latitude": 28.423189,
+    "longitude": 77.051037,
+    "speed": 1,
+    "location": "Mohan Nagar",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-14T15:20:00",
+    "latitude": 28.42423,
+    "longitude": 77.052301,
+    "speed": 1,
+    "location": "Mohan Nagar",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-14T15:30:00",
+    "latitude": 28.422122,
+    "longitude": 77.049523,
+    "speed": 2,
+    "location": "Mohan Nagar",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-14T15:40:00",
+    "latitude": 28.422954,
+    "longitude": 77.050998,
+    "speed": 1,
+    "location": "Mohan Nagar",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-14T15:50:00",
+    "latitude": 28.424378,
+    "longitude": 77.052439,
+    "speed": 1,
+    "location": "Mohan Nagar",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-14T16:00:00",
+    "latitude": 28.421933,
+    "longitude": 77.049586,
+    "speed": 2,
+    "location": "Mohan Nagar",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-14T16:10:00",
+    "latitude": 28.423246,
+    "longitude": 77.051121,
+    "speed": 1,
+    "location": "Mohan Nagar",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-14T16:20:00",
+    "latitude": 28.42429,
+    "longitude": 77.052393,
+    "speed": 1,
+    "location": "Mohan Nagar",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-14T16:30:00",
+    "latitude": 28.421864,
+    "longitude": 77.049559,
+    "speed": 2,
+    "location": "Mohan Nagar",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-14T16:40:00",
+    "latitude": 28.423111,
+    "longitude": 77.051007,
+    "speed": 1,
+    "location": "Mohan Nagar",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-14T16:50:00",
+    "latitude": 28.424209,
+    "longitude": 77.05226,
+    "speed": 1,
+    "location": "Mohan Nagar",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-14T17:00:00",
+    "latitude": 28.422104,
+    "longitude": 77.049376,
+    "speed": 2,
+    "location": "Mohan Nagar",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-14T17:10:00",
+    "latitude": 28.422995,
+    "longitude": 77.051081,
+    "speed": 1,
+    "location": "Mohan Nagar",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-14T17:20:00",
+    "latitude": 28.424178,
+    "longitude": 77.05234,
+    "speed": 1,
+    "location": "Mohan Nagar",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-14T17:30:00",
+    "latitude": 28.421972,
+    "longitude": 77.04955,
+    "speed": 2,
+    "location": "Mohan Nagar",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-14T17:40:00",
+    "latitude": 28.423063,
+    "longitude": 77.050888,
+    "speed": 1,
+    "location": "Mohan Nagar",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-14T17:50:00",
+    "latitude": 28.424402,
+    "longitude": 77.052276,
+    "speed": 1,
+    "location": "Mohan Nagar",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  }
+]

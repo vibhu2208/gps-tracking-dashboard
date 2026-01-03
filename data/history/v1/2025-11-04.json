@@ -1,0 +1,488 @@
+[
+  {
+    "timestamp": "2025-11-04T09:00:00",
+    "latitude": 28.355737,
+    "longitude": 77.080918,
+    "speed": 0,
+    "location": "Maruti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-04T09:10:00",
+    "latitude": 28.356587,
+    "longitude": 77.082852,
+    "speed": 1,
+    "location": "Maruti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-04T09:20:00",
+    "latitude": 28.357505,
+    "longitude": 77.084297,
+    "speed": 1,
+    "location": "Maruti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-04T09:30:00",
+    "latitude": 28.355501,
+    "longitude": 77.081147,
+    "speed": 2,
+    "location": "Maruti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-04T09:40:00",
+    "latitude": 28.356631,
+    "longitude": 77.082798,
+    "speed": 1,
+    "location": "Maruti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-04T09:50:00",
+    "latitude": 28.357545,
+    "longitude": 77.084519,
+    "speed": 1,
+    "location": "Maruti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-04T10:00:00",
+    "latitude": 28.355578,
+    "longitude": 77.081047,
+    "speed": 2,
+    "location": "Maruti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-04T10:10:00",
+    "latitude": 28.356682,
+    "longitude": 77.082808,
+    "speed": 1,
+    "location": "Maruti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-04T10:20:00",
+    "latitude": 28.357547,
+    "longitude": 77.084548,
+    "speed": 1,
+    "location": "Maruti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-04T10:30:00",
+    "latitude": 28.355636,
+    "longitude": 77.080868,
+    "speed": 3,
+    "location": "Maruti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-04T10:40:00",
+    "latitude": 28.356498,
+    "longitude": 77.082934,
+    "speed": 1,
+    "location": "Maruti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-04T10:50:00",
+    "latitude": 28.357513,
+    "longitude": 77.084488,
+    "speed": 1,
+    "location": "Maruti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-04T11:00:00",
+    "latitude": 28.355464,
+    "longitude": 77.080851,
+    "speed": 3,
+    "location": "Maruti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-04T11:10:00",
+    "latitude": 28.356554,
+    "longitude": 77.082912,
+    "speed": 1,
+    "location": "Maruti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-04T11:20:00",
+    "latitude": 28.357534,
+    "longitude": 77.084301,
+    "speed": 1,
+    "location": "Maruti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-04T11:30:00",
+    "latitude": 28.355548,
+    "longitude": 77.081051,
+    "speed": 2,
+    "location": "Maruti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-04T11:40:00",
+    "latitude": 28.356515,
+    "longitude": 77.082961,
+    "speed": 1,
+    "location": "Maruti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-04T11:50:00",
+    "latitude": 28.357353,
+    "longitude": 77.084421,
+    "speed": 1,
+    "location": "Maruti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-04T12:00:00",
+    "latitude": 28.355573,
+    "longitude": 77.081034,
+    "speed": 2,
+    "location": "Maruti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-04T12:10:00",
+    "latitude": 28.356608,
+    "longitude": 77.082922,
+    "speed": 1,
+    "location": "Maruti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-04T12:20:00",
+    "latitude": 28.357575,
+    "longitude": 77.084457,
+    "speed": 1,
+    "location": "Maruti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-04T12:30:00",
+    "latitude": 28.355698,
+    "longitude": 77.080961,
+    "speed": 2,
+    "location": "Maruti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-04T12:40:00",
+    "latitude": 28.356698,
+    "longitude": 77.082908,
+    "speed": 1,
+    "location": "Maruti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-04T12:50:00",
+    "latitude": 28.357634,
+    "longitude": 77.084405,
+    "speed": 1,
+    "location": "Maruti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-04T13:00:00",
+    "latitude": 28.355719,
+    "longitude": 77.081148,
+    "speed": 2,
+    "location": "Maruti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-04T13:10:00",
+    "latitude": 28.356689,
+    "longitude": 77.082832,
+    "speed": 1,
+    "location": "Maruti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-04T13:20:00",
+    "latitude": 28.357519,
+    "longitude": 77.084515,
+    "speed": 1,
+    "location": "Maruti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-04T13:30:00",
+    "latitude": 28.355604,
+    "longitude": 77.081076,
+    "speed": 2,
+    "location": "Maruti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-04T13:40:00",
+    "latitude": 28.356586,
+    "longitude": 77.082832,
+    "speed": 1,
+    "location": "Maruti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-04T13:50:00",
+    "latitude": 28.357414,
+    "longitude": 77.084467,
+    "speed": 1,
+    "location": "Maruti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-04T14:00:00",
+    "latitude": 28.355553,
+    "longitude": 77.081011,
+    "speed": 2,
+    "location": "Maruti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-04T14:10:00",
+    "latitude": 28.356664,
+    "longitude": 77.082803,
+    "speed": 1,
+    "location": "Maruti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-04T14:20:00",
+    "latitude": 28.357402,
+    "longitude": 77.084329,
+    "speed": 1,
+    "location": "Maruti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-04T14:30:00",
+    "latitude": 28.355735,
+    "longitude": 77.080861,
+    "speed": 2,
+    "location": "Maruti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-04T14:40:00",
+    "latitude": 28.356466,
+    "longitude": 77.083037,
+    "speed": 1,
+    "location": "Maruti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-04T14:50:00",
+    "latitude": 28.357587,
+    "longitude": 77.084364,
+    "speed": 1,
+    "location": "Maruti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-04T15:00:00",
+    "latitude": 28.355499,
+    "longitude": 77.080971,
+    "speed": 2,
+    "location": "Maruti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-04T15:10:00",
+    "latitude": 28.356725,
+    "longitude": 77.082818,
+    "speed": 1,
+    "location": "Maruti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-04T15:20:00",
+    "latitude": 28.357574,
+    "longitude": 77.084346,
+    "speed": 1,
+    "location": "Maruti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-04T15:30:00",
+    "latitude": 28.355669,
+    "longitude": 77.080922,
+    "speed": 2,
+    "location": "Maruti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-04T15:40:00",
+    "latitude": 28.356669,
+    "longitude": 77.082863,
+    "speed": 1,
+    "location": "Maruti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-04T15:50:00",
+    "latitude": 28.357369,
+    "longitude": 77.084299,
+    "speed": 1,
+    "location": "Maruti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-04T16:00:00",
+    "latitude": 28.355462,
+    "longitude": 77.080906,
+    "speed": 2,
+    "location": "Maruti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-04T16:10:00",
+    "latitude": 28.356567,
+    "longitude": 77.082777,
+    "speed": 1,
+    "location": "Maruti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-04T16:20:00",
+    "latitude": 28.357495,
+    "longitude": 77.084505,
+    "speed": 1,
+    "location": "Maruti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-04T16:30:00",
+    "latitude": 28.355507,
+    "longitude": 77.081092,
+    "speed": 2,
+    "location": "Maruti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-04T16:40:00",
+    "latitude": 28.356715,
+    "longitude": 77.082887,
+    "speed": 1,
+    "location": "Maruti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-04T16:50:00",
+    "latitude": 28.357607,
+    "longitude": 77.084411,
+    "speed": 1,
+    "location": "Maruti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-04T17:00:00",
+    "latitude": 28.355701,
+    "longitude": 77.080908,
+    "speed": 2,
+    "location": "Maruti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-04T17:10:00",
+    "latitude": 28.356624,
+    "longitude": 77.082822,
+    "speed": 1,
+    "location": "Maruti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-04T17:20:00",
+    "latitude": 28.357419,
+    "longitude": 77.084448,
+    "speed": 1,
+    "location": "Maruti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-04T17:30:00",
+    "latitude": 28.355552,
+    "longitude": 77.081016,
+    "speed": 2,
+    "location": "Maruti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-04T17:40:00",
+    "latitude": 28.356629,
+    "longitude": 77.082953,
+    "speed": 1,
+    "location": "Maruti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-04T17:50:00",
+    "latitude": 28.357479,
+    "longitude": 77.084467,
+    "speed": 1,
+    "location": "Maruti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  }
+]

@@ -1,0 +1,488 @@
+[
+  {
+    "timestamp": "2025-11-13T09:00:00",
+    "latitude": 28.430319,
+    "longitude": 77.031346,
+    "speed": 0,
+    "location": "Naya Gaon",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-13T09:10:00",
+    "latitude": 28.4317,
+    "longitude": 77.033178,
+    "speed": 1,
+    "location": "Naya Gaon",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-13T09:20:00",
+    "latitude": 28.433223,
+    "longitude": 77.034674,
+    "speed": 1,
+    "location": "Naya Gaon",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-13T09:30:00",
+    "latitude": 28.430171,
+    "longitude": 77.031097,
+    "speed": 3,
+    "location": "Naya Gaon",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-13T09:40:00",
+    "latitude": 28.431616,
+    "longitude": 77.033189,
+    "speed": 2,
+    "location": "Naya Gaon",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-13T09:50:00",
+    "latitude": 28.433158,
+    "longitude": 77.034905,
+    "speed": 1,
+    "location": "Naya Gaon",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-13T10:00:00",
+    "latitude": 28.430122,
+    "longitude": 77.031231,
+    "speed": 3,
+    "location": "Naya Gaon",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-13T10:10:00",
+    "latitude": 28.431615,
+    "longitude": 77.032954,
+    "speed": 1,
+    "location": "Naya Gaon",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-13T10:20:00",
+    "latitude": 28.432952,
+    "longitude": 77.034804,
+    "speed": 1,
+    "location": "Naya Gaon",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-13T10:30:00",
+    "latitude": 28.430112,
+    "longitude": 77.031337,
+    "speed": 3,
+    "location": "Naya Gaon",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-13T10:40:00",
+    "latitude": 28.431748,
+    "longitude": 77.033062,
+    "speed": 1,
+    "location": "Naya Gaon",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-13T10:50:00",
+    "latitude": 28.433126,
+    "longitude": 77.034762,
+    "speed": 1,
+    "location": "Naya Gaon",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-13T11:00:00",
+    "latitude": 28.430253,
+    "longitude": 77.031272,
+    "speed": 3,
+    "location": "Naya Gaon",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-13T11:10:00",
+    "latitude": 28.43162,
+    "longitude": 77.033121,
+    "speed": 1,
+    "location": "Naya Gaon",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-13T11:20:00",
+    "latitude": 28.433001,
+    "longitude": 77.034709,
+    "speed": 1,
+    "location": "Naya Gaon",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-13T11:30:00",
+    "latitude": 28.430256,
+    "longitude": 77.031214,
+    "speed": 3,
+    "location": "Naya Gaon",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-13T11:40:00",
+    "latitude": 28.431714,
+    "longitude": 77.03296,
+    "speed": 1,
+    "location": "Naya Gaon",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-13T11:50:00",
+    "latitude": 28.432985,
+    "longitude": 77.034818,
+    "speed": 1,
+    "location": "Naya Gaon",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-13T12:00:00",
+    "latitude": 28.430278,
+    "longitude": 77.031228,
+    "speed": 3,
+    "location": "Naya Gaon",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-13T12:10:00",
+    "latitude": 28.431834,
+    "longitude": 77.032951,
+    "speed": 1,
+    "location": "Naya Gaon",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-13T12:20:00",
+    "latitude": 28.432991,
+    "longitude": 77.034903,
+    "speed": 1,
+    "location": "Naya Gaon",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-13T12:30:00",
+    "latitude": 28.430075,
+    "longitude": 77.031329,
+    "speed": 3,
+    "location": "Naya Gaon",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-13T12:40:00",
+    "latitude": 28.431578,
+    "longitude": 77.033241,
+    "speed": 2,
+    "location": "Naya Gaon",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-13T12:50:00",
+    "latitude": 28.433076,
+    "longitude": 77.034945,
+    "speed": 1,
+    "location": "Naya Gaon",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-13T13:00:00",
+    "latitude": 28.430296,
+    "longitude": 77.03124,
+    "speed": 3,
+    "location": "Naya Gaon",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-13T13:10:00",
+    "latitude": 28.431825,
+    "longitude": 77.033238,
+    "speed": 2,
+    "location": "Naya Gaon",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-13T13:20:00",
+    "latitude": 28.433077,
+    "longitude": 77.034737,
+    "speed": 1,
+    "location": "Naya Gaon",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-13T13:30:00",
+    "latitude": 28.430097,
+    "longitude": 77.031118,
+    "speed": 3,
+    "location": "Naya Gaon",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-13T13:40:00",
+    "latitude": 28.431642,
+    "longitude": 77.033095,
+    "speed": 2,
+    "location": "Naya Gaon",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-13T13:50:00",
+    "latitude": 28.433005,
+    "longitude": 77.034713,
+    "speed": 1,
+    "location": "Naya Gaon",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-13T14:00:00",
+    "latitude": 28.430284,
+    "longitude": 77.031306,
+    "speed": 3,
+    "location": "Naya Gaon",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-13T14:10:00",
+    "latitude": 28.43184,
+    "longitude": 77.032996,
+    "speed": 1,
+    "location": "Naya Gaon",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-13T14:20:00",
+    "latitude": 28.432988,
+    "longitude": 77.03488,
+    "speed": 1,
+    "location": "Naya Gaon",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-13T14:30:00",
+    "latitude": 28.430266,
+    "longitude": 77.03127,
+    "speed": 3,
+    "location": "Naya Gaon",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-13T14:40:00",
+    "latitude": 28.431599,
+    "longitude": 77.033132,
+    "speed": 1,
+    "location": "Naya Gaon",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-13T14:50:00",
+    "latitude": 28.433052,
+    "longitude": 77.034888,
+    "speed": 1,
+    "location": "Naya Gaon",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-13T15:00:00",
+    "latitude": 28.430335,
+    "longitude": 77.031244,
+    "speed": 3,
+    "location": "Naya Gaon",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-13T15:10:00",
+    "latitude": 28.431849,
+    "longitude": 77.033081,
+    "speed": 1,
+    "location": "Naya Gaon",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-13T15:20:00",
+    "latitude": 28.433085,
+    "longitude": 77.034751,
+    "speed": 1,
+    "location": "Naya Gaon",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-13T15:30:00",
+    "latitude": 28.430197,
+    "longitude": 77.031305,
+    "speed": 3,
+    "location": "Naya Gaon",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-13T15:40:00",
+    "latitude": 28.431687,
+    "longitude": 77.033025,
+    "speed": 1,
+    "location": "Naya Gaon",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-13T15:50:00",
+    "latitude": 28.433197,
+    "longitude": 77.034749,
+    "speed": 1,
+    "location": "Naya Gaon",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-13T16:00:00",
+    "latitude": 28.430194,
+    "longitude": 77.031203,
+    "speed": 3,
+    "location": "Naya Gaon",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-13T16:10:00",
+    "latitude": 28.431758,
+    "longitude": 77.033066,
+    "speed": 2,
+    "location": "Naya Gaon",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-13T16:20:00",
+    "latitude": 28.433238,
+    "longitude": 77.034774,
+    "speed": 1,
+    "location": "Naya Gaon",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-13T16:30:00",
+    "latitude": 28.430197,
+    "longitude": 77.031187,
+    "speed": 3,
+    "location": "Naya Gaon",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-13T16:40:00",
+    "latitude": 28.431811,
+    "longitude": 77.033164,
+    "speed": 2,
+    "location": "Naya Gaon",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-13T16:50:00",
+    "latitude": 28.433095,
+    "longitude": 77.034824,
+    "speed": 1,
+    "location": "Naya Gaon",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-13T17:00:00",
+    "latitude": 28.430203,
+    "longitude": 77.031294,
+    "speed": 3,
+    "location": "Naya Gaon",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-13T17:10:00",
+    "latitude": 28.431839,
+    "longitude": 77.033159,
+    "speed": 2,
+    "location": "Naya Gaon",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-13T17:20:00",
+    "latitude": 28.432984,
+    "longitude": 77.034728,
+    "speed": 1,
+    "location": "Naya Gaon",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-13T17:30:00",
+    "latitude": 28.430117,
+    "longitude": 77.031059,
+    "speed": 3,
+    "location": "Naya Gaon",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-13T17:40:00",
+    "latitude": 28.431593,
+    "longitude": 77.032974,
+    "speed": 1,
+    "location": "Naya Gaon",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-13T17:50:00",
+    "latitude": 28.432958,
+    "longitude": 77.034744,
+    "speed": 1,
+    "location": "Naya Gaon",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  }
+]

@@ -1,0 +1,488 @@
+[
+  {
+    "timestamp": "2025-08-29T09:00:00",
+    "latitude": 28.444123,
+    "longitude": 77.032103,
+    "speed": 0,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-29T09:10:00",
+    "latitude": 28.445193,
+    "longitude": 77.033458,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-29T09:20:00",
+    "latitude": 28.446592,
+    "longitude": 77.035067,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-29T09:30:00",
+    "latitude": 28.443895,
+    "longitude": 77.03204,
+    "speed": 3,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-29T09:40:00",
+    "latitude": 28.445165,
+    "longitude": 77.033442,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-29T09:50:00",
+    "latitude": 28.446735,
+    "longitude": 77.034862,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-29T10:00:00",
+    "latitude": 28.443894,
+    "longitude": 77.032106,
+    "speed": 2,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-29T10:10:00",
+    "latitude": 28.445195,
+    "longitude": 77.033468,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-29T10:20:00",
+    "latitude": 28.446721,
+    "longitude": 77.034975,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-29T10:30:00",
+    "latitude": 28.443937,
+    "longitude": 77.031913,
+    "speed": 3,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-29T10:40:00",
+    "latitude": 28.445375,
+    "longitude": 77.033546,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-29T10:50:00",
+    "latitude": 28.446726,
+    "longitude": 77.034947,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-29T11:00:00",
+    "latitude": 28.443922,
+    "longitude": 77.032066,
+    "speed": 3,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-29T11:10:00",
+    "latitude": 28.445401,
+    "longitude": 77.033522,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-29T11:20:00",
+    "latitude": 28.446747,
+    "longitude": 77.035038,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-29T11:30:00",
+    "latitude": 28.444074,
+    "longitude": 77.031897,
+    "speed": 3,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-29T11:40:00",
+    "latitude": 28.445254,
+    "longitude": 77.033365,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-29T11:50:00",
+    "latitude": 28.446509,
+    "longitude": 77.035101,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-29T12:00:00",
+    "latitude": 28.443993,
+    "longitude": 77.032107,
+    "speed": 2,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-29T12:10:00",
+    "latitude": 28.445326,
+    "longitude": 77.033538,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-29T12:20:00",
+    "latitude": 28.446634,
+    "longitude": 77.035091,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-29T12:30:00",
+    "latitude": 28.444037,
+    "longitude": 77.031882,
+    "speed": 3,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-29T12:40:00",
+    "latitude": 28.445188,
+    "longitude": 77.033493,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-29T12:50:00",
+    "latitude": 28.446671,
+    "longitude": 77.03503,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-29T13:00:00",
+    "latitude": 28.444099,
+    "longitude": 77.032043,
+    "speed": 2,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-29T13:10:00",
+    "latitude": 28.445438,
+    "longitude": 77.033486,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-29T13:20:00",
+    "latitude": 28.446459,
+    "longitude": 77.035015,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-29T13:30:00",
+    "latitude": 28.444137,
+    "longitude": 77.032059,
+    "speed": 2,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-29T13:40:00",
+    "latitude": 28.445257,
+    "longitude": 77.033376,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-29T13:50:00",
+    "latitude": 28.446695,
+    "longitude": 77.035005,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-29T14:00:00",
+    "latitude": 28.443998,
+    "longitude": 77.031998,
+    "speed": 3,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-29T14:10:00",
+    "latitude": 28.445449,
+    "longitude": 77.033494,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-29T14:20:00",
+    "latitude": 28.446479,
+    "longitude": 77.035087,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-29T14:30:00",
+    "latitude": 28.444128,
+    "longitude": 77.03197,
+    "speed": 2,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-29T14:40:00",
+    "latitude": 28.445282,
+    "longitude": 77.033594,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-29T14:50:00",
+    "latitude": 28.446515,
+    "longitude": 77.035132,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-29T15:00:00",
+    "latitude": 28.443869,
+    "longitude": 77.032089,
+    "speed": 3,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-29T15:10:00",
+    "latitude": 28.445318,
+    "longitude": 77.033557,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-29T15:20:00",
+    "latitude": 28.446712,
+    "longitude": 77.035148,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-29T15:30:00",
+    "latitude": 28.443895,
+    "longitude": 77.032002,
+    "speed": 3,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-29T15:40:00",
+    "latitude": 28.445355,
+    "longitude": 77.033611,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-29T15:50:00",
+    "latitude": 28.44659,
+    "longitude": 77.035027,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-29T16:00:00",
+    "latitude": 28.444131,
+    "longitude": 77.031991,
+    "speed": 2,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-29T16:10:00",
+    "latitude": 28.445201,
+    "longitude": 77.033592,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-29T16:20:00",
+    "latitude": 28.446592,
+    "longitude": 77.03498,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-29T16:30:00",
+    "latitude": 28.44385,
+    "longitude": 77.031932,
+    "speed": 3,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-29T16:40:00",
+    "latitude": 28.445344,
+    "longitude": 77.033643,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-29T16:50:00",
+    "latitude": 28.446538,
+    "longitude": 77.035003,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-29T17:00:00",
+    "latitude": 28.443917,
+    "longitude": 77.032064,
+    "speed": 2,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-29T17:10:00",
+    "latitude": 28.445435,
+    "longitude": 77.033444,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-29T17:20:00",
+    "latitude": 28.446723,
+    "longitude": 77.034993,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-29T17:30:00",
+    "latitude": 28.443917,
+    "longitude": 77.032046,
+    "speed": 3,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-29T17:40:00",
+    "latitude": 28.445158,
+    "longitude": 77.033647,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-29T17:50:00",
+    "latitude": 28.446555,
+    "longitude": 77.034894,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  }
+]

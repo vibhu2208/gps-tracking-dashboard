@@ -1,0 +1,488 @@
+[
+  {
+    "timestamp": "2025-08-30T09:00:00",
+    "latitude": 28.40122,
+    "longitude": 77.045957,
+    "speed": 0,
+    "location": "Ekta Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-30T09:10:00",
+    "latitude": 28.40266,
+    "longitude": 77.04743,
+    "speed": 1,
+    "location": "Ekta Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-30T09:20:00",
+    "latitude": 28.403791,
+    "longitude": 77.049113,
+    "speed": 1,
+    "location": "Ekta Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-30T09:30:00",
+    "latitude": 28.401156,
+    "longitude": 77.045817,
+    "speed": 3,
+    "location": "Ekta Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-30T09:40:00",
+    "latitude": 28.402709,
+    "longitude": 77.047522,
+    "speed": 1,
+    "location": "Ekta Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-30T09:50:00",
+    "latitude": 28.403946,
+    "longitude": 77.048949,
+    "speed": 1,
+    "location": "Ekta Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-30T10:00:00",
+    "latitude": 28.401256,
+    "longitude": 77.046012,
+    "speed": 2,
+    "location": "Ekta Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-30T10:10:00",
+    "latitude": 28.402596,
+    "longitude": 77.047357,
+    "speed": 1,
+    "location": "Ekta Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-30T10:20:00",
+    "latitude": 28.403882,
+    "longitude": 77.049121,
+    "speed": 1,
+    "location": "Ekta Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-30T10:30:00",
+    "latitude": 28.401378,
+    "longitude": 77.045759,
+    "speed": 3,
+    "location": "Ekta Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-30T10:40:00",
+    "latitude": 28.402673,
+    "longitude": 77.047607,
+    "speed": 1,
+    "location": "Ekta Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-30T10:50:00",
+    "latitude": 28.403794,
+    "longitude": 77.048869,
+    "speed": 1,
+    "location": "Ekta Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-30T11:00:00",
+    "latitude": 28.401349,
+    "longitude": 77.046027,
+    "speed": 2,
+    "location": "Ekta Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-30T11:10:00",
+    "latitude": 28.402636,
+    "longitude": 77.047498,
+    "speed": 1,
+    "location": "Ekta Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-30T11:20:00",
+    "latitude": 28.403658,
+    "longitude": 77.048987,
+    "speed": 1,
+    "location": "Ekta Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-30T11:30:00",
+    "latitude": 28.401314,
+    "longitude": 77.046023,
+    "speed": 2,
+    "location": "Ekta Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-30T11:40:00",
+    "latitude": 28.402722,
+    "longitude": 77.047626,
+    "speed": 1,
+    "location": "Ekta Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-30T11:50:00",
+    "latitude": 28.403801,
+    "longitude": 77.049028,
+    "speed": 1,
+    "location": "Ekta Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-30T12:00:00",
+    "latitude": 28.401198,
+    "longitude": 77.045899,
+    "speed": 3,
+    "location": "Ekta Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-30T12:10:00",
+    "latitude": 28.402525,
+    "longitude": 77.047388,
+    "speed": 1,
+    "location": "Ekta Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-30T12:20:00",
+    "latitude": 28.403878,
+    "longitude": 77.048944,
+    "speed": 1,
+    "location": "Ekta Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-30T12:30:00",
+    "latitude": 28.401317,
+    "longitude": 77.045922,
+    "speed": 2,
+    "location": "Ekta Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-30T12:40:00",
+    "latitude": 28.402698,
+    "longitude": 77.047643,
+    "speed": 1,
+    "location": "Ekta Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-30T12:50:00",
+    "latitude": 28.403918,
+    "longitude": 77.049041,
+    "speed": 1,
+    "location": "Ekta Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-30T13:00:00",
+    "latitude": 28.401288,
+    "longitude": 77.04599,
+    "speed": 3,
+    "location": "Ekta Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-30T13:10:00",
+    "latitude": 28.402473,
+    "longitude": 77.047368,
+    "speed": 1,
+    "location": "Ekta Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-30T13:20:00",
+    "latitude": 28.403753,
+    "longitude": 77.048971,
+    "speed": 1,
+    "location": "Ekta Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-30T13:30:00",
+    "latitude": 28.401344,
+    "longitude": 77.045769,
+    "speed": 2,
+    "location": "Ekta Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-30T13:40:00",
+    "latitude": 28.402608,
+    "longitude": 77.047444,
+    "speed": 1,
+    "location": "Ekta Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-30T13:50:00",
+    "latitude": 28.403659,
+    "longitude": 77.048962,
+    "speed": 1,
+    "location": "Ekta Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-30T14:00:00",
+    "latitude": 28.40141,
+    "longitude": 77.045766,
+    "speed": 2,
+    "location": "Ekta Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-30T14:10:00",
+    "latitude": 28.402601,
+    "longitude": 77.047405,
+    "speed": 1,
+    "location": "Ekta Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-30T14:20:00",
+    "latitude": 28.403936,
+    "longitude": 77.048973,
+    "speed": 1,
+    "location": "Ekta Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-30T14:30:00",
+    "latitude": 28.401377,
+    "longitude": 77.046017,
+    "speed": 2,
+    "location": "Ekta Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-30T14:40:00",
+    "latitude": 28.402514,
+    "longitude": 77.047606,
+    "speed": 1,
+    "location": "Ekta Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-30T14:50:00",
+    "latitude": 28.403796,
+    "longitude": 77.049097,
+    "speed": 1,
+    "location": "Ekta Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-30T15:00:00",
+    "latitude": 28.401183,
+    "longitude": 77.045761,
+    "speed": 3,
+    "location": "Ekta Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-30T15:10:00",
+    "latitude": 28.402687,
+    "longitude": 77.047609,
+    "speed": 1,
+    "location": "Ekta Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-30T15:20:00",
+    "latitude": 28.403914,
+    "longitude": 77.048915,
+    "speed": 1,
+    "location": "Ekta Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-30T15:30:00",
+    "latitude": 28.401196,
+    "longitude": 77.045955,
+    "speed": 3,
+    "location": "Ekta Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-30T15:40:00",
+    "latitude": 28.402716,
+    "longitude": 77.047369,
+    "speed": 1,
+    "location": "Ekta Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-30T15:50:00",
+    "latitude": 28.403869,
+    "longitude": 77.04897,
+    "speed": 1,
+    "location": "Ekta Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-30T16:00:00",
+    "latitude": 28.401257,
+    "longitude": 77.045856,
+    "speed": 3,
+    "location": "Ekta Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-30T16:10:00",
+    "latitude": 28.402468,
+    "longitude": 77.047547,
+    "speed": 1,
+    "location": "Ekta Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-30T16:20:00",
+    "latitude": 28.403763,
+    "longitude": 77.048951,
+    "speed": 1,
+    "location": "Ekta Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-30T16:30:00",
+    "latitude": 28.401344,
+    "longitude": 77.045971,
+    "speed": 2,
+    "location": "Ekta Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-30T16:40:00",
+    "latitude": 28.402669,
+    "longitude": 77.047604,
+    "speed": 1,
+    "location": "Ekta Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-30T16:50:00",
+    "latitude": 28.403923,
+    "longitude": 77.048984,
+    "speed": 1,
+    "location": "Ekta Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-30T17:00:00",
+    "latitude": 28.401179,
+    "longitude": 77.045994,
+    "speed": 3,
+    "location": "Ekta Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-30T17:10:00",
+    "latitude": 28.402606,
+    "longitude": 77.047594,
+    "speed": 1,
+    "location": "Ekta Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-30T17:20:00",
+    "latitude": 28.403708,
+    "longitude": 77.049097,
+    "speed": 1,
+    "location": "Ekta Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-30T17:30:00",
+    "latitude": 28.401162,
+    "longitude": 77.04582,
+    "speed": 3,
+    "location": "Ekta Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-30T17:40:00",
+    "latitude": 28.402573,
+    "longitude": 77.047508,
+    "speed": 1,
+    "location": "Ekta Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-08-30T17:50:00",
+    "latitude": 28.403659,
+    "longitude": 77.04901,
+    "speed": 1,
+    "location": "Ekta Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  }
+]

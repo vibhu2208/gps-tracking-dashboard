@@ -1,0 +1,488 @@
+[
+  {
+    "timestamp": "2025-12-01T09:00:00",
+    "latitude": 28.381433,
+    "longitude": 77.051852,
+    "speed": 0,
+    "location": "Shyam Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-01T09:10:00",
+    "latitude": 28.382721,
+    "longitude": 77.053524,
+    "speed": 1,
+    "location": "Shyam Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-01T09:20:00",
+    "latitude": 28.383898,
+    "longitude": 77.055032,
+    "speed": 1,
+    "location": "Shyam Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-01T09:30:00",
+    "latitude": 28.381541,
+    "longitude": 77.051869,
+    "speed": 2,
+    "location": "Shyam Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-01T09:40:00",
+    "latitude": 28.382661,
+    "longitude": 77.05365,
+    "speed": 1,
+    "location": "Shyam Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-01T09:50:00",
+    "latitude": 28.383935,
+    "longitude": 77.055062,
+    "speed": 1,
+    "location": "Shyam Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-01T10:00:00",
+    "latitude": 28.381368,
+    "longitude": 77.05195,
+    "speed": 3,
+    "location": "Shyam Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-01T10:10:00",
+    "latitude": 28.382764,
+    "longitude": 77.053593,
+    "speed": 1,
+    "location": "Shyam Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-01T10:20:00",
+    "latitude": 28.384132,
+    "longitude": 77.054989,
+    "speed": 1,
+    "location": "Shyam Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-01T10:30:00",
+    "latitude": 28.381373,
+    "longitude": 77.051756,
+    "speed": 3,
+    "location": "Shyam Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-01T10:40:00",
+    "latitude": 28.382689,
+    "longitude": 77.053627,
+    "speed": 1,
+    "location": "Shyam Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-01T10:50:00",
+    "latitude": 28.384039,
+    "longitude": 77.054926,
+    "speed": 1,
+    "location": "Shyam Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-01T11:00:00",
+    "latitude": 28.381632,
+    "longitude": 77.051832,
+    "speed": 2,
+    "location": "Shyam Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-01T11:10:00",
+    "latitude": 28.38278,
+    "longitude": 77.053719,
+    "speed": 1,
+    "location": "Shyam Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-01T11:20:00",
+    "latitude": 28.384146,
+    "longitude": 77.055045,
+    "speed": 1,
+    "location": "Shyam Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-01T11:30:00",
+    "latitude": 28.38156,
+    "longitude": 77.051997,
+    "speed": 2,
+    "location": "Shyam Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-01T11:40:00",
+    "latitude": 28.382758,
+    "longitude": 77.053741,
+    "speed": 1,
+    "location": "Shyam Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-01T11:50:00",
+    "latitude": 28.383926,
+    "longitude": 77.05499,
+    "speed": 1,
+    "location": "Shyam Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-01T12:00:00",
+    "latitude": 28.381456,
+    "longitude": 77.052032,
+    "speed": 2,
+    "location": "Shyam Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-01T12:10:00",
+    "latitude": 28.382884,
+    "longitude": 77.053456,
+    "speed": 1,
+    "location": "Shyam Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-01T12:20:00",
+    "latitude": 28.384071,
+    "longitude": 77.055141,
+    "speed": 1,
+    "location": "Shyam Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-01T12:30:00",
+    "latitude": 28.381636,
+    "longitude": 77.051825,
+    "speed": 3,
+    "location": "Shyam Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-01T12:40:00",
+    "latitude": 28.382922,
+    "longitude": 77.053715,
+    "speed": 1,
+    "location": "Shyam Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-01T12:50:00",
+    "latitude": 28.383988,
+    "longitude": 77.054863,
+    "speed": 1,
+    "location": "Shyam Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-01T13:00:00",
+    "latitude": 28.381536,
+    "longitude": 77.051896,
+    "speed": 2,
+    "location": "Shyam Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-01T13:10:00",
+    "latitude": 28.382876,
+    "longitude": 77.05371,
+    "speed": 1,
+    "location": "Shyam Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-01T13:20:00",
+    "latitude": 28.384135,
+    "longitude": 77.054864,
+    "speed": 1,
+    "location": "Shyam Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-01T13:30:00",
+    "latitude": 28.38137,
+    "longitude": 77.051951,
+    "speed": 3,
+    "location": "Shyam Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-01T13:40:00",
+    "latitude": 28.38288,
+    "longitude": 77.053555,
+    "speed": 1,
+    "location": "Shyam Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-01T13:50:00",
+    "latitude": 28.383895,
+    "longitude": 77.055007,
+    "speed": 1,
+    "location": "Shyam Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-01T14:00:00",
+    "latitude": 28.381374,
+    "longitude": 77.051791,
+    "speed": 3,
+    "location": "Shyam Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-01T14:10:00",
+    "latitude": 28.382847,
+    "longitude": 77.053697,
+    "speed": 1,
+    "location": "Shyam Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-01T14:20:00",
+    "latitude": 28.384047,
+    "longitude": 77.055079,
+    "speed": 1,
+    "location": "Shyam Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-01T14:30:00",
+    "latitude": 28.381458,
+    "longitude": 77.051818,
+    "speed": 3,
+    "location": "Shyam Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-01T14:40:00",
+    "latitude": 28.382803,
+    "longitude": 77.053649,
+    "speed": 1,
+    "location": "Shyam Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-01T14:50:00",
+    "latitude": 28.384003,
+    "longitude": 77.055088,
+    "speed": 1,
+    "location": "Shyam Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-01T15:00:00",
+    "latitude": 28.381498,
+    "longitude": 77.05197,
+    "speed": 2,
+    "location": "Shyam Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-01T15:10:00",
+    "latitude": 28.382798,
+    "longitude": 77.053627,
+    "speed": 1,
+    "location": "Shyam Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-01T15:20:00",
+    "latitude": 28.384051,
+    "longitude": 77.055143,
+    "speed": 1,
+    "location": "Shyam Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-01T15:30:00",
+    "latitude": 28.381497,
+    "longitude": 77.051968,
+    "speed": 3,
+    "location": "Shyam Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-01T15:40:00",
+    "latitude": 28.38291,
+    "longitude": 77.053682,
+    "speed": 1,
+    "location": "Shyam Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-01T15:50:00",
+    "latitude": 28.383995,
+    "longitude": 77.055004,
+    "speed": 1,
+    "location": "Shyam Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-01T16:00:00",
+    "latitude": 28.381553,
+    "longitude": 77.051842,
+    "speed": 2,
+    "location": "Shyam Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-01T16:10:00",
+    "latitude": 28.38272,
+    "longitude": 77.053623,
+    "speed": 1,
+    "location": "Shyam Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-01T16:20:00",
+    "latitude": 28.384015,
+    "longitude": 77.054885,
+    "speed": 1,
+    "location": "Shyam Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-01T16:30:00",
+    "latitude": 28.381399,
+    "longitude": 77.051852,
+    "speed": 2,
+    "location": "Shyam Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-01T16:40:00",
+    "latitude": 28.382713,
+    "longitude": 77.05365,
+    "speed": 1,
+    "location": "Shyam Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-01T16:50:00",
+    "latitude": 28.384115,
+    "longitude": 77.055021,
+    "speed": 1,
+    "location": "Shyam Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-01T17:00:00",
+    "latitude": 28.381496,
+    "longitude": 77.052026,
+    "speed": 2,
+    "location": "Shyam Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-01T17:10:00",
+    "latitude": 28.382776,
+    "longitude": 77.053497,
+    "speed": 1,
+    "location": "Shyam Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-01T17:20:00",
+    "latitude": 28.383931,
+    "longitude": 77.054923,
+    "speed": 1,
+    "location": "Shyam Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-01T17:30:00",
+    "latitude": 28.381419,
+    "longitude": 77.051948,
+    "speed": 2,
+    "location": "Shyam Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-01T17:40:00",
+    "latitude": 28.38279,
+    "longitude": 77.053478,
+    "speed": 1,
+    "location": "Shyam Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-01T17:50:00",
+    "latitude": 28.384128,
+    "longitude": 77.054892,
+    "speed": 1,
+    "location": "Shyam Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  }
+]

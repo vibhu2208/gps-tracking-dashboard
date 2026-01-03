@@ -1,0 +1,488 @@
+[
+  {
+    "timestamp": "2025-11-02T09:00:00",
+    "latitude": 28.424092,
+    "longitude": 77.093291,
+    "speed": 0,
+    "location": "Shanti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-02T09:10:00",
+    "latitude": 28.425155,
+    "longitude": 77.094761,
+    "speed": 1,
+    "location": "Shanti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-02T09:20:00",
+    "latitude": 28.426289,
+    "longitude": 77.096217,
+    "speed": 1,
+    "location": "Shanti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-02T09:30:00",
+    "latitude": 28.423875,
+    "longitude": 77.093275,
+    "speed": 2,
+    "location": "Shanti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-02T09:40:00",
+    "latitude": 28.425319,
+    "longitude": 77.094746,
+    "speed": 1,
+    "location": "Shanti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-02T09:50:00",
+    "latitude": 28.426269,
+    "longitude": 77.096043,
+    "speed": 1,
+    "location": "Shanti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-02T10:00:00",
+    "latitude": 28.424127,
+    "longitude": 77.093296,
+    "speed": 2,
+    "location": "Shanti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-02T10:10:00",
+    "latitude": 28.425165,
+    "longitude": 77.0947,
+    "speed": 1,
+    "location": "Shanti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-02T10:20:00",
+    "latitude": 28.42625,
+    "longitude": 77.096109,
+    "speed": 1,
+    "location": "Shanti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-02T10:30:00",
+    "latitude": 28.423854,
+    "longitude": 77.093064,
+    "speed": 2,
+    "location": "Shanti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-02T10:40:00",
+    "latitude": 28.425304,
+    "longitude": 77.094651,
+    "speed": 1,
+    "location": "Shanti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-02T10:50:00",
+    "latitude": 28.426445,
+    "longitude": 77.096045,
+    "speed": 1,
+    "location": "Shanti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-02T11:00:00",
+    "latitude": 28.424126,
+    "longitude": 77.093182,
+    "speed": 2,
+    "location": "Shanti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-02T11:10:00",
+    "latitude": 28.425346,
+    "longitude": 77.094725,
+    "speed": 1,
+    "location": "Shanti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-02T11:20:00",
+    "latitude": 28.426272,
+    "longitude": 77.096233,
+    "speed": 1,
+    "location": "Shanti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-02T11:30:00",
+    "latitude": 28.423923,
+    "longitude": 77.093091,
+    "speed": 2,
+    "location": "Shanti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-02T11:40:00",
+    "latitude": 28.42519,
+    "longitude": 77.094701,
+    "speed": 1,
+    "location": "Shanti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-02T11:50:00",
+    "latitude": 28.42654,
+    "longitude": 77.09608,
+    "speed": 1,
+    "location": "Shanti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-02T12:00:00",
+    "latitude": 28.423931,
+    "longitude": 77.093196,
+    "speed": 2,
+    "location": "Shanti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-02T12:10:00",
+    "latitude": 28.425228,
+    "longitude": 77.094571,
+    "speed": 1,
+    "location": "Shanti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-02T12:20:00",
+    "latitude": 28.4263,
+    "longitude": 77.095976,
+    "speed": 1,
+    "location": "Shanti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-02T12:30:00",
+    "latitude": 28.423999,
+    "longitude": 77.093212,
+    "speed": 2,
+    "location": "Shanti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-02T12:40:00",
+    "latitude": 28.425306,
+    "longitude": 77.094638,
+    "speed": 1,
+    "location": "Shanti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-02T12:50:00",
+    "latitude": 28.426254,
+    "longitude": 77.096148,
+    "speed": 1,
+    "location": "Shanti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-02T13:00:00",
+    "latitude": 28.423992,
+    "longitude": 77.093259,
+    "speed": 2,
+    "location": "Shanti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-02T13:10:00",
+    "latitude": 28.425266,
+    "longitude": 77.09467,
+    "speed": 1,
+    "location": "Shanti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-02T13:20:00",
+    "latitude": 28.426531,
+    "longitude": 77.096192,
+    "speed": 1,
+    "location": "Shanti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-02T13:30:00",
+    "latitude": 28.424084,
+    "longitude": 77.093272,
+    "speed": 2,
+    "location": "Shanti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-02T13:40:00",
+    "latitude": 28.42517,
+    "longitude": 77.094775,
+    "speed": 1,
+    "location": "Shanti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-02T13:50:00",
+    "latitude": 28.426368,
+    "longitude": 77.096032,
+    "speed": 1,
+    "location": "Shanti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-02T14:00:00",
+    "latitude": 28.423858,
+    "longitude": 77.093155,
+    "speed": 2,
+    "location": "Shanti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-02T14:10:00",
+    "latitude": 28.425287,
+    "longitude": 77.094699,
+    "speed": 1,
+    "location": "Shanti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-02T14:20:00",
+    "latitude": 28.42641,
+    "longitude": 77.095996,
+    "speed": 1,
+    "location": "Shanti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-02T14:30:00",
+    "latitude": 28.423977,
+    "longitude": 77.093088,
+    "speed": 2,
+    "location": "Shanti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-02T14:40:00",
+    "latitude": 28.425276,
+    "longitude": 77.094842,
+    "speed": 1,
+    "location": "Shanti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-02T14:50:00",
+    "latitude": 28.426295,
+    "longitude": 77.096233,
+    "speed": 1,
+    "location": "Shanti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-02T15:00:00",
+    "latitude": 28.423957,
+    "longitude": 77.093074,
+    "speed": 2,
+    "location": "Shanti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-02T15:10:00",
+    "latitude": 28.425218,
+    "longitude": 77.09471,
+    "speed": 1,
+    "location": "Shanti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-02T15:20:00",
+    "latitude": 28.426529,
+    "longitude": 77.096109,
+    "speed": 1,
+    "location": "Shanti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-02T15:30:00",
+    "latitude": 28.424133,
+    "longitude": 77.093082,
+    "speed": 2,
+    "location": "Shanti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-02T15:40:00",
+    "latitude": 28.42509,
+    "longitude": 77.094849,
+    "speed": 1,
+    "location": "Shanti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-02T15:50:00",
+    "latitude": 28.426339,
+    "longitude": 77.096147,
+    "speed": 1,
+    "location": "Shanti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-02T16:00:00",
+    "latitude": 28.423867,
+    "longitude": 77.093276,
+    "speed": 2,
+    "location": "Shanti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-02T16:10:00",
+    "latitude": 28.425062,
+    "longitude": 77.094694,
+    "speed": 1,
+    "location": "Shanti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-02T16:20:00",
+    "latitude": 28.426258,
+    "longitude": 77.095964,
+    "speed": 1,
+    "location": "Shanti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-02T16:30:00",
+    "latitude": 28.424116,
+    "longitude": 77.093311,
+    "speed": 2,
+    "location": "Shanti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-02T16:40:00",
+    "latitude": 28.425303,
+    "longitude": 77.094755,
+    "speed": 1,
+    "location": "Shanti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-02T16:50:00",
+    "latitude": 28.426541,
+    "longitude": 77.096215,
+    "speed": 1,
+    "location": "Shanti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-02T17:00:00",
+    "latitude": 28.423895,
+    "longitude": 77.093288,
+    "speed": 2,
+    "location": "Shanti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-02T17:10:00",
+    "latitude": 28.42515,
+    "longitude": 77.094598,
+    "speed": 1,
+    "location": "Shanti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-02T17:20:00",
+    "latitude": 28.426525,
+    "longitude": 77.096123,
+    "speed": 1,
+    "location": "Shanti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-02T17:30:00",
+    "latitude": 28.423937,
+    "longitude": 77.093315,
+    "speed": 2,
+    "location": "Shanti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-02T17:40:00",
+    "latitude": 28.425297,
+    "longitude": 77.094574,
+    "speed": 1,
+    "location": "Shanti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-02T17:50:00",
+    "latitude": 28.42635,
+    "longitude": 77.096128,
+    "speed": 1,
+    "location": "Shanti Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  }
+]

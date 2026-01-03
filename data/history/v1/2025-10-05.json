@@ -1,0 +1,488 @@
+[
+  {
+    "timestamp": "2025-10-05T09:00:00",
+    "latitude": 28.414075,
+    "longitude": 77.020691,
+    "speed": 0,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-05T09:10:00",
+    "latitude": 28.41538,
+    "longitude": 77.022406,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-05T09:20:00",
+    "latitude": 28.41679,
+    "longitude": 77.023945,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-05T09:30:00",
+    "latitude": 28.41422,
+    "longitude": 77.020793,
+    "speed": 3,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-05T09:40:00",
+    "latitude": 28.415621,
+    "longitude": 77.022344,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-05T09:50:00",
+    "latitude": 28.416898,
+    "longitude": 77.023943,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-05T10:00:00",
+    "latitude": 28.414032,
+    "longitude": 77.020734,
+    "speed": 3,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-05T10:10:00",
+    "latitude": 28.415406,
+    "longitude": 77.022298,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-05T10:20:00",
+    "latitude": 28.416917,
+    "longitude": 77.023809,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-05T10:30:00",
+    "latitude": 28.414073,
+    "longitude": 77.020918,
+    "speed": 3,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-05T10:40:00",
+    "latitude": 28.415554,
+    "longitude": 77.022251,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-05T10:50:00",
+    "latitude": 28.416691,
+    "longitude": 77.02391,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-05T11:00:00",
+    "latitude": 28.414079,
+    "longitude": 77.020669,
+    "speed": 3,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-05T11:10:00",
+    "latitude": 28.415579,
+    "longitude": 77.022273,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-05T11:20:00",
+    "latitude": 28.416757,
+    "longitude": 77.02401,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-05T11:30:00",
+    "latitude": 28.414246,
+    "longitude": 77.02074,
+    "speed": 3,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-05T11:40:00",
+    "latitude": 28.415618,
+    "longitude": 77.022215,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-05T11:50:00",
+    "latitude": 28.416907,
+    "longitude": 77.02393,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-05T12:00:00",
+    "latitude": 28.414026,
+    "longitude": 77.020855,
+    "speed": 3,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-05T12:10:00",
+    "latitude": 28.415615,
+    "longitude": 77.022339,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-05T12:20:00",
+    "latitude": 28.416881,
+    "longitude": 77.023916,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-05T12:30:00",
+    "latitude": 28.414091,
+    "longitude": 77.020755,
+    "speed": 3,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-05T12:40:00",
+    "latitude": 28.415486,
+    "longitude": 77.022338,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-05T12:50:00",
+    "latitude": 28.416854,
+    "longitude": 77.023937,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-05T13:00:00",
+    "latitude": 28.414043,
+    "longitude": 77.020708,
+    "speed": 3,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-05T13:10:00",
+    "latitude": 28.415375,
+    "longitude": 77.022331,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-05T13:20:00",
+    "latitude": 28.416895,
+    "longitude": 77.023886,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-05T13:30:00",
+    "latitude": 28.413984,
+    "longitude": 77.020931,
+    "speed": 3,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-05T13:40:00",
+    "latitude": 28.4154,
+    "longitude": 77.022155,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-05T13:50:00",
+    "latitude": 28.416663,
+    "longitude": 77.023914,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-05T14:00:00",
+    "latitude": 28.414188,
+    "longitude": 77.020775,
+    "speed": 2,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-05T14:10:00",
+    "latitude": 28.415354,
+    "longitude": 77.022372,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-05T14:20:00",
+    "latitude": 28.416915,
+    "longitude": 77.023996,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-05T14:30:00",
+    "latitude": 28.41407,
+    "longitude": 77.020768,
+    "speed": 3,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-05T14:40:00",
+    "latitude": 28.415486,
+    "longitude": 77.022404,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-05T14:50:00",
+    "latitude": 28.416678,
+    "longitude": 77.023881,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-05T15:00:00",
+    "latitude": 28.414239,
+    "longitude": 77.020791,
+    "speed": 2,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-05T15:10:00",
+    "latitude": 28.415371,
+    "longitude": 77.022422,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-05T15:20:00",
+    "latitude": 28.41676,
+    "longitude": 77.024,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-05T15:30:00",
+    "latitude": 28.41416,
+    "longitude": 77.020884,
+    "speed": 3,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-05T15:40:00",
+    "latitude": 28.415505,
+    "longitude": 77.022362,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-05T15:50:00",
+    "latitude": 28.416677,
+    "longitude": 77.023981,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-05T16:00:00",
+    "latitude": 28.414247,
+    "longitude": 77.020916,
+    "speed": 2,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-05T16:10:00",
+    "latitude": 28.415647,
+    "longitude": 77.022209,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-05T16:20:00",
+    "latitude": 28.416702,
+    "longitude": 77.023851,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-05T16:30:00",
+    "latitude": 28.413985,
+    "longitude": 77.020829,
+    "speed": 3,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-05T16:40:00",
+    "latitude": 28.41545,
+    "longitude": 77.022377,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-05T16:50:00",
+    "latitude": 28.416775,
+    "longitude": 77.023926,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-05T17:00:00",
+    "latitude": 28.41417,
+    "longitude": 77.020907,
+    "speed": 2,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-05T17:10:00",
+    "latitude": 28.415606,
+    "longitude": 77.022409,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-05T17:20:00",
+    "latitude": 28.416892,
+    "longitude": 77.023759,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-05T17:30:00",
+    "latitude": 28.414191,
+    "longitude": 77.020858,
+    "speed": 2,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-05T17:40:00",
+    "latitude": 28.415396,
+    "longitude": 77.022341,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-05T17:50:00",
+    "latitude": 28.416681,
+    "longitude": 77.023894,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  }
+]

@@ -1,0 +1,488 @@
+[
+  {
+    "timestamp": "2025-10-27T09:00:00",
+    "latitude": 28.352887,
+    "longitude": 77.060881,
+    "speed": 0,
+    "location": "Bhondsi",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-27T09:10:00",
+    "latitude": 28.353493,
+    "longitude": 77.063162,
+    "speed": 1,
+    "location": "Bhondsi",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-27T09:20:00",
+    "latitude": 28.353926,
+    "longitude": 77.061545,
+    "speed": 1,
+    "location": "Bhondsi",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-27T09:30:00",
+    "latitude": 28.352957,
+    "longitude": 77.059848,
+    "speed": 1,
+    "location": "Bhondsi",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-27T09:40:00",
+    "latitude": 28.352675,
+    "longitude": 77.060857,
+    "speed": 1,
+    "location": "Bhondsi",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-27T09:50:00",
+    "latitude": 28.353325,
+    "longitude": 77.063304,
+    "speed": 2,
+    "location": "Bhondsi",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-27T10:00:00",
+    "latitude": 28.354086,
+    "longitude": 77.061355,
+    "speed": 1,
+    "location": "Bhondsi",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-27T10:10:00",
+    "latitude": 28.353002,
+    "longitude": 77.059867,
+    "speed": 1,
+    "location": "Bhondsi",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-27T10:20:00",
+    "latitude": 28.352811,
+    "longitude": 77.061029,
+    "speed": 1,
+    "location": "Bhondsi",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-27T10:30:00",
+    "latitude": 28.35326,
+    "longitude": 77.063094,
+    "speed": 1,
+    "location": "Bhondsi",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-27T10:40:00",
+    "latitude": 28.353954,
+    "longitude": 77.061528,
+    "speed": 1,
+    "location": "Bhondsi",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-27T10:50:00",
+    "latitude": 28.352976,
+    "longitude": 77.059661,
+    "speed": 1,
+    "location": "Bhondsi",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-27T11:00:00",
+    "latitude": 28.352666,
+    "longitude": 77.060994,
+    "speed": 1,
+    "location": "Bhondsi",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-27T11:10:00",
+    "latitude": 28.353487,
+    "longitude": 77.063053,
+    "speed": 1,
+    "location": "Bhondsi",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-27T11:20:00",
+    "latitude": 28.354045,
+    "longitude": 77.061484,
+    "speed": 1,
+    "location": "Bhondsi",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-27T11:30:00",
+    "latitude": 28.352798,
+    "longitude": 77.059682,
+    "speed": 1,
+    "location": "Bhondsi",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-27T11:40:00",
+    "latitude": 28.352817,
+    "longitude": 77.060886,
+    "speed": 1,
+    "location": "Bhondsi",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-27T11:50:00",
+    "latitude": 28.353373,
+    "longitude": 77.063299,
+    "speed": 1,
+    "location": "Bhondsi",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-27T12:00:00",
+    "latitude": 28.354015,
+    "longitude": 77.06154,
+    "speed": 1,
+    "location": "Bhondsi",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-27T12:10:00",
+    "latitude": 28.35284,
+    "longitude": 77.059736,
+    "speed": 1,
+    "location": "Bhondsi",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-27T12:20:00",
+    "latitude": 28.352716,
+    "longitude": 77.060967,
+    "speed": 1,
+    "location": "Bhondsi",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-27T12:30:00",
+    "latitude": 28.353274,
+    "longitude": 77.063274,
+    "speed": 1,
+    "location": "Bhondsi",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-27T12:40:00",
+    "latitude": 28.354076,
+    "longitude": 77.061454,
+    "speed": 1,
+    "location": "Bhondsi",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-27T12:50:00",
+    "latitude": 28.352995,
+    "longitude": 77.059911,
+    "speed": 1,
+    "location": "Bhondsi",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-27T13:00:00",
+    "latitude": 28.352682,
+    "longitude": 77.060852,
+    "speed": 1,
+    "location": "Bhondsi",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-27T13:10:00",
+    "latitude": 28.353287,
+    "longitude": 77.063177,
+    "speed": 1,
+    "location": "Bhondsi",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-27T13:20:00",
+    "latitude": 28.354106,
+    "longitude": 77.061574,
+    "speed": 1,
+    "location": "Bhondsi",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-27T13:30:00",
+    "latitude": 28.352806,
+    "longitude": 77.059772,
+    "speed": 1,
+    "location": "Bhondsi",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-27T13:40:00",
+    "latitude": 28.352904,
+    "longitude": 77.060762,
+    "speed": 1,
+    "location": "Bhondsi",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-27T13:50:00",
+    "latitude": 28.353434,
+    "longitude": 77.063264,
+    "speed": 2,
+    "location": "Bhondsi",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-27T14:00:00",
+    "latitude": 28.353931,
+    "longitude": 77.061372,
+    "speed": 1,
+    "location": "Bhondsi",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-27T14:10:00",
+    "latitude": 28.352951,
+    "longitude": 77.05986,
+    "speed": 1,
+    "location": "Bhondsi",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-27T14:20:00",
+    "latitude": 28.352668,
+    "longitude": 77.060964,
+    "speed": 1,
+    "location": "Bhondsi",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-27T14:30:00",
+    "latitude": 28.35338,
+    "longitude": 77.063149,
+    "speed": 1,
+    "location": "Bhondsi",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-27T14:40:00",
+    "latitude": 28.354001,
+    "longitude": 77.061378,
+    "speed": 1,
+    "location": "Bhondsi",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-27T14:50:00",
+    "latitude": 28.352842,
+    "longitude": 77.059834,
+    "speed": 1,
+    "location": "Bhondsi",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-27T15:00:00",
+    "latitude": 28.352698,
+    "longitude": 77.060876,
+    "speed": 1,
+    "location": "Bhondsi",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-27T15:10:00",
+    "latitude": 28.353424,
+    "longitude": 77.063232,
+    "speed": 1,
+    "location": "Bhondsi",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-27T15:20:00",
+    "latitude": 28.354113,
+    "longitude": 77.061569,
+    "speed": 1,
+    "location": "Bhondsi",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-27T15:30:00",
+    "latitude": 28.352913,
+    "longitude": 77.05967,
+    "speed": 1,
+    "location": "Bhondsi",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-27T15:40:00",
+    "latitude": 28.352761,
+    "longitude": 77.060872,
+    "speed": 1,
+    "location": "Bhondsi",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-27T15:50:00",
+    "latitude": 28.353525,
+    "longitude": 77.06314,
+    "speed": 1,
+    "location": "Bhondsi",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-27T16:00:00",
+    "latitude": 28.353992,
+    "longitude": 77.061545,
+    "speed": 1,
+    "location": "Bhondsi",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-27T16:10:00",
+    "latitude": 28.352999,
+    "longitude": 77.059869,
+    "speed": 1,
+    "location": "Bhondsi",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-27T16:20:00",
+    "latitude": 28.352862,
+    "longitude": 77.060845,
+    "speed": 1,
+    "location": "Bhondsi",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-27T16:30:00",
+    "latitude": 28.353439,
+    "longitude": 77.063298,
+    "speed": 1,
+    "location": "Bhondsi",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-27T16:40:00",
+    "latitude": 28.353861,
+    "longitude": 77.061558,
+    "speed": 1,
+    "location": "Bhondsi",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-27T16:50:00",
+    "latitude": 28.352899,
+    "longitude": 77.059803,
+    "speed": 1,
+    "location": "Bhondsi",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-27T17:00:00",
+    "latitude": 28.352925,
+    "longitude": 77.0608,
+    "speed": 1,
+    "location": "Bhondsi",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-27T17:10:00",
+    "latitude": 28.353382,
+    "longitude": 77.063254,
+    "speed": 1,
+    "location": "Bhondsi",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-27T17:20:00",
+    "latitude": 28.354032,
+    "longitude": 77.061646,
+    "speed": 1,
+    "location": "Bhondsi",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-27T17:30:00",
+    "latitude": 28.353023,
+    "longitude": 77.059681,
+    "speed": 1,
+    "location": "Bhondsi",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-27T17:40:00",
+    "latitude": 28.352931,
+    "longitude": 77.060997,
+    "speed": 1,
+    "location": "Bhondsi",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-27T17:50:00",
+    "latitude": 28.353254,
+    "longitude": 77.063318,
+    "speed": 1,
+    "location": "Bhondsi",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  }
+]

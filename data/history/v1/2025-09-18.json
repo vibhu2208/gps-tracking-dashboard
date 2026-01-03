@@ -1,0 +1,488 @@
+[
+  {
+    "timestamp": "2025-09-18T09:00:00",
+    "latitude": 28.395763,
+    "longitude": 77.058531,
+    "speed": 0,
+    "location": "Mayur Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-09-18T09:10:00",
+    "latitude": 28.397126,
+    "longitude": 77.060033,
+    "speed": 1,
+    "location": "Mayur Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-09-18T09:20:00",
+    "latitude": 28.39855,
+    "longitude": 77.061273,
+    "speed": 1,
+    "location": "Mayur Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-09-18T09:30:00",
+    "latitude": 28.395817,
+    "longitude": 77.058639,
+    "speed": 2,
+    "location": "Mayur Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-09-18T09:40:00",
+    "latitude": 28.397341,
+    "longitude": 77.059948,
+    "speed": 1,
+    "location": "Mayur Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-09-18T09:50:00",
+    "latitude": 28.398655,
+    "longitude": 77.061283,
+    "speed": 1,
+    "location": "Mayur Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-09-18T10:00:00",
+    "latitude": 28.395854,
+    "longitude": 77.058631,
+    "speed": 2,
+    "location": "Mayur Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-09-18T10:10:00",
+    "latitude": 28.397057,
+    "longitude": 77.060043,
+    "speed": 1,
+    "location": "Mayur Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-09-18T10:20:00",
+    "latitude": 28.398644,
+    "longitude": 77.061384,
+    "speed": 1,
+    "location": "Mayur Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-09-18T10:30:00",
+    "latitude": 28.395965,
+    "longitude": 77.058367,
+    "speed": 3,
+    "location": "Mayur Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-09-18T10:40:00",
+    "latitude": 28.397213,
+    "longitude": 77.059811,
+    "speed": 1,
+    "location": "Mayur Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-09-18T10:50:00",
+    "latitude": 28.398488,
+    "longitude": 77.061346,
+    "speed": 1,
+    "location": "Mayur Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-09-18T11:00:00",
+    "latitude": 28.396026,
+    "longitude": 77.058541,
+    "speed": 2,
+    "location": "Mayur Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-09-18T11:10:00",
+    "latitude": 28.397096,
+    "longitude": 77.059768,
+    "speed": 1,
+    "location": "Mayur Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-09-18T11:20:00",
+    "latitude": 28.398457,
+    "longitude": 77.061434,
+    "speed": 1,
+    "location": "Mayur Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-09-18T11:30:00",
+    "latitude": 28.395986,
+    "longitude": 77.058447,
+    "speed": 2,
+    "location": "Mayur Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-09-18T11:40:00",
+    "latitude": 28.397067,
+    "longitude": 77.059993,
+    "speed": 1,
+    "location": "Mayur Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-09-18T11:50:00",
+    "latitude": 28.398644,
+    "longitude": 77.061442,
+    "speed": 1,
+    "location": "Mayur Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-09-18T12:00:00",
+    "latitude": 28.395757,
+    "longitude": 77.058647,
+    "speed": 3,
+    "location": "Mayur Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-09-18T12:10:00",
+    "latitude": 28.397085,
+    "longitude": 77.059807,
+    "speed": 1,
+    "location": "Mayur Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-09-18T12:20:00",
+    "latitude": 28.39875,
+    "longitude": 77.061385,
+    "speed": 1,
+    "location": "Mayur Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-09-18T12:30:00",
+    "latitude": 28.39602,
+    "longitude": 77.058611,
+    "speed": 2,
+    "location": "Mayur Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-09-18T12:40:00",
+    "latitude": 28.397259,
+    "longitude": 77.059978,
+    "speed": 1,
+    "location": "Mayur Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-09-18T12:50:00",
+    "latitude": 28.39869,
+    "longitude": 77.061208,
+    "speed": 1,
+    "location": "Mayur Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-09-18T13:00:00",
+    "latitude": 28.396,
+    "longitude": 77.058552,
+    "speed": 2,
+    "location": "Mayur Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-09-18T13:10:00",
+    "latitude": 28.397098,
+    "longitude": 77.059906,
+    "speed": 1,
+    "location": "Mayur Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-09-18T13:20:00",
+    "latitude": 28.398666,
+    "longitude": 77.061432,
+    "speed": 1,
+    "location": "Mayur Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-09-18T13:30:00",
+    "latitude": 28.395802,
+    "longitude": 77.0586,
+    "speed": 3,
+    "location": "Mayur Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-09-18T13:40:00",
+    "latitude": 28.397231,
+    "longitude": 77.0598,
+    "speed": 1,
+    "location": "Mayur Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-09-18T13:50:00",
+    "latitude": 28.398508,
+    "longitude": 77.061156,
+    "speed": 1,
+    "location": "Mayur Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-09-18T14:00:00",
+    "latitude": 28.395928,
+    "longitude": 77.058447,
+    "speed": 2,
+    "location": "Mayur Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-09-18T14:10:00",
+    "latitude": 28.397333,
+    "longitude": 77.060039,
+    "speed": 1,
+    "location": "Mayur Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-09-18T14:20:00",
+    "latitude": 28.398661,
+    "longitude": 77.061185,
+    "speed": 1,
+    "location": "Mayur Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-09-18T14:30:00",
+    "latitude": 28.39579,
+    "longitude": 77.058637,
+    "speed": 2,
+    "location": "Mayur Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-09-18T14:40:00",
+    "latitude": 28.397319,
+    "longitude": 77.059994,
+    "speed": 1,
+    "location": "Mayur Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-09-18T14:50:00",
+    "latitude": 28.398594,
+    "longitude": 77.061153,
+    "speed": 1,
+    "location": "Mayur Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-09-18T15:00:00",
+    "latitude": 28.39578,
+    "longitude": 77.058377,
+    "speed": 2,
+    "location": "Mayur Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-09-18T15:10:00",
+    "latitude": 28.39711,
+    "longitude": 77.059923,
+    "speed": 1,
+    "location": "Mayur Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-09-18T15:20:00",
+    "latitude": 28.398503,
+    "longitude": 77.061197,
+    "speed": 1,
+    "location": "Mayur Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-09-18T15:30:00",
+    "latitude": 28.395805,
+    "longitude": 77.058606,
+    "speed": 2,
+    "location": "Mayur Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-09-18T15:40:00",
+    "latitude": 28.397301,
+    "longitude": 77.05979,
+    "speed": 1,
+    "location": "Mayur Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-09-18T15:50:00",
+    "latitude": 28.398706,
+    "longitude": 77.061197,
+    "speed": 1,
+    "location": "Mayur Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-09-18T16:00:00",
+    "latitude": 28.395942,
+    "longitude": 77.058629,
+    "speed": 2,
+    "location": "Mayur Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-09-18T16:10:00",
+    "latitude": 28.397284,
+    "longitude": 77.059828,
+    "speed": 1,
+    "location": "Mayur Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-09-18T16:20:00",
+    "latitude": 28.398646,
+    "longitude": 77.061239,
+    "speed": 1,
+    "location": "Mayur Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-09-18T16:30:00",
+    "latitude": 28.395853,
+    "longitude": 77.058554,
+    "speed": 2,
+    "location": "Mayur Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-09-18T16:40:00",
+    "latitude": 28.397216,
+    "longitude": 77.059809,
+    "speed": 1,
+    "location": "Mayur Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-09-18T16:50:00",
+    "latitude": 28.398651,
+    "longitude": 77.061323,
+    "speed": 1,
+    "location": "Mayur Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-09-18T17:00:00",
+    "latitude": 28.39583,
+    "longitude": 77.058412,
+    "speed": 3,
+    "location": "Mayur Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-09-18T17:10:00",
+    "latitude": 28.397276,
+    "longitude": 77.05997,
+    "speed": 1,
+    "location": "Mayur Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-09-18T17:20:00",
+    "latitude": 28.39845,
+    "longitude": 77.061183,
+    "speed": 1,
+    "location": "Mayur Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-09-18T17:30:00",
+    "latitude": 28.39582,
+    "longitude": 77.058645,
+    "speed": 2,
+    "location": "Mayur Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-09-18T17:40:00",
+    "latitude": 28.397214,
+    "longitude": 77.059859,
+    "speed": 1,
+    "location": "Mayur Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-09-18T17:50:00",
+    "latitude": 28.398613,
+    "longitude": 77.061196,
+    "speed": 1,
+    "location": "Mayur Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  }
+]

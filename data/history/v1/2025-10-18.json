@@ -1,0 +1,488 @@
+[
+  {
+    "timestamp": "2025-10-18T09:00:00",
+    "latitude": 28.390643,
+    "longitude": 77.044625,
+    "speed": 0,
+    "location": "Vatika Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-18T09:10:00",
+    "latitude": 28.392018,
+    "longitude": 77.046072,
+    "speed": 1,
+    "location": "Vatika Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-18T09:20:00",
+    "latitude": 28.393044,
+    "longitude": 77.047562,
+    "speed": 1,
+    "location": "Vatika Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-18T09:30:00",
+    "latitude": 28.390539,
+    "longitude": 77.044622,
+    "speed": 2,
+    "location": "Vatika Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-18T09:40:00",
+    "latitude": 28.392001,
+    "longitude": 77.045929,
+    "speed": 1,
+    "location": "Vatika Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-18T09:50:00",
+    "latitude": 28.393037,
+    "longitude": 77.047445,
+    "speed": 1,
+    "location": "Vatika Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-18T10:00:00",
+    "latitude": 28.390413,
+    "longitude": 77.044845,
+    "speed": 2,
+    "location": "Vatika Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-18T10:10:00",
+    "latitude": 28.39208,
+    "longitude": 77.045864,
+    "speed": 1,
+    "location": "Vatika Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-18T10:20:00",
+    "latitude": 28.39297,
+    "longitude": 77.047494,
+    "speed": 1,
+    "location": "Vatika Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-18T10:30:00",
+    "latitude": 28.390591,
+    "longitude": 77.044745,
+    "speed": 2,
+    "location": "Vatika Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-18T10:40:00",
+    "latitude": 28.391854,
+    "longitude": 77.046112,
+    "speed": 1,
+    "location": "Vatika Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-18T10:50:00",
+    "latitude": 28.393103,
+    "longitude": 77.04754,
+    "speed": 1,
+    "location": "Vatika Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-18T11:00:00",
+    "latitude": 28.390512,
+    "longitude": 77.044846,
+    "speed": 2,
+    "location": "Vatika Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-18T11:10:00",
+    "latitude": 28.392011,
+    "longitude": 77.046047,
+    "speed": 1,
+    "location": "Vatika Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-18T11:20:00",
+    "latitude": 28.393043,
+    "longitude": 77.047459,
+    "speed": 1,
+    "location": "Vatika Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-18T11:30:00",
+    "latitude": 28.390581,
+    "longitude": 77.044725,
+    "speed": 2,
+    "location": "Vatika Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-18T11:40:00",
+    "latitude": 28.391941,
+    "longitude": 77.045929,
+    "speed": 1,
+    "location": "Vatika Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-18T11:50:00",
+    "latitude": 28.393135,
+    "longitude": 77.047606,
+    "speed": 1,
+    "location": "Vatika Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-18T12:00:00",
+    "latitude": 28.390573,
+    "longitude": 77.044817,
+    "speed": 2,
+    "location": "Vatika Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-18T12:10:00",
+    "latitude": 28.391921,
+    "longitude": 77.04604,
+    "speed": 1,
+    "location": "Vatika Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-18T12:20:00",
+    "latitude": 28.393213,
+    "longitude": 77.047572,
+    "speed": 1,
+    "location": "Vatika Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-18T12:30:00",
+    "latitude": 28.390567,
+    "longitude": 77.044769,
+    "speed": 2,
+    "location": "Vatika Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-18T12:40:00",
+    "latitude": 28.391883,
+    "longitude": 77.046111,
+    "speed": 1,
+    "location": "Vatika Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-18T12:50:00",
+    "latitude": 28.39312,
+    "longitude": 77.047552,
+    "speed": 1,
+    "location": "Vatika Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-18T13:00:00",
+    "latitude": 28.390367,
+    "longitude": 77.044772,
+    "speed": 2,
+    "location": "Vatika Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-18T13:10:00",
+    "latitude": 28.392076,
+    "longitude": 77.045912,
+    "speed": 1,
+    "location": "Vatika Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-18T13:20:00",
+    "latitude": 28.39317,
+    "longitude": 77.04736,
+    "speed": 1,
+    "location": "Vatika Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-18T13:30:00",
+    "latitude": 28.390531,
+    "longitude": 77.044778,
+    "speed": 2,
+    "location": "Vatika Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-18T13:40:00",
+    "latitude": 28.392038,
+    "longitude": 77.045883,
+    "speed": 1,
+    "location": "Vatika Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-18T13:50:00",
+    "latitude": 28.393037,
+    "longitude": 77.047367,
+    "speed": 1,
+    "location": "Vatika Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-18T14:00:00",
+    "latitude": 28.390433,
+    "longitude": 77.044593,
+    "speed": 2,
+    "location": "Vatika Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-18T14:10:00",
+    "latitude": 28.391898,
+    "longitude": 77.045955,
+    "speed": 1,
+    "location": "Vatika Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-18T14:20:00",
+    "latitude": 28.393211,
+    "longitude": 77.047517,
+    "speed": 1,
+    "location": "Vatika Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-18T14:30:00",
+    "latitude": 28.390462,
+    "longitude": 77.044761,
+    "speed": 2,
+    "location": "Vatika Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-18T14:40:00",
+    "latitude": 28.391917,
+    "longitude": 77.046005,
+    "speed": 1,
+    "location": "Vatika Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-18T14:50:00",
+    "latitude": 28.39318,
+    "longitude": 77.047492,
+    "speed": 1,
+    "location": "Vatika Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-18T15:00:00",
+    "latitude": 28.390545,
+    "longitude": 77.044611,
+    "speed": 2,
+    "location": "Vatika Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-18T15:10:00",
+    "latitude": 28.392095,
+    "longitude": 77.045974,
+    "speed": 1,
+    "location": "Vatika Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-18T15:20:00",
+    "latitude": 28.39301,
+    "longitude": 77.04746,
+    "speed": 1,
+    "location": "Vatika Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-18T15:30:00",
+    "latitude": 28.390533,
+    "longitude": 77.044752,
+    "speed": 2,
+    "location": "Vatika Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-18T15:40:00",
+    "latitude": 28.391995,
+    "longitude": 77.046067,
+    "speed": 1,
+    "location": "Vatika Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-18T15:50:00",
+    "latitude": 28.39319,
+    "longitude": 77.047453,
+    "speed": 1,
+    "location": "Vatika Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-18T16:00:00",
+    "latitude": 28.390581,
+    "longitude": 77.044587,
+    "speed": 2,
+    "location": "Vatika Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-18T16:10:00",
+    "latitude": 28.392123,
+    "longitude": 77.045972,
+    "speed": 1,
+    "location": "Vatika Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-18T16:20:00",
+    "latitude": 28.392954,
+    "longitude": 77.047387,
+    "speed": 1,
+    "location": "Vatika Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-18T16:30:00",
+    "latitude": 28.39048,
+    "longitude": 77.044639,
+    "speed": 2,
+    "location": "Vatika Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-18T16:40:00",
+    "latitude": 28.391989,
+    "longitude": 77.045887,
+    "speed": 1,
+    "location": "Vatika Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-18T16:50:00",
+    "latitude": 28.393211,
+    "longitude": 77.047365,
+    "speed": 1,
+    "location": "Vatika Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-18T17:00:00",
+    "latitude": 28.390475,
+    "longitude": 77.044554,
+    "speed": 2,
+    "location": "Vatika Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-18T17:10:00",
+    "latitude": 28.392054,
+    "longitude": 77.046054,
+    "speed": 1,
+    "location": "Vatika Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-18T17:20:00",
+    "latitude": 28.393045,
+    "longitude": 77.047567,
+    "speed": 1,
+    "location": "Vatika Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-18T17:30:00",
+    "latitude": 28.390483,
+    "longitude": 77.04462,
+    "speed": 2,
+    "location": "Vatika Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-18T17:40:00",
+    "latitude": 28.391945,
+    "longitude": 77.046143,
+    "speed": 1,
+    "location": "Vatika Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-10-18T17:50:00",
+    "latitude": 28.393136,
+    "longitude": 77.047624,
+    "speed": 1,
+    "location": "Vatika Kunj",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  }
+]

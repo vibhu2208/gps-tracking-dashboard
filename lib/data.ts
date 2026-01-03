@@ -12,34 +12,32 @@ export const getVehicleById = (id: string): Vehicle | undefined => {
 
 export const getRouteData = async (vehicleId: string, date: string): Promise<RouteData | null> => {
   try {
-    const response = await fetch(`/data/history/${vehicleId}/${date}.json`);
+    const response = await fetch('/data/routes.json');
     if (!response.ok) return null;
-    return await response.json();
+    const allRoutes = await response.json();
+    
+    if (allRoutes[vehicleId] && allRoutes[vehicleId][date]) {
+      return allRoutes[vehicleId][date];
+    }
+    return null;
   } catch (error) {
     return null;
   }
 };
 
 export const getAvailableDates = async (vehicleId: string): Promise<string[]> => {
-  const dates: string[] = [];
-  const endDate = new Date('2025-12-28');
-  const startDate = new Date('2025-12-03');
-  
-  const currentDate = new Date(startDate);
-  while (currentDate <= endDate) {
-    const dateStr = currentDate.toISOString().split('T')[0];
-    try {
-      const response = await fetch(`/data/history/${vehicleId}/${dateStr}.json`);
-      if (response.ok) {
-        dates.push(dateStr);
-      }
-    } catch (error) {
-      // Skip missing dates
+  try {
+    const response = await fetch('/data/routes.json');
+    if (!response.ok) return [];
+    const allRoutes = await response.json();
+    
+    if (allRoutes[vehicleId]) {
+      return Object.keys(allRoutes[vehicleId]).sort().reverse();
     }
-    currentDate.setDate(currentDate.getDate() + 1);
+    return [];
+  } catch (error) {
+    return [];
   }
-  
-  return dates.reverse();
 };
 
 export const getAlerts = (): Alert[] => {

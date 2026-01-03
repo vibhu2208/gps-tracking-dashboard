@@ -1,537 +1,488 @@
-{
-  "points": [
-    {
-      "lat": 28.6692,
-      "lng": 77.4538,
-      "timestamp": "2025-12-03T01:30:00.000Z",
-      "speed": 0,
-      "isStop": false
-    },
-    {
-      "lat": 28.6692,
-      "lng": 77.4538,
-      "timestamp": "2025-12-03T01:35:00.000Z",
-      "speed": 42,
-      "isStop": false
-    },
-    {
-      "lat": 28.6692,
-      "lng": 77.4538,
-      "timestamp": "2025-12-03T01:37:00.000Z",
-      "speed": 37,
-      "isStop": false
-    },
-    {
-      "lat": 28.6692,
-      "lng": 77.4538,
-      "timestamp": "2025-12-03T01:39:00.000Z",
-      "speed": 51,
-      "isStop": false
-    },
-    {
-      "lat": 28.6692,
-      "lng": 77.4538,
-      "timestamp": "2025-12-03T01:41:00.000Z",
-      "speed": 37,
-      "isStop": false
-    },
-    {
-      "lat": 28.6692,
-      "lng": 77.4538,
-      "timestamp": "2025-12-03T01:43:00.000Z",
-      "speed": 29,
-      "isStop": false
-    },
-    {
-      "lat": 28.6692,
-      "lng": 77.4538,
-      "timestamp": "2025-12-03T01:45:00.000Z",
-      "speed": 35,
-      "isStop": false
-    },
-    {
-      "lat": 28.6692,
-      "lng": 77.4538,
-      "timestamp": "2025-12-03T01:47:00.000Z",
-      "speed": 56,
-      "isStop": false
-    },
-    {
-      "lat": 28.6692,
-      "lng": 77.4538,
-      "timestamp": "2025-12-03T01:49:00.000Z",
-      "speed": 34,
-      "isStop": false
-    },
-    {
-      "lat": 28.6692,
-      "lng": 77.4538,
-      "timestamp": "2025-12-03T01:51:00.000Z",
-      "speed": 46,
-      "isStop": false
-    },
-    {
-      "lat": 28.6692,
-      "lng": 77.4538,
-      "timestamp": "2025-12-03T01:53:00.000Z",
-      "speed": 30,
-      "isStop": false
-    },
-    {
-      "lat": 28.6692,
-      "lng": 77.4538,
-      "timestamp": "2025-12-03T01:55:00.000Z",
-      "speed": 32,
-      "isStop": false
-    },
-    {
-      "lat": 28.6692,
-      "lng": 77.4538,
-      "timestamp": "2025-12-03T01:57:00.000Z",
-      "speed": 27,
-      "isStop": false
-    },
-    {
-      "lat": 28.6692,
-      "lng": 77.4538,
-      "timestamp": "2025-12-03T01:59:00.000Z",
-      "speed": 34,
-      "isStop": false
-    },
-    {
-      "lat": 28.6692,
-      "lng": 77.4538,
-      "timestamp": "2025-12-03T02:01:00.000Z",
-      "speed": 34,
-      "isStop": false
-    },
-    {
-      "lat": 28.6692,
-      "lng": 77.4538,
-      "timestamp": "2025-12-03T02:03:00.000Z",
-      "speed": 29,
-      "isStop": false
-    },
-    {
-      "lat": 28.6692,
-      "lng": 77.4538,
-      "timestamp": "2025-12-03T02:05:00.000Z",
-      "speed": 53,
-      "isStop": false
-    },
-    {
-      "lat": 28.6692,
-      "lng": 77.4538,
-      "timestamp": "2025-12-03T02:07:00.000Z",
-      "speed": 56,
-      "isStop": false
-    },
-    {
-      "lat": 28.6692,
-      "lng": 77.4538,
-      "timestamp": "2025-12-03T02:09:00.000Z",
-      "speed": 44,
-      "isStop": false
-    },
-    {
-      "lat": 28.6692,
-      "lng": 77.4538,
-      "timestamp": "2025-12-03T02:11:00.000Z",
-      "speed": 0,
-      "isStop": false
-    },
-    {
-      "lat": 28.6692,
-      "lng": 77.4538,
-      "timestamp": "2025-12-03T02:42:00.000Z",
-      "speed": 0,
-      "isStop": false
-    },
-    {
-      "lat": 28.6692,
-      "lng": 77.4538,
-      "timestamp": "2025-12-03T02:47:00.000Z",
-      "speed": 35,
-      "isStop": false
-    },
-    {
-      "lat": 28.6692,
-      "lng": 77.4538,
-      "timestamp": "2025-12-03T02:49:00.000Z",
-      "speed": 45,
-      "isStop": false
-    },
-    {
-      "lat": 28.6692,
-      "lng": 77.4538,
-      "timestamp": "2025-12-03T02:51:00.000Z",
-      "speed": 18,
-      "isStop": false
-    },
-    {
-      "lat": 28.6692,
-      "lng": 77.4538,
-      "timestamp": "2025-12-03T02:53:00.000Z",
-      "speed": 48,
-      "isStop": false
-    },
-    {
-      "lat": 28.6692,
-      "lng": 77.4538,
-      "timestamp": "2025-12-03T02:55:00.000Z",
-      "speed": 38,
-      "isStop": false
-    },
-    {
-      "lat": 28.6692,
-      "lng": 77.4538,
-      "timestamp": "2025-12-03T02:57:00.000Z",
-      "speed": 45,
-      "isStop": false
-    },
-    {
-      "lat": 28.6692,
-      "lng": 77.4538,
-      "timestamp": "2025-12-03T02:59:00.000Z",
-      "speed": 52,
-      "isStop": false
-    },
-    {
-      "lat": 28.6692,
-      "lng": 77.4538,
-      "timestamp": "2025-12-03T03:01:00.000Z",
-      "speed": 39,
-      "isStop": false
-    },
-    {
-      "lat": 28.6692,
-      "lng": 77.4538,
-      "timestamp": "2025-12-03T03:03:00.000Z",
-      "speed": 32,
-      "isStop": false
-    },
-    {
-      "lat": 28.6692,
-      "lng": 77.4538,
-      "timestamp": "2025-12-03T03:05:00.000Z",
-      "speed": 47,
-      "isStop": false
-    },
-    {
-      "lat": 28.6692,
-      "lng": 77.4538,
-      "timestamp": "2025-12-03T03:07:00.000Z",
-      "speed": 29,
-      "isStop": false
-    },
-    {
-      "lat": 28.6692,
-      "lng": 77.4538,
-      "timestamp": "2025-12-03T03:09:00.000Z",
-      "speed": 52,
-      "isStop": false
-    },
-    {
-      "lat": 28.6692,
-      "lng": 77.4538,
-      "timestamp": "2025-12-03T03:11:00.000Z",
-      "speed": 34,
-      "isStop": false
-    },
-    {
-      "lat": 28.6692,
-      "lng": 77.4538,
-      "timestamp": "2025-12-03T03:13:00.000Z",
-      "speed": 44,
-      "isStop": false
-    },
-    {
-      "lat": 28.6692,
-      "lng": 77.4538,
-      "timestamp": "2025-12-03T03:15:00.000Z",
-      "speed": 42,
-      "isStop": false
-    },
-    {
-      "lat": 28.6692,
-      "lng": 77.4538,
-      "timestamp": "2025-12-03T03:17:00.000Z",
-      "speed": 57,
-      "isStop": false
-    },
-    {
-      "lat": 28.6692,
-      "lng": 77.4538,
-      "timestamp": "2025-12-03T03:19:00.000Z",
-      "speed": 46,
-      "isStop": false
-    },
-    {
-      "lat": 28.6692,
-      "lng": 77.4538,
-      "timestamp": "2025-12-03T03:21:00.000Z",
-      "speed": 40,
-      "isStop": false
-    },
-    {
-      "lat": 28.6692,
-      "lng": 77.4538,
-      "timestamp": "2025-12-03T03:23:00.000Z",
-      "speed": 98,
-      "isStop": false
-    },
-    {
-      "lat": 28.6692,
-      "lng": 77.4538,
-      "timestamp": "2025-12-03T03:25:00.000Z",
-      "speed": 50,
-      "isStop": false
-    },
-    {
-      "lat": 28.6692,
-      "lng": 77.4538,
-      "timestamp": "2025-12-03T03:27:00.000Z",
-      "speed": 53,
-      "isStop": false
-    },
-    {
-      "lat": 28.6692,
-      "lng": 77.4538,
-      "timestamp": "2025-12-03T03:29:00.000Z",
-      "speed": 33,
-      "isStop": false
-    },
-    {
-      "lat": 28.6692,
-      "lng": 77.4538,
-      "timestamp": "2025-12-03T03:31:00.000Z",
-      "speed": 39,
-      "isStop": false
-    },
-    {
-      "lat": 28.6692,
-      "lng": 77.4538,
-      "timestamp": "2025-12-03T03:33:00.000Z",
-      "speed": 64,
-      "isStop": false
-    },
-    {
-      "lat": 28.6692,
-      "lng": 77.4538,
-      "timestamp": "2025-12-03T03:35:00.000Z",
-      "speed": 58,
-      "isStop": false
-    },
-    {
-      "lat": 28.6692,
-      "lng": 77.4538,
-      "timestamp": "2025-12-03T03:37:00.000Z",
-      "speed": 29,
-      "isStop": false
-    },
-    {
-      "lat": 28.6692,
-      "lng": 77.4538,
-      "timestamp": "2025-12-03T03:39:00.000Z",
-      "speed": 0,
-      "isStop": false
-    },
-    {
-      "lat": 28.6692,
-      "lng": 77.4538,
-      "timestamp": "2025-12-03T03:58:00.000Z",
-      "speed": 0,
-      "isStop": false
-    },
-    {
-      "lat": 28.667073076923078,
-      "lng": 77.44438461538462,
-      "timestamp": "2025-12-03T04:03:00.000Z",
-      "speed": 86,
-      "isStop": false
-    },
-    {
-      "lat": 28.664946153846152,
-      "lng": 77.43496923076923,
-      "timestamp": "2025-12-03T04:05:00.000Z",
-      "speed": 35,
-      "isStop": false
-    },
-    {
-      "lat": 28.66281923076923,
-      "lng": 77.42555384615385,
-      "timestamp": "2025-12-03T04:07:00.000Z",
-      "speed": 38,
-      "isStop": false
-    },
-    {
-      "lat": 28.660692307692308,
-      "lng": 77.41613846153847,
-      "timestamp": "2025-12-03T04:09:00.000Z",
-      "speed": 55,
-      "isStop": false
-    },
-    {
-      "lat": 28.658565384615386,
-      "lng": 77.40672307692307,
-      "timestamp": "2025-12-03T04:11:00.000Z",
-      "speed": 60,
-      "isStop": false
-    },
-    {
-      "lat": 28.65643846153846,
-      "lng": 77.39730769230769,
-      "timestamp": "2025-12-03T04:13:00.000Z",
-      "speed": 45,
-      "isStop": false
-    },
-    {
-      "lat": 28.65431153846154,
-      "lng": 77.38789230769231,
-      "timestamp": "2025-12-03T04:15:00.000Z",
-      "speed": 56,
-      "isStop": false
-    },
-    {
-      "lat": 28.652184615384616,
-      "lng": 77.37847692307693,
-      "timestamp": "2025-12-03T04:17:00.000Z",
-      "speed": 38,
-      "isStop": false
-    },
-    {
-      "lat": 28.650057692307694,
-      "lng": 77.36906153846154,
-      "timestamp": "2025-12-03T04:19:00.000Z",
-      "speed": 36,
-      "isStop": false
-    },
-    {
-      "lat": 28.64793076923077,
-      "lng": 77.35964615384616,
-      "timestamp": "2025-12-03T04:21:00.000Z",
-      "speed": 49,
-      "isStop": false
-    },
-    {
-      "lat": 28.645803846153846,
-      "lng": 77.35023076923078,
-      "timestamp": "2025-12-03T04:23:00.000Z",
-      "speed": 58,
-      "isStop": false
-    },
-    {
-      "lat": 28.643676923076924,
-      "lng": 77.34081538461538,
-      "timestamp": "2025-12-03T04:25:00.000Z",
-      "speed": 48,
-      "isStop": false
-    },
-    {
-      "lat": 28.641550000000002,
-      "lng": 77.3314,
-      "timestamp": "2025-12-03T04:27:00.000Z",
-      "speed": 37,
-      "isStop": false
-    },
-    {
-      "lat": 28.639423076923077,
-      "lng": 77.32198461538462,
-      "timestamp": "2025-12-03T04:29:00.000Z",
-      "speed": 38,
-      "isStop": false
-    },
-    {
-      "lat": 28.637296153846155,
-      "lng": 77.31256923076923,
-      "timestamp": "2025-12-03T04:31:00.000Z",
-      "speed": 31,
-      "isStop": false
-    },
-    {
-      "lat": 28.635169230769232,
-      "lng": 77.30315384615385,
-      "timestamp": "2025-12-03T04:33:00.000Z",
-      "speed": 40,
-      "isStop": false
-    },
-    {
-      "lat": 28.633042307692307,
-      "lng": 77.29373846153847,
-      "timestamp": "2025-12-03T04:35:00.000Z",
-      "speed": 38,
-      "isStop": false
-    },
-    {
-      "lat": 28.630915384615385,
-      "lng": 77.28432307692307,
-      "timestamp": "2025-12-03T04:37:00.000Z",
-      "speed": 24,
-      "isStop": false
-    },
-    {
-      "lat": 28.628788461538463,
-      "lng": 77.27490769230769,
-      "timestamp": "2025-12-03T04:39:00.000Z",
-      "speed": 37,
-      "isStop": false
-    },
-    {
-      "lat": 28.62666153846154,
-      "lng": 77.26549230769231,
-      "timestamp": "2025-12-03T04:41:00.000Z",
-      "speed": 34,
-      "isStop": false
-    },
-    {
-      "lat": 28.624534615384615,
-      "lng": 77.25607692307693,
-      "timestamp": "2025-12-03T04:43:00.000Z",
-      "speed": 27,
-      "isStop": false
-    },
-    {
-      "lat": 28.622407692307693,
-      "lng": 77.24666153846154,
-      "timestamp": "2025-12-03T04:45:00.000Z",
-      "speed": 56,
-      "isStop": false
-    },
-    {
-      "lat": 28.62028076923077,
-      "lng": 77.23724615384616,
-      "timestamp": "2025-12-03T04:47:00.000Z",
-      "speed": 33,
-      "isStop": false
-    },
-    {
-      "lat": 28.61815384615385,
-      "lng": 77.22783076923078,
-      "timestamp": "2025-12-03T04:49:00.000Z",
-      "speed": 47,
-      "isStop": false
-    },
-    {
-      "lat": 28.616026923076923,
-      "lng": 77.21841538461538,
-      "timestamp": "2025-12-03T04:51:00.000Z",
-      "speed": 103,
-      "isStop": false
-    },
-    {
-      "lat": 28.6139,
-      "lng": 77.209,
-      "timestamp": "2025-12-03T04:53:00.000Z",
-      "speed": 0,
-      "isStop": false
-    }
-  ],
-  "summary": {
-    "totalDistance": 24.6,
-    "drivingDuration": 138,
-    "idleDuration": 40,
-    "maxSpeed": 103,
-    "avgSpeed": 44,
-    "stops": 4
+[
+  {
+    "timestamp": "2025-12-03T09:00:00",
+    "latitude": 28.414202,
+    "longitude": 77.020796,
+    "speed": 0,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-03T09:10:00",
+    "latitude": 28.415544,
+    "longitude": 77.022261,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-03T09:20:00",
+    "latitude": 28.416834,
+    "longitude": 77.023902,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-03T09:30:00",
+    "latitude": 28.41417,
+    "longitude": 77.020837,
+    "speed": 3,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-03T09:40:00",
+    "latitude": 28.415524,
+    "longitude": 77.02232,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-03T09:50:00",
+    "latitude": 28.416697,
+    "longitude": 77.023975,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-03T10:00:00",
+    "latitude": 28.414177,
+    "longitude": 77.020695,
+    "speed": 3,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-03T10:10:00",
+    "latitude": 28.415545,
+    "longitude": 77.02244,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-03T10:20:00",
+    "latitude": 28.416945,
+    "longitude": 77.023893,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-03T10:30:00",
+    "latitude": 28.414002,
+    "longitude": 77.020908,
+    "speed": 3,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-03T10:40:00",
+    "latitude": 28.415496,
+    "longitude": 77.022285,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-03T10:50:00",
+    "latitude": 28.416944,
+    "longitude": 77.023988,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-03T11:00:00",
+    "latitude": 28.414244,
+    "longitude": 77.020836,
+    "speed": 3,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-03T11:10:00",
+    "latitude": 28.415479,
+    "longitude": 77.02219,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-03T11:20:00",
+    "latitude": 28.41667,
+    "longitude": 77.02393,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-03T11:30:00",
+    "latitude": 28.41404,
+    "longitude": 77.020704,
+    "speed": 3,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-03T11:40:00",
+    "latitude": 28.415563,
+    "longitude": 77.022241,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-03T11:50:00",
+    "latitude": 28.416878,
+    "longitude": 77.023936,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-03T12:00:00",
+    "latitude": 28.413998,
+    "longitude": 77.020778,
+    "speed": 3,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-03T12:10:00",
+    "latitude": 28.415381,
+    "longitude": 77.022277,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-03T12:20:00",
+    "latitude": 28.416669,
+    "longitude": 77.023864,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-03T12:30:00",
+    "latitude": 28.414164,
+    "longitude": 77.020832,
+    "speed": 2,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-03T12:40:00",
+    "latitude": 28.415484,
+    "longitude": 77.022416,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-03T12:50:00",
+    "latitude": 28.416661,
+    "longitude": 77.023832,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-03T13:00:00",
+    "latitude": 28.413996,
+    "longitude": 77.020867,
+    "speed": 2,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-03T13:10:00",
+    "latitude": 28.415523,
+    "longitude": 77.022407,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-03T13:20:00",
+    "latitude": 28.416767,
+    "longitude": 77.024023,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-03T13:30:00",
+    "latitude": 28.414044,
+    "longitude": 77.020752,
+    "speed": 3,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-03T13:40:00",
+    "latitude": 28.415613,
+    "longitude": 77.022316,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-03T13:50:00",
+    "latitude": 28.416788,
+    "longitude": 77.023949,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-03T14:00:00",
+    "latitude": 28.413978,
+    "longitude": 77.020718,
+    "speed": 3,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-03T14:10:00",
+    "latitude": 28.415635,
+    "longitude": 77.022442,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-03T14:20:00",
+    "latitude": 28.416819,
+    "longitude": 77.023899,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-03T14:30:00",
+    "latitude": 28.414015,
+    "longitude": 77.02087,
+    "speed": 3,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-03T14:40:00",
+    "latitude": 28.415366,
+    "longitude": 77.022193,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-03T14:50:00",
+    "latitude": 28.416762,
+    "longitude": 77.023797,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-03T15:00:00",
+    "latitude": 28.414014,
+    "longitude": 77.020948,
+    "speed": 2,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-03T15:10:00",
+    "latitude": 28.41542,
+    "longitude": 77.022186,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-03T15:20:00",
+    "latitude": 28.41683,
+    "longitude": 77.024026,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-03T15:30:00",
+    "latitude": 28.414207,
+    "longitude": 77.020795,
+    "speed": 3,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-03T15:40:00",
+    "latitude": 28.415579,
+    "longitude": 77.022215,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-03T15:50:00",
+    "latitude": 28.416699,
+    "longitude": 77.023754,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-03T16:00:00",
+    "latitude": 28.414094,
+    "longitude": 77.020764,
+    "speed": 2,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-03T16:10:00",
+    "latitude": 28.415473,
+    "longitude": 77.022255,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-03T16:20:00",
+    "latitude": 28.416689,
+    "longitude": 77.023919,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-03T16:30:00",
+    "latitude": 28.414097,
+    "longitude": 77.020937,
+    "speed": 2,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-03T16:40:00",
+    "latitude": 28.41565,
+    "longitude": 77.022283,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-03T16:50:00",
+    "latitude": 28.416789,
+    "longitude": 77.023886,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-03T17:00:00",
+    "latitude": 28.413999,
+    "longitude": 77.020763,
+    "speed": 3,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-03T17:10:00",
+    "latitude": 28.415585,
+    "longitude": 77.022438,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-03T17:20:00",
+    "latitude": 28.416779,
+    "longitude": 77.023957,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-03T17:30:00",
+    "latitude": 28.414157,
+    "longitude": 77.020869,
+    "speed": 3,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-03T17:40:00",
+    "latitude": 28.415368,
+    "longitude": 77.022433,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-03T17:50:00",
+    "latitude": 28.416752,
+    "longitude": 77.023774,
+    "speed": 1,
+    "location": "Shri Ram Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
   }
-}
+]

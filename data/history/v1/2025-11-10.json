@@ -1,0 +1,488 @@
+[
+  {
+    "timestamp": "2025-11-10T09:00:00",
+    "latitude": 28.405198,
+    "longitude": 77.029967,
+    "speed": 0,
+    "location": "Rayan Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-10T09:10:00",
+    "latitude": 28.406436,
+    "longitude": 77.031645,
+    "speed": 1,
+    "location": "Rayan Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-10T09:20:00",
+    "latitude": 28.407555,
+    "longitude": 77.032855,
+    "speed": 1,
+    "location": "Rayan Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-10T09:30:00",
+    "latitude": 28.405127,
+    "longitude": 77.029852,
+    "speed": 2,
+    "location": "Rayan Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-10T09:40:00",
+    "latitude": 28.406545,
+    "longitude": 77.031509,
+    "speed": 1,
+    "location": "Rayan Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-10T09:50:00",
+    "latitude": 28.40758,
+    "longitude": 77.033147,
+    "speed": 1,
+    "location": "Rayan Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-10T10:00:00",
+    "latitude": 28.404972,
+    "longitude": 77.029909,
+    "speed": 3,
+    "location": "Rayan Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-10T10:10:00",
+    "latitude": 28.406473,
+    "longitude": 77.031368,
+    "speed": 1,
+    "location": "Rayan Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-10T10:20:00",
+    "latitude": 28.407657,
+    "longitude": 77.03309,
+    "speed": 1,
+    "location": "Rayan Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-10T10:30:00",
+    "latitude": 28.405219,
+    "longitude": 77.029761,
+    "speed": 3,
+    "location": "Rayan Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-10T10:40:00",
+    "latitude": 28.406411,
+    "longitude": 77.031621,
+    "speed": 1,
+    "location": "Rayan Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-10T10:50:00",
+    "latitude": 28.407684,
+    "longitude": 77.03306,
+    "speed": 1,
+    "location": "Rayan Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-10T11:00:00",
+    "latitude": 28.405099,
+    "longitude": 77.02996,
+    "speed": 3,
+    "location": "Rayan Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-10T11:10:00",
+    "latitude": 28.406414,
+    "longitude": 77.031578,
+    "speed": 1,
+    "location": "Rayan Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-10T11:20:00",
+    "latitude": 28.407799,
+    "longitude": 77.032933,
+    "speed": 1,
+    "location": "Rayan Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-10T11:30:00",
+    "latitude": 28.405104,
+    "longitude": 77.029757,
+    "speed": 3,
+    "location": "Rayan Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-10T11:40:00",
+    "latitude": 28.406614,
+    "longitude": 77.031595,
+    "speed": 1,
+    "location": "Rayan Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-10T11:50:00",
+    "latitude": 28.407624,
+    "longitude": 77.033089,
+    "speed": 1,
+    "location": "Rayan Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-10T12:00:00",
+    "latitude": 28.404978,
+    "longitude": 77.029946,
+    "speed": 3,
+    "location": "Rayan Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-10T12:10:00",
+    "latitude": 28.406364,
+    "longitude": 77.031361,
+    "speed": 1,
+    "location": "Rayan Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-10T12:20:00",
+    "latitude": 28.40772,
+    "longitude": 77.032946,
+    "speed": 1,
+    "location": "Rayan Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-10T12:30:00",
+    "latitude": 28.404974,
+    "longitude": 77.029979,
+    "speed": 3,
+    "location": "Rayan Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-10T12:40:00",
+    "latitude": 28.406393,
+    "longitude": 77.031517,
+    "speed": 1,
+    "location": "Rayan Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-10T12:50:00",
+    "latitude": 28.407818,
+    "longitude": 77.032863,
+    "speed": 1,
+    "location": "Rayan Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-10T13:00:00",
+    "latitude": 28.404966,
+    "longitude": 77.029976,
+    "speed": 3,
+    "location": "Rayan Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-10T13:10:00",
+    "latitude": 28.406565,
+    "longitude": 77.031389,
+    "speed": 1,
+    "location": "Rayan Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-10T13:20:00",
+    "latitude": 28.407586,
+    "longitude": 77.033032,
+    "speed": 1,
+    "location": "Rayan Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-10T13:30:00",
+    "latitude": 28.405111,
+    "longitude": 77.029882,
+    "speed": 2,
+    "location": "Rayan Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-10T13:40:00",
+    "latitude": 28.406423,
+    "longitude": 77.031384,
+    "speed": 1,
+    "location": "Rayan Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-10T13:50:00",
+    "latitude": 28.407652,
+    "longitude": 77.032964,
+    "speed": 1,
+    "location": "Rayan Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-10T14:00:00",
+    "latitude": 28.405094,
+    "longitude": 77.029984,
+    "speed": 2,
+    "location": "Rayan Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-10T14:10:00",
+    "latitude": 28.406579,
+    "longitude": 77.031424,
+    "speed": 1,
+    "location": "Rayan Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-10T14:20:00",
+    "latitude": 28.407571,
+    "longitude": 77.033075,
+    "speed": 1,
+    "location": "Rayan Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-10T14:30:00",
+    "latitude": 28.405135,
+    "longitude": 77.03,
+    "speed": 2,
+    "location": "Rayan Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-10T14:40:00",
+    "latitude": 28.406411,
+    "longitude": 77.031503,
+    "speed": 1,
+    "location": "Rayan Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-10T14:50:00",
+    "latitude": 28.407706,
+    "longitude": 77.032997,
+    "speed": 1,
+    "location": "Rayan Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-10T15:00:00",
+    "latitude": 28.405059,
+    "longitude": 77.03003,
+    "speed": 2,
+    "location": "Rayan Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-10T15:10:00",
+    "latitude": 28.406628,
+    "longitude": 77.031411,
+    "speed": 1,
+    "location": "Rayan Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-10T15:20:00",
+    "latitude": 28.407802,
+    "longitude": 77.033003,
+    "speed": 1,
+    "location": "Rayan Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-10T15:30:00",
+    "latitude": 28.405154,
+    "longitude": 77.029991,
+    "speed": 2,
+    "location": "Rayan Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-10T15:40:00",
+    "latitude": 28.4065,
+    "longitude": 77.031586,
+    "speed": 1,
+    "location": "Rayan Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-10T15:50:00",
+    "latitude": 28.407847,
+    "longitude": 77.032928,
+    "speed": 1,
+    "location": "Rayan Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-10T16:00:00",
+    "latitude": 28.405143,
+    "longitude": 77.029985,
+    "speed": 2,
+    "location": "Rayan Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-10T16:10:00",
+    "latitude": 28.406644,
+    "longitude": 77.031535,
+    "speed": 1,
+    "location": "Rayan Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-10T16:20:00",
+    "latitude": 28.407814,
+    "longitude": 77.032985,
+    "speed": 1,
+    "location": "Rayan Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-10T16:30:00",
+    "latitude": 28.405107,
+    "longitude": 77.029899,
+    "speed": 3,
+    "location": "Rayan Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-10T16:40:00",
+    "latitude": 28.406514,
+    "longitude": 77.031428,
+    "speed": 1,
+    "location": "Rayan Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-10T16:50:00",
+    "latitude": 28.40778,
+    "longitude": 77.033002,
+    "speed": 1,
+    "location": "Rayan Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-10T17:00:00",
+    "latitude": 28.405071,
+    "longitude": 77.029806,
+    "speed": 3,
+    "location": "Rayan Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-10T17:10:00",
+    "latitude": 28.406565,
+    "longitude": 77.031452,
+    "speed": 1,
+    "location": "Rayan Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-10T17:20:00",
+    "latitude": 28.407586,
+    "longitude": 77.03294,
+    "speed": 1,
+    "location": "Rayan Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-10T17:30:00",
+    "latitude": 28.405223,
+    "longitude": 77.029753,
+    "speed": 2,
+    "location": "Rayan Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-10T17:40:00",
+    "latitude": 28.406546,
+    "longitude": 77.031475,
+    "speed": 1,
+    "location": "Rayan Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-10T17:50:00",
+    "latitude": 28.407673,
+    "longitude": 77.033119,
+    "speed": 1,
+    "location": "Rayan Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  }
+]

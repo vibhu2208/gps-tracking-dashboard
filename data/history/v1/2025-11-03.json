@@ -1,0 +1,488 @@
+[
+  {
+    "timestamp": "2025-11-03T09:00:00",
+    "latitude": 28.388164,
+    "longitude": 77.059928,
+    "speed": 0,
+    "location": "Nirmala Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-03T09:10:00",
+    "latitude": 28.389542,
+    "longitude": 77.061298,
+    "speed": 1,
+    "location": "Nirmala Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-03T09:20:00",
+    "latitude": 28.391002,
+    "longitude": 77.062572,
+    "speed": 1,
+    "location": "Nirmala Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-03T09:30:00",
+    "latitude": 28.388154,
+    "longitude": 77.059854,
+    "speed": 2,
+    "location": "Nirmala Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-03T09:40:00",
+    "latitude": 28.389529,
+    "longitude": 77.06128,
+    "speed": 1,
+    "location": "Nirmala Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-03T09:50:00",
+    "latitude": 28.390936,
+    "longitude": 77.062555,
+    "speed": 1,
+    "location": "Nirmala Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-03T10:00:00",
+    "latitude": 28.388334,
+    "longitude": 77.059958,
+    "speed": 2,
+    "location": "Nirmala Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-03T10:10:00",
+    "latitude": 28.389746,
+    "longitude": 77.061333,
+    "speed": 1,
+    "location": "Nirmala Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-03T10:20:00",
+    "latitude": 28.39076,
+    "longitude": 77.062571,
+    "speed": 1,
+    "location": "Nirmala Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-03T10:30:00",
+    "latitude": 28.388346,
+    "longitude": 77.059767,
+    "speed": 2,
+    "location": "Nirmala Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-03T10:40:00",
+    "latitude": 28.389476,
+    "longitude": 77.061474,
+    "speed": 1,
+    "location": "Nirmala Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-03T10:50:00",
+    "latitude": 28.390774,
+    "longitude": 77.062681,
+    "speed": 1,
+    "location": "Nirmala Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-03T11:00:00",
+    "latitude": 28.388435,
+    "longitude": 77.05977,
+    "speed": 2,
+    "location": "Nirmala Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-03T11:10:00",
+    "latitude": 28.389637,
+    "longitude": 77.061453,
+    "speed": 1,
+    "location": "Nirmala Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-03T11:20:00",
+    "latitude": 28.390851,
+    "longitude": 77.062734,
+    "speed": 1,
+    "location": "Nirmala Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-03T11:30:00",
+    "latitude": 28.388436,
+    "longitude": 77.059959,
+    "speed": 2,
+    "location": "Nirmala Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-03T11:40:00",
+    "latitude": 28.389617,
+    "longitude": 77.061257,
+    "speed": 1,
+    "location": "Nirmala Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-03T11:50:00",
+    "latitude": 28.390868,
+    "longitude": 77.062599,
+    "speed": 1,
+    "location": "Nirmala Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-03T12:00:00",
+    "latitude": 28.388274,
+    "longitude": 77.059817,
+    "speed": 2,
+    "location": "Nirmala Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-03T12:10:00",
+    "latitude": 28.389692,
+    "longitude": 77.061399,
+    "speed": 1,
+    "location": "Nirmala Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-03T12:20:00",
+    "latitude": 28.390831,
+    "longitude": 77.062736,
+    "speed": 1,
+    "location": "Nirmala Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-03T12:30:00",
+    "latitude": 28.388396,
+    "longitude": 77.059985,
+    "speed": 2,
+    "location": "Nirmala Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-03T12:40:00",
+    "latitude": 28.389631,
+    "longitude": 77.061305,
+    "speed": 1,
+    "location": "Nirmala Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-03T12:50:00",
+    "latitude": 28.391026,
+    "longitude": 77.062674,
+    "speed": 1,
+    "location": "Nirmala Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-03T13:00:00",
+    "latitude": 28.38833,
+    "longitude": 77.059944,
+    "speed": 2,
+    "location": "Nirmala Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-03T13:10:00",
+    "latitude": 28.389477,
+    "longitude": 77.061462,
+    "speed": 1,
+    "location": "Nirmala Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-03T13:20:00",
+    "latitude": 28.390829,
+    "longitude": 77.062749,
+    "speed": 1,
+    "location": "Nirmala Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-03T13:30:00",
+    "latitude": 28.388367,
+    "longitude": 77.059847,
+    "speed": 2,
+    "location": "Nirmala Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-03T13:40:00",
+    "latitude": 28.389488,
+    "longitude": 77.061434,
+    "speed": 1,
+    "location": "Nirmala Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-03T13:50:00",
+    "latitude": 28.390844,
+    "longitude": 77.062814,
+    "speed": 1,
+    "location": "Nirmala Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-03T14:00:00",
+    "latitude": 28.388376,
+    "longitude": 77.059838,
+    "speed": 2,
+    "location": "Nirmala Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-03T14:10:00",
+    "latitude": 28.389479,
+    "longitude": 77.061472,
+    "speed": 1,
+    "location": "Nirmala Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-03T14:20:00",
+    "latitude": 28.390798,
+    "longitude": 77.06271,
+    "speed": 1,
+    "location": "Nirmala Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-03T14:30:00",
+    "latitude": 28.388369,
+    "longitude": 77.059984,
+    "speed": 2,
+    "location": "Nirmala Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-03T14:40:00",
+    "latitude": 28.389577,
+    "longitude": 77.061457,
+    "speed": 1,
+    "location": "Nirmala Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-03T14:50:00",
+    "latitude": 28.391035,
+    "longitude": 77.062729,
+    "speed": 1,
+    "location": "Nirmala Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-03T15:00:00",
+    "latitude": 28.388184,
+    "longitude": 77.059978,
+    "speed": 2,
+    "location": "Nirmala Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-03T15:10:00",
+    "latitude": 28.389481,
+    "longitude": 77.061411,
+    "speed": 1,
+    "location": "Nirmala Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-03T15:20:00",
+    "latitude": 28.390929,
+    "longitude": 77.06261,
+    "speed": 1,
+    "location": "Nirmala Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-03T15:30:00",
+    "latitude": 28.388243,
+    "longitude": 77.059939,
+    "speed": 2,
+    "location": "Nirmala Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-03T15:40:00",
+    "latitude": 28.389461,
+    "longitude": 77.061347,
+    "speed": 1,
+    "location": "Nirmala Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-03T15:50:00",
+    "latitude": 28.390922,
+    "longitude": 77.062564,
+    "speed": 1,
+    "location": "Nirmala Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-03T16:00:00",
+    "latitude": 28.388378,
+    "longitude": 77.059762,
+    "speed": 2,
+    "location": "Nirmala Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-03T16:10:00",
+    "latitude": 28.389648,
+    "longitude": 77.061497,
+    "speed": 1,
+    "location": "Nirmala Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-03T16:20:00",
+    "latitude": 28.390964,
+    "longitude": 77.062609,
+    "speed": 1,
+    "location": "Nirmala Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-03T16:30:00",
+    "latitude": 28.388287,
+    "longitude": 77.059973,
+    "speed": 2,
+    "location": "Nirmala Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-03T16:40:00",
+    "latitude": 28.38969,
+    "longitude": 77.061335,
+    "speed": 1,
+    "location": "Nirmala Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-03T16:50:00",
+    "latitude": 28.390967,
+    "longitude": 77.062678,
+    "speed": 1,
+    "location": "Nirmala Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-03T17:00:00",
+    "latitude": 28.388284,
+    "longitude": 77.060045,
+    "speed": 2,
+    "location": "Nirmala Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-03T17:10:00",
+    "latitude": 28.389619,
+    "longitude": 77.061323,
+    "speed": 1,
+    "location": "Nirmala Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-03T17:20:00",
+    "latitude": 28.390751,
+    "longitude": 77.062758,
+    "speed": 1,
+    "location": "Nirmala Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-03T17:30:00",
+    "latitude": 28.388167,
+    "longitude": 77.059813,
+    "speed": 2,
+    "location": "Nirmala Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-03T17:40:00",
+    "latitude": 28.389587,
+    "longitude": 77.061368,
+    "speed": 1,
+    "location": "Nirmala Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-11-03T17:50:00",
+    "latitude": 28.39082,
+    "longitude": 77.062561,
+    "speed": 1,
+    "location": "Nirmala Enclave",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  }
+]

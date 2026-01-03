@@ -1,691 +1,488 @@
-{
-  "points": [
-    {
-      "lat": 28.7041,
-      "lng": 77.1025,
-      "timestamp": "2025-12-19T02:30:00.000Z",
-      "speed": 0,
-      "isStop": false
-    },
-    {
-      "lat": 28.7041,
-      "lng": 77.1025,
-      "timestamp": "2025-12-19T02:35:00.000Z",
-      "speed": 50,
-      "isStop": false
-    },
-    {
-      "lat": 28.7041,
-      "lng": 77.1025,
-      "timestamp": "2025-12-19T02:37:00.000Z",
-      "speed": 61,
-      "isStop": false
-    },
-    {
-      "lat": 28.7041,
-      "lng": 77.1025,
-      "timestamp": "2025-12-19T02:39:00.000Z",
-      "speed": 29,
-      "isStop": false
-    },
-    {
-      "lat": 28.7041,
-      "lng": 77.1025,
-      "timestamp": "2025-12-19T02:41:00.000Z",
-      "speed": 37,
-      "isStop": false
-    },
-    {
-      "lat": 28.7041,
-      "lng": 77.1025,
-      "timestamp": "2025-12-19T02:43:00.000Z",
-      "speed": 29,
-      "isStop": false
-    },
-    {
-      "lat": 28.7041,
-      "lng": 77.1025,
-      "timestamp": "2025-12-19T02:45:00.000Z",
-      "speed": 47,
-      "isStop": false
-    },
-    {
-      "lat": 28.7041,
-      "lng": 77.1025,
-      "timestamp": "2025-12-19T02:47:00.000Z",
-      "speed": 42,
-      "isStop": false
-    },
-    {
-      "lat": 28.7041,
-      "lng": 77.1025,
-      "timestamp": "2025-12-19T02:49:00.000Z",
-      "speed": 25,
-      "isStop": false
-    },
-    {
-      "lat": 28.7041,
-      "lng": 77.1025,
-      "timestamp": "2025-12-19T02:51:00.000Z",
-      "speed": 23,
-      "isStop": false
-    },
-    {
-      "lat": 28.7041,
-      "lng": 77.1025,
-      "timestamp": "2025-12-19T02:53:00.000Z",
-      "speed": 26,
-      "isStop": false
-    },
-    {
-      "lat": 28.7041,
-      "lng": 77.1025,
-      "timestamp": "2025-12-19T02:55:00.000Z",
-      "speed": 51,
-      "isStop": false
-    },
-    {
-      "lat": 28.7041,
-      "lng": 77.1025,
-      "timestamp": "2025-12-19T02:57:00.000Z",
-      "speed": 49,
-      "isStop": false
-    },
-    {
-      "lat": 28.7041,
-      "lng": 77.1025,
-      "timestamp": "2025-12-19T02:59:00.000Z",
-      "speed": 32,
-      "isStop": false
-    },
-    {
-      "lat": 28.7041,
-      "lng": 77.1025,
-      "timestamp": "2025-12-19T03:01:00.000Z",
-      "speed": 44,
-      "isStop": false
-    },
-    {
-      "lat": 28.7041,
-      "lng": 77.1025,
-      "timestamp": "2025-12-19T03:03:00.000Z",
-      "speed": 26,
-      "isStop": false
-    },
-    {
-      "lat": 28.7041,
-      "lng": 77.1025,
-      "timestamp": "2025-12-19T03:05:00.000Z",
-      "speed": 57,
-      "isStop": false
-    },
-    {
-      "lat": 28.7041,
-      "lng": 77.1025,
-      "timestamp": "2025-12-19T03:07:00.000Z",
-      "speed": 40,
-      "isStop": false
-    },
-    {
-      "lat": 28.7041,
-      "lng": 77.1025,
-      "timestamp": "2025-12-19T03:09:00.000Z",
-      "speed": 21,
-      "isStop": false
-    },
-    {
-      "lat": 28.7041,
-      "lng": 77.1025,
-      "timestamp": "2025-12-19T03:11:00.000Z",
-      "speed": 55,
-      "isStop": false
-    },
-    {
-      "lat": 28.7041,
-      "lng": 77.1025,
-      "timestamp": "2025-12-19T03:13:00.000Z",
-      "speed": 55,
-      "isStop": false
-    },
-    {
-      "lat": 28.7041,
-      "lng": 77.1025,
-      "timestamp": "2025-12-19T03:15:00.000Z",
-      "speed": 34,
-      "isStop": false
-    },
-    {
-      "lat": 28.7041,
-      "lng": 77.1025,
-      "timestamp": "2025-12-19T03:17:00.000Z",
-      "speed": 39,
-      "isStop": false
-    },
-    {
-      "lat": 28.7041,
-      "lng": 77.1025,
-      "timestamp": "2025-12-19T03:19:00.000Z",
-      "speed": 46,
-      "isStop": false
-    },
-    {
-      "lat": 28.7041,
-      "lng": 77.1025,
-      "timestamp": "2025-12-19T03:21:00.000Z",
-      "speed": 0,
-      "isStop": false
-    },
-    {
-      "lat": 28.7041,
-      "lng": 77.1025,
-      "timestamp": "2025-12-19T03:52:00.000Z",
-      "speed": 0,
-      "isStop": false
-    },
-    {
-      "lat": 28.697682142857143,
-      "lng": 77.10546428571429,
-      "timestamp": "2025-12-19T03:57:00.000Z",
-      "speed": 45,
-      "isStop": false
-    },
-    {
-      "lat": 28.691264285714286,
-      "lng": 77.10842857142858,
-      "timestamp": "2025-12-19T03:59:00.000Z",
-      "speed": 54,
-      "isStop": false
-    },
-    {
-      "lat": 28.68484642857143,
-      "lng": 77.11139285714286,
-      "timestamp": "2025-12-19T04:01:00.000Z",
-      "speed": 36,
-      "isStop": false
-    },
-    {
-      "lat": 28.678428571428572,
-      "lng": 77.11435714285714,
-      "timestamp": "2025-12-19T04:03:00.000Z",
-      "speed": 26,
-      "isStop": false
-    },
-    {
-      "lat": 28.672010714285715,
-      "lng": 77.11732142857143,
-      "timestamp": "2025-12-19T04:05:00.000Z",
-      "speed": 40,
-      "isStop": false
-    },
-    {
-      "lat": 28.665592857142858,
-      "lng": 77.12028571428571,
-      "timestamp": "2025-12-19T04:07:00.000Z",
-      "speed": 41,
-      "isStop": false
-    },
-    {
-      "lat": 28.659175,
-      "lng": 77.12325000000001,
-      "timestamp": "2025-12-19T04:09:00.000Z",
-      "speed": 35,
-      "isStop": false
-    },
-    {
-      "lat": 28.652757142857144,
-      "lng": 77.1262142857143,
-      "timestamp": "2025-12-19T04:11:00.000Z",
-      "speed": 31,
-      "isStop": false
-    },
-    {
-      "lat": 28.646339285714287,
-      "lng": 77.12917857142858,
-      "timestamp": "2025-12-19T04:13:00.000Z",
-      "speed": 32,
-      "isStop": false
-    },
-    {
-      "lat": 28.63992142857143,
-      "lng": 77.13214285714287,
-      "timestamp": "2025-12-19T04:15:00.000Z",
-      "speed": 67,
-      "isStop": false
-    },
-    {
-      "lat": 28.633503571428573,
-      "lng": 77.13510714285715,
-      "timestamp": "2025-12-19T04:17:00.000Z",
-      "speed": 28,
-      "isStop": false
-    },
-    {
-      "lat": 28.627085714285716,
-      "lng": 77.13807142857144,
-      "timestamp": "2025-12-19T04:19:00.000Z",
-      "speed": 50,
-      "isStop": false
-    },
-    {
-      "lat": 28.62066785714286,
-      "lng": 77.14103571428572,
-      "timestamp": "2025-12-19T04:21:00.000Z",
-      "speed": 53,
-      "isStop": false
-    },
-    {
-      "lat": 28.61425,
-      "lng": 77.144,
-      "timestamp": "2025-12-19T04:23:00.000Z",
-      "speed": 60,
-      "isStop": false
-    },
-    {
-      "lat": 28.60783214285714,
-      "lng": 77.14696428571429,
-      "timestamp": "2025-12-19T04:25:00.000Z",
-      "speed": 45,
-      "isStop": false
-    },
-    {
-      "lat": 28.601414285714284,
-      "lng": 77.14992857142857,
-      "timestamp": "2025-12-19T04:27:00.000Z",
-      "speed": 40,
-      "isStop": false
-    },
-    {
-      "lat": 28.594996428571427,
-      "lng": 77.15289285714286,
-      "timestamp": "2025-12-19T04:29:00.000Z",
-      "speed": 44,
-      "isStop": false
-    },
-    {
-      "lat": 28.58857857142857,
-      "lng": 77.15585714285714,
-      "timestamp": "2025-12-19T04:31:00.000Z",
-      "speed": 87,
-      "isStop": false
-    },
-    {
-      "lat": 28.582160714285713,
-      "lng": 77.15882142857143,
-      "timestamp": "2025-12-19T04:33:00.000Z",
-      "speed": 54,
-      "isStop": false
-    },
-    {
-      "lat": 28.575742857142856,
-      "lng": 77.16178571428571,
-      "timestamp": "2025-12-19T04:35:00.000Z",
-      "speed": 46,
-      "isStop": false
-    },
-    {
-      "lat": 28.569325,
-      "lng": 77.16475,
-      "timestamp": "2025-12-19T04:37:00.000Z",
-      "speed": 45,
-      "isStop": false
-    },
-    {
-      "lat": 28.562907142857142,
-      "lng": 77.1677142857143,
-      "timestamp": "2025-12-19T04:39:00.000Z",
-      "speed": 49,
-      "isStop": false
-    },
-    {
-      "lat": 28.556489285714285,
-      "lng": 77.17067857142858,
-      "timestamp": "2025-12-19T04:41:00.000Z",
-      "speed": 44,
-      "isStop": false
-    },
-    {
-      "lat": 28.550071428571428,
-      "lng": 77.17364285714287,
-      "timestamp": "2025-12-19T04:43:00.000Z",
-      "speed": 95,
-      "isStop": false
-    },
-    {
-      "lat": 28.54365357142857,
-      "lng": 77.17660714285715,
-      "timestamp": "2025-12-19T04:45:00.000Z",
-      "speed": 52,
-      "isStop": false
-    },
-    {
-      "lat": 28.537235714285714,
-      "lng": 77.17957142857144,
-      "timestamp": "2025-12-19T04:47:00.000Z",
-      "speed": 31,
-      "isStop": false
-    },
-    {
-      "lat": 28.530817857142857,
-      "lng": 77.18253571428572,
-      "timestamp": "2025-12-19T04:49:00.000Z",
-      "speed": 25,
-      "isStop": false
-    },
-    {
-      "lat": 28.5244,
-      "lng": 77.1855,
-      "timestamp": "2025-12-19T04:51:00.000Z",
-      "speed": 0,
-      "isStop": false
-    },
-    {
-      "lat": 28.5244,
-      "lng": 77.1855,
-      "timestamp": "2025-12-19T05:07:00.000Z",
-      "speed": 0,
-      "isStop": false
-    },
-    {
-      "lat": 28.529969230769233,
-      "lng": 77.19581923076923,
-      "timestamp": "2025-12-19T05:12:00.000Z",
-      "speed": 27,
-      "isStop": false
-    },
-    {
-      "lat": 28.53553846153846,
-      "lng": 77.20613846153847,
-      "timestamp": "2025-12-19T05:14:00.000Z",
-      "speed": 50,
-      "isStop": false
-    },
-    {
-      "lat": 28.54110769230769,
-      "lng": 77.2164576923077,
-      "timestamp": "2025-12-19T05:16:00.000Z",
-      "speed": 28,
-      "isStop": false
-    },
-    {
-      "lat": 28.546676923076923,
-      "lng": 77.22677692307693,
-      "timestamp": "2025-12-19T05:18:00.000Z",
-      "speed": 51,
-      "isStop": false
-    },
-    {
-      "lat": 28.552246153846156,
-      "lng": 77.23709615384615,
-      "timestamp": "2025-12-19T05:20:00.000Z",
-      "speed": 53,
-      "isStop": false
-    },
-    {
-      "lat": 28.557815384615385,
-      "lng": 77.2474153846154,
-      "timestamp": "2025-12-19T05:22:00.000Z",
-      "speed": 85,
-      "isStop": false
-    },
-    {
-      "lat": 28.563384615384614,
-      "lng": 77.25773461538462,
-      "timestamp": "2025-12-19T05:24:00.000Z",
-      "speed": 43,
-      "isStop": false
-    },
-    {
-      "lat": 28.568953846153846,
-      "lng": 77.26805384615385,
-      "timestamp": "2025-12-19T05:26:00.000Z",
-      "speed": 56,
-      "isStop": false
-    },
-    {
-      "lat": 28.57452307692308,
-      "lng": 77.27837307692307,
-      "timestamp": "2025-12-19T05:28:00.000Z",
-      "speed": 41,
-      "isStop": false
-    },
-    {
-      "lat": 28.580092307692308,
-      "lng": 77.28869230769232,
-      "timestamp": "2025-12-19T05:30:00.000Z",
-      "speed": 34,
-      "isStop": false
-    },
-    {
-      "lat": 28.585661538461537,
-      "lng": 77.29901153846154,
-      "timestamp": "2025-12-19T05:32:00.000Z",
-      "speed": 29,
-      "isStop": false
-    },
-    {
-      "lat": 28.59123076923077,
-      "lng": 77.30933076923077,
-      "timestamp": "2025-12-19T05:34:00.000Z",
-      "speed": 26,
-      "isStop": false
-    },
-    {
-      "lat": 28.5968,
-      "lng": 77.31965,
-      "timestamp": "2025-12-19T05:36:00.000Z",
-      "speed": 50,
-      "isStop": false
-    },
-    {
-      "lat": 28.60236923076923,
-      "lng": 77.32996923076924,
-      "timestamp": "2025-12-19T05:38:00.000Z",
-      "speed": 35,
-      "isStop": false
-    },
-    {
-      "lat": 28.60793846153846,
-      "lng": 77.34028846153846,
-      "timestamp": "2025-12-19T05:40:00.000Z",
-      "speed": 21,
-      "isStop": false
-    },
-    {
-      "lat": 28.613507692307692,
-      "lng": 77.35060769230769,
-      "timestamp": "2025-12-19T05:42:00.000Z",
-      "speed": 95,
-      "isStop": false
-    },
-    {
-      "lat": 28.619076923076925,
-      "lng": 77.36092692307693,
-      "timestamp": "2025-12-19T05:44:00.000Z",
-      "speed": 39,
-      "isStop": false
-    },
-    {
-      "lat": 28.624646153846154,
-      "lng": 77.37124615384616,
-      "timestamp": "2025-12-19T05:46:00.000Z",
-      "speed": 36,
-      "isStop": false
-    },
-    {
-      "lat": 28.630215384615383,
-      "lng": 77.38156538461539,
-      "timestamp": "2025-12-19T05:48:00.000Z",
-      "speed": 65,
-      "isStop": false
-    },
-    {
-      "lat": 28.635784615384615,
-      "lng": 77.39188461538461,
-      "timestamp": "2025-12-19T05:50:00.000Z",
-      "speed": 38,
-      "isStop": false
-    },
-    {
-      "lat": 28.641353846153848,
-      "lng": 77.40220384615385,
-      "timestamp": "2025-12-19T05:52:00.000Z",
-      "speed": 48,
-      "isStop": false
-    },
-    {
-      "lat": 28.646923076923077,
-      "lng": 77.41252307692308,
-      "timestamp": "2025-12-19T05:54:00.000Z",
-      "speed": 46,
-      "isStop": false
-    },
-    {
-      "lat": 28.652492307692306,
-      "lng": 77.4228423076923,
-      "timestamp": "2025-12-19T05:56:00.000Z",
-      "speed": 56,
-      "isStop": false
-    },
-    {
-      "lat": 28.65806153846154,
-      "lng": 77.43316153846153,
-      "timestamp": "2025-12-19T05:58:00.000Z",
-      "speed": 56,
-      "isStop": false
-    },
-    {
-      "lat": 28.66363076923077,
-      "lng": 77.44348076923077,
-      "timestamp": "2025-12-19T06:00:00.000Z",
-      "speed": 31,
-      "isStop": false
-    },
-    {
-      "lat": 28.6692,
-      "lng": 77.4538,
-      "timestamp": "2025-12-19T06:02:00.000Z",
-      "speed": 0,
-      "isStop": false
-    },
-    {
-      "lat": 28.6692,
-      "lng": 77.4538,
-      "timestamp": "2025-12-19T06:25:00.000Z",
-      "speed": 0,
-      "isStop": false
-    },
-    {
-      "lat": 28.671526666666665,
-      "lng": 77.43038,
-      "timestamp": "2025-12-19T06:30:00.000Z",
-      "speed": 50,
-      "isStop": false
-    },
-    {
-      "lat": 28.673853333333334,
-      "lng": 77.40696,
-      "timestamp": "2025-12-19T06:32:00.000Z",
-      "speed": 34,
-      "isStop": false
-    },
-    {
-      "lat": 28.67618,
-      "lng": 77.38354,
-      "timestamp": "2025-12-19T06:34:00.000Z",
-      "speed": 38,
-      "isStop": false
-    },
-    {
-      "lat": 28.678506666666667,
-      "lng": 77.36012000000001,
-      "timestamp": "2025-12-19T06:36:00.000Z",
-      "speed": 45,
-      "isStop": false
-    },
-    {
-      "lat": 28.680833333333332,
-      "lng": 77.33670000000001,
-      "timestamp": "2025-12-19T06:38:00.000Z",
-      "speed": 52,
-      "isStop": false
-    },
-    {
-      "lat": 28.68316,
-      "lng": 77.31328,
-      "timestamp": "2025-12-19T06:40:00.000Z",
-      "speed": 57,
-      "isStop": false
-    },
-    {
-      "lat": 28.685486666666666,
-      "lng": 77.28986,
-      "timestamp": "2025-12-19T06:42:00.000Z",
-      "speed": 37,
-      "isStop": false
-    },
-    {
-      "lat": 28.687813333333334,
-      "lng": 77.26644,
-      "timestamp": "2025-12-19T06:44:00.000Z",
-      "speed": 28,
-      "isStop": false
-    },
-    {
-      "lat": 28.69014,
-      "lng": 77.24302,
-      "timestamp": "2025-12-19T06:46:00.000Z",
-      "speed": 34,
-      "isStop": false
-    },
-    {
-      "lat": 28.692466666666668,
-      "lng": 77.2196,
-      "timestamp": "2025-12-19T06:48:00.000Z",
-      "speed": 46,
-      "isStop": false
-    },
-    {
-      "lat": 28.694793333333333,
-      "lng": 77.19618,
-      "timestamp": "2025-12-19T06:50:00.000Z",
-      "speed": 31,
-      "isStop": false
-    },
-    {
-      "lat": 28.69712,
-      "lng": 77.17276000000001,
-      "timestamp": "2025-12-19T06:52:00.000Z",
-      "speed": 46,
-      "isStop": false
-    },
-    {
-      "lat": 28.699446666666667,
-      "lng": 77.14934000000001,
-      "timestamp": "2025-12-19T06:54:00.000Z",
-      "speed": 45,
-      "isStop": false
-    },
-    {
-      "lat": 28.701773333333335,
-      "lng": 77.12592000000001,
-      "timestamp": "2025-12-19T06:56:00.000Z",
-      "speed": 52,
-      "isStop": false
-    },
-    {
-      "lat": 28.7041,
-      "lng": 77.1025,
-      "timestamp": "2025-12-19T06:58:00.000Z",
-      "speed": 0,
-      "isStop": false
-    }
-  ],
-  "summary": {
-    "totalDistance": 86.7,
-    "drivingDuration": 178,
-    "idleDuration": 55,
-    "maxSpeed": 95,
-    "avgSpeed": 44,
-    "stops": 5
+[
+  {
+    "timestamp": "2025-12-19T09:00:00",
+    "latitude": 28.443981,
+    "longitude": 77.031963,
+    "speed": 0,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-19T09:10:00",
+    "latitude": 28.44525,
+    "longitude": 77.033381,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-19T09:20:00",
+    "latitude": 28.446456,
+    "longitude": 77.035063,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-19T09:30:00",
+    "latitude": 28.444135,
+    "longitude": 77.03213,
+    "speed": 2,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-19T09:40:00",
+    "latitude": 28.445432,
+    "longitude": 77.033521,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-19T09:50:00",
+    "latitude": 28.446515,
+    "longitude": 77.03512,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-19T10:00:00",
+    "latitude": 28.444094,
+    "longitude": 77.031863,
+    "speed": 3,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-19T10:10:00",
+    "latitude": 28.445284,
+    "longitude": 77.033425,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-19T10:20:00",
+    "latitude": 28.446629,
+    "longitude": 77.03489,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-19T10:30:00",
+    "latitude": 28.443941,
+    "longitude": 77.032101,
+    "speed": 2,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-19T10:40:00",
+    "latitude": 28.445222,
+    "longitude": 77.033367,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-19T10:50:00",
+    "latitude": 28.446641,
+    "longitude": 77.035119,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-19T11:00:00",
+    "latitude": 28.443931,
+    "longitude": 77.031957,
+    "speed": 3,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-19T11:10:00",
+    "latitude": 28.44528,
+    "longitude": 77.033604,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-19T11:20:00",
+    "latitude": 28.446655,
+    "longitude": 77.035031,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-19T11:30:00",
+    "latitude": 28.44412,
+    "longitude": 77.032111,
+    "speed": 2,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-19T11:40:00",
+    "latitude": 28.445259,
+    "longitude": 77.033415,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-19T11:50:00",
+    "latitude": 28.446731,
+    "longitude": 77.035109,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-19T12:00:00",
+    "latitude": 28.444099,
+    "longitude": 77.031996,
+    "speed": 3,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-19T12:10:00",
+    "latitude": 28.445271,
+    "longitude": 77.033599,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-19T12:20:00",
+    "latitude": 28.446565,
+    "longitude": 77.034908,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-19T12:30:00",
+    "latitude": 28.444107,
+    "longitude": 77.031979,
+    "speed": 2,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-19T12:40:00",
+    "latitude": 28.445197,
+    "longitude": 77.033487,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-19T12:50:00",
+    "latitude": 28.446624,
+    "longitude": 77.035049,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-19T13:00:00",
+    "latitude": 28.443939,
+    "longitude": 77.031899,
+    "speed": 3,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-19T13:10:00",
+    "latitude": 28.445271,
+    "longitude": 77.033579,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-19T13:20:00",
+    "latitude": 28.446565,
+    "longitude": 77.03498,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-19T13:30:00",
+    "latitude": 28.444144,
+    "longitude": 77.032143,
+    "speed": 2,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-19T13:40:00",
+    "latitude": 28.445234,
+    "longitude": 77.033532,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-19T13:50:00",
+    "latitude": 28.446487,
+    "longitude": 77.034927,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-19T14:00:00",
+    "latitude": 28.444024,
+    "longitude": 77.032127,
+    "speed": 2,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-19T14:10:00",
+    "latitude": 28.445229,
+    "longitude": 77.033467,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-19T14:20:00",
+    "latitude": 28.44661,
+    "longitude": 77.034934,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-19T14:30:00",
+    "latitude": 28.444068,
+    "longitude": 77.032065,
+    "speed": 2,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-19T14:40:00",
+    "latitude": 28.445331,
+    "longitude": 77.03339,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-19T14:50:00",
+    "latitude": 28.446665,
+    "longitude": 77.034876,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-19T15:00:00",
+    "latitude": 28.444019,
+    "longitude": 77.031917,
+    "speed": 2,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-19T15:10:00",
+    "latitude": 28.445366,
+    "longitude": 77.03365,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-19T15:20:00",
+    "latitude": 28.44649,
+    "longitude": 77.034941,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-19T15:30:00",
+    "latitude": 28.443887,
+    "longitude": 77.031861,
+    "speed": 3,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-19T15:40:00",
+    "latitude": 28.445322,
+    "longitude": 77.033504,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-19T15:50:00",
+    "latitude": 28.446725,
+    "longitude": 77.034883,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-19T16:00:00",
+    "latitude": 28.443947,
+    "longitude": 77.03205,
+    "speed": 2,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-19T16:10:00",
+    "latitude": 28.445265,
+    "longitude": 77.033625,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-19T16:20:00",
+    "latitude": 28.446582,
+    "longitude": 77.035015,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-19T16:30:00",
+    "latitude": 28.443969,
+    "longitude": 77.032146,
+    "speed": 2,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-19T16:40:00",
+    "latitude": 28.44516,
+    "longitude": 77.033617,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-19T16:50:00",
+    "latitude": 28.446457,
+    "longitude": 77.035037,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-19T17:00:00",
+    "latitude": 28.443903,
+    "longitude": 77.031911,
+    "speed": 3,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-19T17:10:00",
+    "latitude": 28.44533,
+    "longitude": 77.033413,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-19T17:20:00",
+    "latitude": 28.446462,
+    "longitude": 77.03509,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-19T17:30:00",
+    "latitude": 28.443921,
+    "longitude": 77.032038,
+    "speed": 2,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-19T17:40:00",
+    "latitude": 28.445211,
+    "longitude": 77.033511,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
+  },
+  {
+    "timestamp": "2025-12-19T17:50:00",
+    "latitude": 28.446696,
+    "longitude": 77.034984,
+    "speed": 1,
+    "location": "Defense Colony",
+    "status": "WORKING_ON_ROAD",
+    "ward": "19"
   }
-}
+]
