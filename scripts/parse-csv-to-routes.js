@@ -1,8 +1,24 @@
 const fs = require('fs');
 const path = require('path');
 
-const csvFilePath = path.join(__dirname, '../data/fleetzi_jcb_ward19_roads_aligned_aug25_to_dec24_2025.csv');
+const csvFilePath = path.join(__dirname, '../data/fleetzi_jcb_single_gali_1min_aug25_to_dec24_2025.csv');
 const outputFilePath = path.join(__dirname, '../data/routes.json');
+
+// Convert IST timestamp to UTC ISO string
+function istToUtc(istTimestamp) {
+  // IST is UTC+5:30
+  const [datePart, timePart] = istTimestamp.split(' ');
+  const [year, month, day] = datePart.split('-').map(Number);
+  const [hour, minute, second] = timePart.split(':').map(Number);
+  
+  // Create date in IST and convert to UTC by subtracting 5:30
+  const istDate = new Date(Date.UTC(year, month - 1, day, hour, minute, second));
+  // Subtract 5 hours 30 minutes to convert IST to UTC
+  istDate.setUTCHours(istDate.getUTCHours() - 5);
+  istDate.setUTCMinutes(istDate.getUTCMinutes() - 30);
+  
+  return istDate.toISOString();
+}
 
 function parseCSV() {
   const csvContent = fs.readFileSync(csvFilePath, 'utf-8');
@@ -20,13 +36,13 @@ function parseCSV() {
     const timestamp = parts[0];
     const vehicle = parts[1];
     const ward = parts[2];
-    const location = parts[3];
+    const locationName = parts[3]; // Exact location name (e.g., "Bhondsi")
     const latitude = parseFloat(parts[4]);
     const longitude = parseFloat(parts[5]);
     const status = parts[6];
     
     const date = timestamp.split(' ')[0];
-    const isoTimestamp = timestamp.replace(' ', 'T') + 'Z';
+    const isoTimestamp = istToUtc(timestamp);
     
     if (!routes[vehicle]) {
       routes[vehicle] = {};
@@ -48,8 +64,8 @@ function parseCSV() {
       lat: latitude,
       lng: longitude,
       timestamp: isoTimestamp,
-      speed: status === 'WORKING_ON_ROAD' ? 1 : 0,
-      location: location,
+      speed: status === 'WORKING_IN_SINGLE_GALI' ? 1 : 0,
+      location: locationName,
       status: status
     });
   }
