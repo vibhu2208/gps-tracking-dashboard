@@ -64,7 +64,7 @@ function parseCSV() {
       lat: latitude,
       lng: longitude,
       timestamp: isoTimestamp,
-      speed: status === 'WORKING_IN_SINGLE_GALI' ? 1 : 0,
+      speed: status === 'WorkingI' ? 1 : 0,
       location: locationName,
       status: status
     });

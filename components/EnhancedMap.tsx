@@ -13,13 +13,15 @@ interface EnhancedMapProps {
   currentIndex?: number;
   showPlayback?: boolean;
   overspeedThreshold?: number;
+  vehicleNumber?: string;
 }
 
 export default function EnhancedMap({ 
   points, 
   currentIndex = 0, 
   showPlayback = false,
-  overspeedThreshold = 80 
+  overspeedThreshold = 80,
+  vehicleNumber = 'Unknown'
 }: EnhancedMapProps) {
   const mapContainerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<mapboxgl.Map | null>(null);
@@ -249,10 +251,8 @@ export default function EnhancedMap({
         carEl.style.cursor = 'pointer';
 
         const currentPoint = points[currentIndex];
-        const locationName = currentPoint.lat > 28.5 && currentPoint.lat < 28.8 ? 'Delhi NCR' :
-                          currentPoint.lat > 19.0 && currentPoint.lat < 19.3 ? 'Mumbai' :
-                          currentPoint.lat > 12.8 && currentPoint.lat < 13.1 ? 'Bangalore' :
-                          currentPoint.lat > 18.4 && currentPoint.lat < 18.6 ? 'Pune' : 'India';
+        const locationName = currentPoint.location || 'Unknown Location';
+        const displayStatus = currentPoint.status === 'WORKING' ? 'WORKING' : (currentPoint.status || 'Unknown');
 
         markerRef.current = new mapboxgl.Marker({ element: carEl })
           .setLngLat([currentPoint.lng, currentPoint.lat])
@@ -265,16 +265,16 @@ export default function EnhancedMap({
               <div style="font-weight: 600; font-size: 14px; margin-bottom: 8px; color: #1f2937;">Current Position</div>
               <div style="font-size: 12px; color: #4b5563; line-height: 1.6;">
                 <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+                  <span>Vehicle:</span>
+                  <strong style="color: #3B82F6;">${vehicleNumber}</strong>
+                </div>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
                   <span>Speed:</span>
                   <strong style="color: ${currentPoint.speed > overspeedThreshold ? '#EF4444' : '#10B981'}">${currentPoint.speed} km/h</strong>
                 </div>
-                <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
-                  <span>Time:</span>
-                  <strong style="color: #1f2937;">${new Date(currentPoint.timestamp).toLocaleTimeString()}</strong>
-                </div>
                 <div style="display: flex; justify-content: space-between;">
                   <span>Location:</span>
-                  <strong style="color: #3B82F6;">${locationName}</strong>
+                  <strong style="color: #10B981;">${locationName}</strong>
                 </div>
               </div>
             </div>
@@ -297,10 +297,8 @@ export default function EnhancedMap({
 
     const currentPoint = points[currentIndex];
     if (currentPoint) {
-      const locationName = currentPoint.lat > 28.5 && currentPoint.lat < 28.8 ? 'Delhi NCR' :
-                          currentPoint.lat > 19.0 && currentPoint.lat < 19.3 ? 'Mumbai' :
-                          currentPoint.lat > 12.8 && currentPoint.lat < 13.1 ? 'Bangalore' :
-                          currentPoint.lat > 18.4 && currentPoint.lat < 18.6 ? 'Pune' : 'India';
+      const locationName = currentPoint.location || 'Unknown Location';
+      const displayStatus = currentPoint.status === 'WorkingI' ? 'WORKING' : (currentPoint.status || 'Unknown');
 
       markerRef.current.setLngLat([currentPoint.lng, currentPoint.lat]);
       popupRef.current.setLngLat([currentPoint.lng, currentPoint.lat]);
@@ -309,16 +307,16 @@ export default function EnhancedMap({
           <div style="font-weight: 600; font-size: 14px; margin-bottom: 8px; color: #1f2937;">Current Position</div>
           <div style="font-size: 12px; color: #4b5563; line-height: 1.6;">
             <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+              <span>Vehicle:</span>
+              <strong style="color: #3B82F6;">${vehicleNumber}</strong>
+            </div>
+            <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
               <span>Speed:</span>
               <strong style="color: ${currentPoint.speed > overspeedThreshold ? '#EF4444' : '#10B981'}">${currentPoint.speed} km/h</strong>
             </div>
-            <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
-              <span>Time:</span>
-              <strong style="color: #1f2937;">${new Date(currentPoint.timestamp).toLocaleTimeString()}</strong>
-            </div>
             <div style="display: flex; justify-content: space-between;">
               <span>Location:</span>
-              <strong style="color: #3B82F6;">${locationName}</strong>
+              <strong style="color: #10B981;">${locationName}</strong>
             </div>
           </div>
         </div>

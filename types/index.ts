@@ -19,6 +19,7 @@ export interface Vehicle {
   model: string;
   color: string;
   city: string;
+  ward?: string;
 }
 
 export interface RoutePoint {
@@ -26,6 +27,8 @@ export interface RoutePoint {
   lng: number;
   timestamp: string;
   speed: number;
+  location?: string;
+  status?: string;
   isStop?: boolean;
 }
 

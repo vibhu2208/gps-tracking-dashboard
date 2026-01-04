@@ -53,6 +53,52 @@ export const getRecentAlerts = (limit: number = 10): Alert[] => {
   return alerts.slice(0, limit);
 };
 
+export const getAllVehicleData = async (vehicleId: string): Promise<any[]> => {
+  try {
+    const response = await fetch('/data/routes.json');
+    if (!response.ok) return [];
+    const allRoutes = await response.json();
+    
+    const vehicleData = allRoutes[vehicleId];
+    if (!vehicleData) return [];
+    
+    const vehicle = getVehicleById(vehicleId);
+    const allDataPoints: any[] = [];
+    
+    // Iterate through all dates for this vehicle
+    Object.keys(vehicleData).forEach(date => {
+      const dayData = vehicleData[date];
+      if (dayData && dayData.points) {
+        dayData.points.forEach((point: any) => {
+          allDataPoints.push({
+            Vehicle: vehicle?.name || vehicleId,
+            PlateNumber: vehicle?.plateNumber || vehicleId,
+            Driver: vehicle?.driver || 'Unknown',
+            Ward: vehicle?.ward || 'Unknown',
+            City: vehicle?.city || 'Unknown',
+            Date: date,
+            Timestamp: new Date(point.timestamp).toLocaleString(),
+            Latitude: point.lat,
+            Longitude: point.lng,
+            Speed: point.speed || 0,
+            Location: point.location || 'Unknown',
+            Status: point.status || 'Unknown',
+            IsStop: point.isStop ? 'Yes' : 'No'
+          });
+        });
+      }
+    });
+    
+    // Sort by timestamp
+    allDataPoints.sort((a, b) => new Date(a.Timestamp).getTime() - new Date(b.Timestamp).getTime());
+    
+    return allDataPoints;
+  } catch (error) {
+    console.error('Error fetching all vehicle data:', error);
+    return [];
+  }
+};
+
 export const exportToCSV = (data: any[], filename: string): void => {
   if (data.length === 0) return;
 

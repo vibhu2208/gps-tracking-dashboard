@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { getVehicles, getRouteData, getAlerts, exportToCSV } from '@/lib/data';
+import { getVehicles, getRouteData, getAlerts, getAllVehicleData, exportToCSV } from '@/lib/data';
 import { Download, FileText, Calendar, Car } from 'lucide-react';
 import { format, subDays, startOfWeek, endOfWeek, startOfMonth, endOfMonth } from 'date-fns';
 
@@ -202,6 +202,24 @@ export default function ReportsPage() {
     }
   };
 
+  const handleExportCompleteVehicleData = async () => {
+    setIsExporting(true);
+    try {
+      const allData = await getAllVehicleData(selectedVehicle);
+      if (allData.length === 0) {
+        alert('No data available for the selected vehicle');
+        return;
+      }
+
+      const vehicle = vehicles.find(v => v.id === selectedVehicle);
+      const filename = `complete-vehicle-data-${vehicle?.plateNumber || selectedVehicle}-${format(new Date(), 'yyyy-MM-dd')}.csv`;
+      
+      exportToCSV(allData, filename);
+    } finally {
+      setIsExporting(false);
+    }
+  };
+
   const selectedVehicleData = vehicles.find(v => v.id === selectedVehicle);
 
   return (
@@ -271,6 +289,66 @@ export default function ReportsPage() {
             >
               <Download className="w-5 h-5" />
               Export Trip Report
+            </button>
+          </div>
+        </div>
+
+        <div className="bg-white rounded-xl border border-gray-200 p-6">
+          <div className="flex items-center gap-3 mb-6">
+            <div className="w-12 h-12 bg-orange-50 rounded-lg flex items-center justify-center">
+              <FileText className="w-6 h-6 text-orange-600" />
+            </div>
+            <div>
+              <h2 className="text-lg font-semibold text-gray-900">Complete Vehicle History</h2>
+              <p className="text-sm text-gray-600">Export all data for a specific vehicle across all dates</p>
+            </div>
+          </div>
+
+          <div className="space-y-4">
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                Select Vehicle
+              </label>
+              <div className="relative">
+                <Car className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
+                <select
+                  value={selectedVehicle}
+                  onChange={(e) => setSelectedVehicle(e.target.value)}
+                  className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none"
+                >
+                  {vehicles.map((vehicle) => (
+                    <option key={vehicle.id} value={vehicle.id}>
+                      {vehicle.name} ({vehicle.plateNumber})
+                    </option>
+                  ))}
+                </select>
+              </div>
+            </div>
+
+            <div className="bg-orange-50 rounded-lg p-4 space-y-2">
+              <h3 className="font-medium text-gray-900 text-sm">Complete Report Includes</h3>
+              <ul className="text-sm text-gray-600 space-y-1">
+                <li>• All GPS coordinates and timestamps</li>
+                <li>• Speed data for every point</li>
+                <li>• Location and status information</li>
+                <li>• Driver and vehicle details</li>
+                <li>• Complete journey history across all dates</li>
+                <li>• Stop/movement indicators</li>
+              </ul>
+              <div className="pt-2 border-t border-orange-200 mt-3">
+                <span className="text-orange-700 font-medium">
+                  This will export ALL available data for the selected vehicle
+                </span>
+              </div>
+            </div>
+
+            <button
+              onClick={handleExportCompleteVehicleData}
+              disabled={isExporting}
+              className="w-full flex items-center justify-center gap-2 bg-orange-600 text-white py-3 rounded-lg hover:bg-orange-700 transition disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              <Download className="w-5 h-5" />
+              {isExporting ? 'Exporting...' : 'Export Complete Vehicle Data'}
             </button>
           </div>
         </div>

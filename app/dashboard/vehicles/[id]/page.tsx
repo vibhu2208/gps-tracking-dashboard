@@ -178,6 +178,7 @@ export default function VehicleDetailPage() {
                     currentIndex={currentIndex}
                     showPlayback={true}
                     overspeedThreshold={80}
+                    vehicleNumber={vehicle.plateNumber}
                   />
                 </div>
 
@@ -224,11 +225,11 @@ export default function VehicleDetailPage() {
 
                   {routeData.points[currentIndex] && (
                     <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg p-4 border border-blue-200">
-                      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+                      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-sm">
                         <div>
-                          <span className="text-gray-600 block mb-1">Time</span>
-                          <span className="font-semibold text-gray-900 block">
-                            {format(new Date(routeData.points[currentIndex].timestamp), 'HH:mm:ss')}
+                          <span className="text-gray-600 block mb-1">Location</span>
+                          <span className="font-semibold text-blue-600 block">
+                            {routeData.points[currentIndex].location || 'Unknown Location'}
                           </span>
                         </div>
                         <div>
@@ -242,16 +243,7 @@ export default function VehicleDetailPage() {
                         <div>
                           <span className="text-gray-600 block mb-1">Status</span>
                           <span className="font-semibold text-gray-900 block">
-                            {routeData.points[currentIndex].isStop ? '🛑 Stopped' : '🚗 Moving'}
-                          </span>
-                        </div>
-                        <div>
-                          <span className="text-gray-600 block mb-1">Location</span>
-                          <span className="font-semibold text-blue-600 block">
-                            {routeData.points[currentIndex].lat > 28.5 && routeData.points[currentIndex].lat < 28.8 ? 'Delhi NCR' :
-                             routeData.points[currentIndex].lat > 19.0 && routeData.points[currentIndex].lat < 19.3 ? 'Mumbai' :
-                             routeData.points[currentIndex].lat > 12.8 && routeData.points[currentIndex].lat < 13.1 ? 'Bangalore' :
-                             routeData.points[currentIndex].lat > 18.4 && routeData.points[currentIndex].lat < 18.6 ? 'Pune' : vehicle.city}
+                            WORKING
                           </span>
                         </div>
                       </div>
