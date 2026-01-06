@@ -30,6 +30,11 @@ export interface RoutePoint {
   location?: string;
   status?: string;
   isStop?: boolean;
+  phase?: string;
+  raw_lat?: number;
+  raw_lng?: number;
+  confidence?: number;
+  matched?: boolean;
 }
 
 export interface RouteSummary {
