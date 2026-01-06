@@ -6,7 +6,7 @@ import { getVehicleById, getRouteData, getAlertsByVehicle, getAvailableDates, ex
 import { RouteData } from '@/types';
 import EnhancedMap from '@/components/EnhancedMap';
 import AlertCard from '@/components/AlertCard';
-import { Calendar, Play, Pause, RotateCcw, Clock, Gauge, Route, Timer, ArrowLeft, Download } from 'lucide-react';
+import { Calendar, Play, Pause, RotateCcw, Clock, Gauge, Route, Timer, ArrowLeft, Download, MapPin, Navigation } from 'lucide-react';
 import { format } from 'date-fns';
 
 export default function VehicleDetailPage() {
@@ -22,6 +22,7 @@ export default function VehicleDetailPage() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [playbackSpeed, setPlaybackSpeed] = useState<1 | 2 | 4>(1);
   const [isLoading, setIsLoading] = useState(true);
+  const [showRawCoordinates, setShowRawCoordinates] = useState(false);
   const alerts = getAlertsByVehicle(vehicleId);
 
   useEffect(() => {
@@ -38,14 +39,14 @@ export default function VehicleDetailPage() {
   useEffect(() => {
     const loadRouteData = async () => {
       setIsLoading(true);
-      const data = await getRouteData(vehicleId, selectedDate);
+      const data = await getRouteData(vehicleId, selectedDate, { useRawCoordinates: showRawCoordinates });
       setRouteData(data);
       setCurrentIndex(0);
       setIsPlaying(false);
       setIsLoading(false);
     };
     loadRouteData();
-  }, [vehicleId, selectedDate]);
+  }, [vehicleId, selectedDate, showRawCoordinates]);
 
   useEffect(() => {
     if (!isPlaying || !routeData) return;
@@ -137,6 +138,32 @@ export default function VehicleDetailPage() {
             <div className="flex items-center justify-between mb-4">
               <h2 className="text-lg font-semibold text-gray-900">Route History</h2>
               <div className="flex items-center gap-3">
+                <div className="flex items-center gap-2 bg-gray-100 rounded-lg p-1">
+                  <button
+                    onClick={() => setShowRawCoordinates(false)}
+                    className={`flex items-center gap-1 px-3 py-1.5 rounded-md text-sm font-medium transition ${
+                      !showRawCoordinates 
+                        ? 'bg-blue-600 text-white' 
+                        : 'text-gray-600 hover:bg-gray-200'
+                    }`}
+                    title="Show road-snapped coordinates"
+                  >
+                    <Navigation className="w-4 h-4" />
+                    Snapped
+                  </button>
+                  <button
+                    onClick={() => setShowRawCoordinates(true)}
+                    className={`flex items-center gap-1 px-3 py-1.5 rounded-md text-sm font-medium transition ${
+                      showRawCoordinates 
+                        ? 'bg-orange-600 text-white' 
+                        : 'text-gray-600 hover:bg-gray-200'
+                    }`}
+                    title="Show raw GPS coordinates"
+                  >
+                    <MapPin className="w-4 h-4" />
+                    Raw
+                  </button>
+                </div>
                 <button
                   onClick={handleExportRouteData}
                   disabled={!routeData || isLoading}

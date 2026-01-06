@@ -10,14 +10,29 @@ export const getVehicleById = (id: string): Vehicle | undefined => {
   return vehiclesData.find((v) => v.id === id) as Vehicle | undefined;
 };
 
-export const getRouteData = async (vehicleId: string, date: string): Promise<RouteData | null> => {
+export const getRouteData = async (
+  vehicleId: string, 
+  date: string,
+  options: { useRawCoordinates?: boolean } = {}
+): Promise<RouteData | null> => {
   try {
     const response = await fetch('/data/routes.json');
     if (!response.ok) return null;
     const allRoutes = await response.json();
     
     if (allRoutes[vehicleId] && allRoutes[vehicleId][date]) {
-      return allRoutes[vehicleId][date];
+      const routeData = allRoutes[vehicleId][date];
+      
+      // If useRawCoordinates is true and raw coordinates exist, swap them
+      if (options.useRawCoordinates && routeData.points) {
+        routeData.points = routeData.points.map((point: any) => ({
+          ...point,
+          lat: point.raw_lat ?? point.lat,
+          lng: point.raw_lng ?? point.lng,
+        }));
+      }
+      
+      return routeData;
     }
     return null;
   } catch (error) {
