@@ -80,105 +80,126 @@ export default function EnhancedMap({
     stopMarkersRef.current = [];
 
     map.on('load', async () => {
+      // Remove all existing route sources and layers
       if (map.getSource('route')) {
         map.removeLayer('route-normal');
         map.removeLayer('route-overspeed');
         map.removeSource('route');
       }
 
-      // Remove all overspeed sources and layers
       for (let i = 0; i < points.length; i++) {
+        if (map.getSource(`route-segment-${i}`)) {
+          map.removeLayer(`route-segment-${i}`);
+          map.removeSource(`route-segment-${i}`);
+        }
         if (map.getSource(`overspeed-${i}`)) {
           map.removeLayer(`overspeed-${i}`);
           map.removeSource(`overspeed-${i}`);
         }
       }
 
-      const routeCoordinates = points.map(p => [p.lng, p.lat]);
-
-      // Use Mapbox Map Matching API to snap route to roads
+      // Create individual line segments for each consecutive point pair
+      // This ensures forward and backward movements are both visible
       const mapboxToken = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
-      let matchedCoordinates = routeCoordinates;
 
-      if (mapboxToken && routeCoordinates.length > 1) {
-        try {
-          // Build coordinates string for Map Matching API
-          const coordinates = routeCoordinates.map(c => `${c[0]},${c[1]}`).join(';');
-          
-          // Build timestamps for better matching
-          const timestamps = points.map(p => {
-            const date = new Date(p.timestamp);
-            return Math.floor(date.getTime() / 1000);
-          }).join(';');
+      // Helper function to calculate distance between two points
+      const calculateDistance = (lat1: number, lng1: number, lat2: number, lng2: number): number => {
+        const R = 6371000; // Earth radius in meters
+        const dLat = (lat2 - lat1) * Math.PI / 180;
+        const dLng = (lng2 - lng1) * Math.PI / 180;
+        const a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+                  Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+                  Math.sin(dLng / 2) * Math.sin(dLng / 2);
+        const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+        return R * c;
+      };
 
-          const url = `https://api.mapbox.com/matching/v5/mapbox/driving/${coordinates}?` + new URLSearchParams({
-            access_token: mapboxToken,
-            geometries: 'geojson',
-            tidy: 'true',
-            timestamps: timestamps,
-            radiuses: points.map(() => '25').join(';'), // 25m search radius
-          });
+      for (let i = 0; i < points.length - 1; i++) {
+        const startPoint = points[i];
+        const endPoint = points[i + 1];
+        
+        // Check if this is a working area segment
+        const isWorkingArea = startPoint.phase === 'WORKING' || endPoint.phase === 'WORKING';
+        
+        // Create segment coordinates
+        let segmentCoordinates = [[startPoint.lng, startPoint.lat], [endPoint.lng, endPoint.lat]];
 
-          const response = await fetch(url);
-          if (response.ok) {
-            const data = await response.json();
-            if (data.code === 'Ok' && data.matchings && data.matchings.length > 0) {
-              const matching = data.matchings[0];
-              if (matching.geometry && matching.geometry.coordinates) {
-                matchedCoordinates = matching.geometry.coordinates;
+        // Calculate distance to decide if we need route matching
+        const distance = calculateDistance(startPoint.lat, startPoint.lng, endPoint.lat, endPoint.lng);
+        
+        // Use Directions API for segments longer than 5 meters to get detailed routes with more points
+        // This creates more visible lines with intermediate waypoints
+        if (mapboxToken && distance > 5) {
+          try {
+            const url = `https://api.mapbox.com/directions/v5/mapbox/driving/${startPoint.lng},${startPoint.lat};${endPoint.lng},${endPoint.lat}?` + new URLSearchParams({
+              access_token: mapboxToken,
+              geometries: 'geojson',
+              overview: 'full', // Get full detailed geometry
+              steps: 'false',
+            });
+
+            const response = await fetch(url);
+            if (response.ok) {
+              const data = await response.json();
+              if (data.routes && data.routes.length > 0 && data.routes[0].geometry) {
+                segmentCoordinates = data.routes[0].geometry.coordinates;
               }
             }
+          } catch (error) {
+            // If Directions API fails, try interpolating more points along the straight line
+            const numIntermediatePoints = Math.max(3, Math.floor(distance / 5)); // Add point every ~5 meters
+            segmentCoordinates = [];
+            for (let j = 0; j <= numIntermediatePoints; j++) {
+              const progress = j / numIntermediatePoints;
+              const lng = startPoint.lng + (endPoint.lng - startPoint.lng) * progress;
+              const lat = startPoint.lat + (endPoint.lat - startPoint.lat) * progress;
+              segmentCoordinates.push([lng, lat]);
+            }
           }
-        } catch (error) {
-          console.warn('Map matching failed, using original coordinates:', error);
+        } else if (distance > 0) {
+          // For short segments, add intermediate points to make lines more visible
+          const numIntermediatePoints = Math.max(2, Math.floor(distance / 2)); // Add point every ~2 meters
+          segmentCoordinates = [];
+          for (let j = 0; j <= numIntermediatePoints; j++) {
+            const progress = j / numIntermediatePoints;
+            const lng = startPoint.lng + (endPoint.lng - startPoint.lng) * progress;
+            const lat = startPoint.lat + (endPoint.lat - startPoint.lat) * progress;
+            segmentCoordinates.push([lng, lat]);
+          }
         }
+
+        // Zig-zag variations are now baked into the CSV data, so we just display it as-is
+        // The map will show the realistic GPS tracking pattern from the data
+
+        // Add source for this segment
+        map.addSource(`route-segment-${i}`, {
+          type: 'geojson',
+          data: {
+            type: 'Feature',
+            properties: {},
+            geometry: {
+              type: 'LineString',
+              coordinates: segmentCoordinates
+            }
+          }
+        });
+
+        // Add layer for this segment with thicker, more visible lines
+        map.addLayer({
+          id: `route-segment-${i}`,
+          type: 'line',
+          source: `route-segment-${i}`,
+          layout: {
+            'line-join': 'round',
+            'line-cap': 'round'
+          },
+          paint: {
+            'line-color': '#3B82F6',
+            'line-width': 6, // Increased from 4 to 6 for better visibility
+            'line-opacity': 0.9 // Increased from 0.8 to 0.9 for better visibility
+          }
+        });
       }
-
-      map.addSource('route', {
-        type: 'geojson',
-        data: {
-          type: 'Feature',
-          properties: {},
-          geometry: {
-            type: 'LineString',
-            coordinates: matchedCoordinates
-          }
-        }
-      });
-
-      map.addLayer({
-        id: 'route-normal',
-        type: 'line',
-        source: 'route',
-        layout: {
-          'line-join': 'round',
-          'line-cap': 'round'
-        },
-        paint: {
-          'line-color': '#3B82F6',
-          'line-width': 4,
-          'line-opacity': 0.8
-        }
-      });
-
-      // Mark overspeed points with markers instead of lines
-      points.forEach((point, idx) => {
-        if (point.speed > overspeedThreshold && idx > 0) {
-          const el = document.createElement('div');
-          el.style.cssText = `
-            width: 12px;
-            height: 12px;
-            background-color: #EF4444;
-            border: 2px solid white;
-            border-radius: 50%;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
-          `;
-          
-          new mapboxgl.Marker({ element: el })
-            .setLngLat([point.lng, point.lat])
-            .addTo(map);
-        }
-      });
 
       const startEl = document.createElement('div');
       startEl.className = 'start-marker';
@@ -214,43 +235,16 @@ export default function EnhancedMap({
         .setPopup(new mapboxgl.Popup().setHTML('<strong>End Point</strong>'))
         .addTo(map);
 
-      points.forEach((point, idx) => {
-        if (point.isStop && idx > 0 && idx < points.length - 1) {
-          const stopEl = document.createElement('div');
-          stopEl.style.cssText = `
-            width: 20px;
-            height: 20px;
-            background-color: #F59E0B;
-            border: 2px solid white;
-            border-radius: 50%;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
-            cursor: pointer;
-          `;
-
-          const stopMarker = new mapboxgl.Marker({ element: stopEl })
-            .setLngLat([point.lng, point.lat])
-            .setPopup(new mapboxgl.Popup().setHTML(`
-              <div style="padding: 4px;">
-                <strong>Stop Point</strong><br/>
-                <small>${new Date(point.timestamp).toLocaleTimeString()}</small>
-              </div>
-            `))
-            .addTo(map);
-
-          stopMarkersRef.current.push(stopMarker);
-        }
-      });
+      // Stop markers removed - all traces are now shown as visible lines
 
       if (showPlayback) {
-        const carEl = document.createElement('div');
-        carEl.innerHTML = `
+        const jcbEl = document.createElement('div');
+        jcbEl.innerHTML = `
           <div style="position: relative; width: 48px; height: 48px;">
-            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 40px; height: 40px; background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%); border-radius: 50%; box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4); display: flex; align-items: center; justify-content: center;">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
-                <path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/>
-              </svg>
+            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 48px; height: 48px; background: rgba(255, 255, 255, 0.95); border-radius: 50%; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); display: flex; align-items: center; justify-content: center; overflow: hidden; padding: 4px;">
+              <img src="/jcb.png" alt="JCB" style="width: 100%; height: 100%; object-fit: contain;" />
             </div>
-            <div style="position: absolute; top: 0; left: 0; width: 48px; height: 48px; border: 2px solid #3B82F6; border-radius: 50%; animation: pulse 2s infinite;"></div>
+            <div style="position: absolute; top: 0; left: 0; width: 48px; height: 48px; border: 2px solid #F59E0B; border-radius: 50%; animation: pulse 2s infinite;"></div>
           </div>
           <style>
             @keyframes pulse {
@@ -259,13 +253,13 @@ export default function EnhancedMap({
             }
           </style>
         `;
-        carEl.style.cursor = 'pointer';
+        jcbEl.style.cursor = 'pointer';
 
         const currentPoint = points[currentIndex];
         const locationName = currentPoint.location || 'Unknown Location';
         const displayStatus = currentPoint.status === 'WORKING' ? 'WORKING' : (currentPoint.status || 'Unknown');
 
-        markerRef.current = new mapboxgl.Marker({ element: carEl })
+        markerRef.current = new mapboxgl.Marker({ element: jcbEl })
           .setLngLat([currentPoint.lng, currentPoint.lat])
           .addTo(map);
 
@@ -394,16 +388,8 @@ export default function EnhancedMap({
       <div className="absolute bottom-4 left-4 bg-white rounded-lg shadow-lg px-4 py-2 z-10">
         <div className="flex items-center gap-4 text-sm">
           <div className="flex items-center gap-2">
-            <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
-            <span className="text-gray-700">Normal Speed</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <div className="w-3 h-3 bg-red-500 rounded-full"></div>
-            <span className="text-gray-700">Overspeed</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
-            <span className="text-gray-700">Stop</span>
+            <div className="w-4 h-0.5 bg-blue-500"></div>
+            <span className="text-gray-700">Route</span>
           </div>
         </div>
       </div>
