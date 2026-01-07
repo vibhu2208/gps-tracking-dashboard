@@ -79,33 +79,60 @@ export default function EnhancedMap({
     stopMarkersRef.current.forEach(marker => marker.remove());
     stopMarkersRef.current = [];
 
-    map.on('load', () => {
+    map.on('load', async () => {
       if (map.getSource('route')) {
         map.removeLayer('route-normal');
         map.removeLayer('route-overspeed');
         map.removeSource('route');
       }
 
-      const normalSegments: [number, number][] = [];
-      const overspeedSegments: [number, number][] = [];
-
-      points.forEach((point, idx) => {
-        if (idx === 0) return;
-        
-        const prevPoint = points[idx - 1];
-        const segment: [number, number][] = [
-          [prevPoint.lng, prevPoint.lat],
-          [point.lng, point.lat]
-        ];
-
-        if (point.speed > overspeedThreshold) {
-          overspeedSegments.push(...segment);
-        } else {
-          normalSegments.push(...segment);
+      // Remove all overspeed sources and layers
+      for (let i = 0; i < points.length; i++) {
+        if (map.getSource(`overspeed-${i}`)) {
+          map.removeLayer(`overspeed-${i}`);
+          map.removeSource(`overspeed-${i}`);
         }
-      });
+      }
 
       const routeCoordinates = points.map(p => [p.lng, p.lat]);
+
+      // Use Mapbox Map Matching API to snap route to roads
+      const mapboxToken = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
+      let matchedCoordinates = routeCoordinates;
+
+      if (mapboxToken && routeCoordinates.length > 1) {
+        try {
+          // Build coordinates string for Map Matching API
+          const coordinates = routeCoordinates.map(c => `${c[0]},${c[1]}`).join(';');
+          
+          // Build timestamps for better matching
+          const timestamps = points.map(p => {
+            const date = new Date(p.timestamp);
+            return Math.floor(date.getTime() / 1000);
+          }).join(';');
+
+          const url = `https://api.mapbox.com/matching/v5/mapbox/driving/${coordinates}?` + new URLSearchParams({
+            access_token: mapboxToken,
+            geometries: 'geojson',
+            tidy: 'true',
+            timestamps: timestamps,
+            radiuses: points.map(() => '25').join(';'), // 25m search radius
+          });
+
+          const response = await fetch(url);
+          if (response.ok) {
+            const data = await response.json();
+            if (data.code === 'Ok' && data.matchings && data.matchings.length > 0) {
+              const matching = data.matchings[0];
+              if (matching.geometry && matching.geometry.coordinates) {
+                matchedCoordinates = matching.geometry.coordinates;
+              }
+            }
+          }
+        } catch (error) {
+          console.warn('Map matching failed, using original coordinates:', error);
+        }
+      }
 
       map.addSource('route', {
         type: 'geojson',
@@ -114,7 +141,7 @@ export default function EnhancedMap({
           properties: {},
           geometry: {
             type: 'LineString',
-            coordinates: routeCoordinates
+            coordinates: matchedCoordinates
           }
         }
       });
@@ -134,40 +161,24 @@ export default function EnhancedMap({
         }
       });
 
-      if (overspeedSegments.length > 0) {
-        points.forEach((point, idx) => {
-          if (point.speed > overspeedThreshold && idx > 0) {
-            const prevPoint = points[idx - 1];
-            
-            map.addSource(`overspeed-${idx}`, {
-              type: 'geojson',
-              data: {
-                type: 'Feature',
-                properties: {},
-                geometry: {
-                  type: 'LineString',
-                  coordinates: [[prevPoint.lng, prevPoint.lat], [point.lng, point.lat]]
-                }
-              }
-            });
-
-            map.addLayer({
-              id: `overspeed-${idx}`,
-              type: 'line',
-              source: `overspeed-${idx}`,
-              layout: {
-                'line-join': 'round',
-                'line-cap': 'round'
-              },
-              paint: {
-                'line-color': '#EF4444',
-                'line-width': 5,
-                'line-opacity': 0.9
-              }
-            });
-          }
-        });
-      }
+      // Mark overspeed points with markers instead of lines
+      points.forEach((point, idx) => {
+        if (point.speed > overspeedThreshold && idx > 0) {
+          const el = document.createElement('div');
+          el.style.cssText = `
+            width: 12px;
+            height: 12px;
+            background-color: #EF4444;
+            border: 2px solid white;
+            border-radius: 50%;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+          `;
+          
+          new mapboxgl.Marker({ element: el })
+            .setLngLat([point.lng, point.lat])
+            .addTo(map);
+        }
+      });
 
       const startEl = document.createElement('div');
       startEl.className = 'start-marker';
