@@ -335,6 +335,37 @@ async function generateWorkingPoints(streetCenter, numPoints, dayOffset = 0) {
             lat = routeCoordinates[segmentIndex][1];
           }
           
+          // Add realistic GPS tracking variations (zig-zag pattern) to working points
+          // This simulates real GPS accuracy limitations and makes the data dynamic
+          const pointIndex = points.length;
+          if (pointIndex > 0 && pointIndex < numPoints - 1) {
+            // Calculate route direction for perpendicular offset
+            const prevPoint = pointIndex > 0 ? points[pointIndex - 1] : { lat, lng };
+            const nextPoint = { lat, lng }; // Will be calculated next, use current as approximation
+            
+            // Calculate route angle
+            const routeAngle = Math.atan2(
+              lat - prevPoint.lat,
+              (lng - prevPoint.lng) * Math.cos(lat * Math.PI / 180)
+            );
+            
+            // Create zig-zag pattern (alternating left-right)
+            const zigZagDirection = (pointIndex % 2 === 0) ? 1 : -1;
+            
+            // Add small GPS variation (0.5-1.5 meters) perpendicular to route
+            const variationMeters = 0.5 + Math.random() * 1.0; // 0.5-1.5 meters
+            const variationDegrees = variationMeters / 111000; // Convert to degrees
+            
+            // Perpendicular angle with reduced variation
+            const perpAngle = routeAngle + (Math.PI / 2) + (zigZagDirection * (Math.PI / 12));
+            
+            const latOffset = Math.cos(perpAngle) * variationDegrees;
+            const lngOffset = Math.sin(perpAngle) * variationDegrees * Math.cos(lat * Math.PI / 180);
+            
+            lat += latOffset;
+            lng += lngOffset;
+          }
+          
           points.push({ lat, lng });
         }
       }
@@ -379,7 +410,42 @@ async function generateWorkingPoints(streetCenter, numPoints, dayOffset = 0) {
           const overallProgress = sectionStartProgress + (sectionProgress * (sectionEndProgress - sectionStartProgress));
           const index = Math.floor(overallProgress * (routePoints.length - 1));
           
-          points.push(routePoints[index] || startPoint);
+          let point = routePoints[index] || startPoint;
+          
+          // Add realistic GPS tracking variations (zig-zag pattern) to working points
+          const pointIndex = points.length;
+          if (pointIndex > 0 && pointIndex < numPoints - 1 && routePoints.length > 1) {
+            // Calculate route direction
+            const prevIndex = Math.max(0, index - 1);
+            const nextIndex = Math.min(routePoints.length - 1, index + 1);
+            const prevPoint = routePoints[prevIndex];
+            const nextPoint = routePoints[nextIndex];
+            
+            const routeAngle = Math.atan2(
+              nextPoint.lat - prevPoint.lat,
+              (nextPoint.lng - prevPoint.lng) * Math.cos(point.lat * Math.PI / 180)
+            );
+            
+            // Create zig-zag pattern (alternating left-right)
+            const zigZagDirection = (pointIndex % 2 === 0) ? 1 : -1;
+            
+            // Add small GPS variation (0.5-1.5 meters) perpendicular to route
+            const variationMeters = 0.5 + Math.random() * 1.0; // 0.5-1.5 meters
+            const variationDegrees = variationMeters / 111000; // Convert to degrees
+            
+            // Perpendicular angle with reduced variation
+            const perpAngle = routeAngle + (Math.PI / 2) + (zigZagDirection * (Math.PI / 12));
+            
+            const latOffset = Math.cos(perpAngle) * variationDegrees;
+            const lngOffset = Math.sin(perpAngle) * variationDegrees * Math.cos(point.lat * Math.PI / 180);
+            
+            point = {
+              lat: point.lat + latOffset,
+              lng: point.lng + lngOffset
+            };
+          }
+          
+          points.push(point);
         }
       }
     } else {
