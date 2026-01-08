@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { getVehicles, getRouteData, getAlerts, getAllVehicleData, exportToCSV } from '@/lib/data';
+import { getVehicles, getRouteData, getAlerts, getAllVehicleData, exportToCSV, getAvailableDates } from '@/lib/data';
 import { Download, FileText, Car } from 'lucide-react';
 import { format, subDays, startOfWeek, endOfWeek, startOfMonth, endOfMonth } from 'date-fns';
 import { Vehicle } from '@/types';
@@ -11,6 +11,11 @@ export default function ReportsPage() {
   const [vehicles, setVehicles] = useState<Vehicle[]>([]);
   const [alerts, setAlerts] = useState<any[]>([]);
   const [selectedVehicle, setSelectedVehicle] = useState('');
+  const [availableDates, setAvailableDates] = useState<string[]>([]);
+  const [selectedDate, setSelectedDate] = useState('');
+  const [selectedWeekEnd, setSelectedWeekEnd] = useState('');
+  const [reportPeriod, setReportPeriod] = useState<'daily' | 'weekly' | 'monthly'>('daily');
+  const [isExporting, setIsExporting] = useState(false);
 
   useEffect(() => {
     const loadVehicles = async () => {
@@ -30,27 +35,31 @@ export default function ReportsPage() {
     };
     loadAlerts();
   }, []);
-  const [selectedDate, setSelectedDate] = useState('2025-12-28');
-  const [selectedWeekEnd, setSelectedWeekEnd] = useState('2025-12-28');
-  const [reportPeriod, setReportPeriod] = useState<'daily' | 'weekly' | 'monthly'>('daily');
-  const [isExporting, setIsExporting] = useState(false);
 
-  // Generate all dates from Dec 3 to Dec 28, 2025
-  const generateDateOptions = () => {
-    const dates = [];
-    const start = new Date('2025-12-03');
-    const end = new Date('2025-12-28');
-    const current = new Date(start);
-    
-    while (current <= end) {
-      dates.push(new Date(current));
-      current.setDate(current.getDate() + 1);
-    }
-    
-    return dates.reverse(); // Most recent first
-  };
+  // Load available dates when vehicle is selected
+  useEffect(() => {
+    const loadDates = async () => {
+      if (selectedVehicle) {
+        const dates = await getAvailableDates(selectedVehicle);
+        setAvailableDates(dates);
+        if (dates.length > 0) {
+          setSelectedDate(dates[0]);
+          setSelectedWeekEnd(dates[0]);
+        } else {
+          setSelectedDate('');
+          setSelectedWeekEnd('');
+        }
+      } else {
+        setAvailableDates([]);
+        setSelectedDate('');
+        setSelectedWeekEnd('');
+      }
+    };
+    loadDates();
+  }, [selectedVehicle]);
 
-  const dateOptions = generateDateOptions();
+  // Convert date strings to Date objects for DatePicker
+  const dateOptions = availableDates.map(date => new Date(date)).reverse(); // Most recent first
 
   const handleExportTrips = async () => {
     setIsExporting(true);
@@ -62,16 +71,19 @@ export default function ReportsPage() {
       }
 
       const vehicle = vehicles.find(v => v.id === selectedVehicle);
-      const exportData = routeData.points.map(point => ({
-        Vehicle: vehicle?.name,
-        PlateNumber: vehicle?.plateNumber,
-        Date: selectedDate,
-        Timestamp: format(new Date(point.timestamp), 'yyyy-MM-dd HH:mm:ss'),
-        Latitude: point.lat,
-        Longitude: point.lng,
-        Speed: point.speed,
-        IsStop: point.isStop ? 'Yes' : 'No',
-      }));
+      const exportData = routeData.points.map(point => {
+        const pointDate = new Date(point.timestamp);
+        return {
+          Vehicle: vehicle?.name,
+          PlateNumber: vehicle?.plateNumber,
+          Date: format(pointDate, 'yyyy-MM-dd'),
+          Time: format(pointDate, 'HH:mm:ss'),
+          Timestamp: format(pointDate, 'yyyy-MM-dd HH:mm:ss'),
+          Latitude: point.lat,
+          Longitude: point.lng,
+          Location: point.location || 'Unknown Location',
+        };
+      });
 
       exportToCSV(exportData, `trip-report-${vehicle?.plateNumber}-${selectedDate}.csv`);
     } finally {
@@ -290,13 +302,15 @@ export default function ReportsPage() {
               </label>
               <DatePicker
                 selectedDate={selectedDate}
-                availableDates={dateOptions.map(date => format(date, 'yyyy-MM-dd'))}
+                availableDates={availableDates}
                 onChange={setSelectedDate}
+                disabled={!selectedVehicle || availableDates.length === 0}
               />
             </div>
 
             <button
               onClick={handleExportTrips}
+              disabled={!selectedVehicle || !selectedDate || isExporting}
               disabled={isExporting}
               className="w-full flex items-center justify-center gap-2 bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition disabled:opacity-50 disabled:cursor-not-allowed"
             >
@@ -384,8 +398,9 @@ export default function ReportsPage() {
               </label>
               <DatePicker
                 selectedDate={selectedDate}
-                availableDates={dateOptions.map(date => format(date, 'yyyy-MM-dd'))}
+                availableDates={availableDates}
                 onChange={setSelectedDate}
+                disabled={!selectedVehicle || availableDates.length === 0}
               />
             </div>
 
@@ -402,6 +417,7 @@ export default function ReportsPage() {
 
             <button
               onClick={handleExportSummary}
+              disabled={!selectedDate || isExporting}
               disabled={isExporting}
               className="w-full flex items-center justify-center gap-2 bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 transition disabled:opacity-50 disabled:cursor-not-allowed"
             >
@@ -469,10 +485,11 @@ export default function ReportsPage() {
                 value={selectedWeekEnd}
                 onChange={(e) => setSelectedWeekEnd(e.target.value)}
                 className="w-full pl-4 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none"
+                disabled={!selectedVehicle || availableDates.length === 0}
               >
-                {dateOptions.map((date) => (
-                  <option key={date.toISOString()} value={format(date, 'yyyy-MM-dd')}>
-                    Week ending {format(date, 'MMMM dd, yyyy')}
+                {availableDates.map((date) => (
+                  <option key={date} value={date}>
+                    Week ending {format(new Date(date), 'MMMM dd, yyyy')}
                   </option>
                 ))}
               </select>
