@@ -1,7 +1,7 @@
 /**
- * Generate Realistic GPS Data for JCB HR26DP0703 in Om Nagar, Ward 19
+ * Generate Realistic GPS Data for JCB HR38T3206 in Cancon Enclave, Ward 10
  * 
- * Generates CSV with GPS coordinates for a JCB operating strictly within Om Nagar
+ * Generates CSV with GPS coordinates for a JCB operating strictly within Cancon Enclave
  * following the specified daily operation pattern.
  * Uses Mapbox Directions API to generate realistic road-following routes.
  */
@@ -15,21 +15,25 @@ if (!process.env.NEXT_PUBLIC_MAPBOX_TOKEN && !process.env.MAPBOX_ACCESS_TOKEN) {
 }
 
 // Fixed Locations
-const DEPOT = { lat: 28.449967, lng: 77.018736 };
+const DEPOT = { lat: 28.478120, lng: 77.016554 };
 const STREETS = [
-  { id: 'S1', lat: 28.449227, lng: 77.019325, name: 'Street 1' },
-  { id: 'S2', lat: 28.449543, lng: 77.020870, name: 'Street 2' },
-  { id: 'S3', lat: 28.450236, lng: 77.020919, name: 'Street 3' },
+  { id: 'S1', lat: 28.478125, lng: 77.015062, name: 'Street 1' },
+  { id: 'S2', lat: 28.478089, lng: 77.014091, name: 'Street 2' },
+  { id: 'S3', lat: 28.477523, lng: 77.015201, name: 'Street 3' },
+  { id: 'S4', lat: 28.477844, lng: 77.014557, name: 'Street 4' },
+  { id: 'S5', lat: 28.476796, lng: 77.016206, name: 'Street 5' },
+  { id: 'S6', lat: 28.479431, lng: 77.014782, name: 'Street 6' },
+  { id: 'S7', lat: 28.478654, lng: 77.014576, name: 'Street 7' },
 ];
 
 // Configuration
 const CONFIG = {
   MAPBOX_TOKEN: process.env.NEXT_PUBLIC_MAPBOX_TOKEN || process.env.MAPBOX_ACCESS_TOKEN,
-  VEHICLE: 'HR26DP0703',
-  WARD: '19',
-  LOCATION: 'Om Nagar',
-  START_DATE: new Date('2025-10-13'),
-  END_DATE: new Date('2025-10-18'),
+  VEHICLE: 'HR38T3206',
+  WARD: '10',
+  LOCATION: 'Cancon Enclave',
+  START_DATE: new Date('2025-11-23'),
+  END_DATE: new Date('2025-12-24'),
   WORK_START: 9, // 09:00
   WORK_END: 17,   // 17:00
   TRAVEL_START: 9 * 60 + 10, // 09:10 in minutes
@@ -793,9 +797,9 @@ function writeCSV(rows, outputPath) {
 
 // Main execution
 async function main() {
-  const outputPath = path.join(__dirname, '../data/kadarpur_hr26dp0703_oct13_oct18_2025.csv');
+  const outputPath = path.join(__dirname, '../data/kadarpur_hr38t3206_nov23_dec24_2025.csv');
 
-  console.log('🚀 Generating GPS data for JCB HR26DP0703 in Om Nagar...');
+  console.log('🚀 Generating GPS data for JCB HR38T3206 in Cancon Enclave...');
   console.log(`📅 Date range: ${CONFIG.START_DATE.toISOString().split('T')[0]} to ${CONFIG.END_DATE.toISOString().split('T')[0]}`);
   console.log(`📍 Location: ${CONFIG.LOCATION}, Ward ${CONFIG.WARD}`);
   console.log(`🏭 Depot: ${DEPOT.lat}, ${DEPOT.lng}`);

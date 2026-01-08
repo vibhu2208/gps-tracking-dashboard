@@ -9,7 +9,7 @@ const fs = require('fs');
 const path = require('path');
 const { MongoClient } = require('mongodb');
 
-const csvFilePath = path.join(__dirname, '../data/kadarpur_hr26dp0703_oct13_oct18_2025.csv');
+const csvFilePath = path.join(__dirname, '../data/kadarpur_hr38t3206_nov23_dec24_2025.csv');
 const outputFilePath = path.join(__dirname, '../public/data/routes.json');
 
 // Convert IST timestamp to UTC ISO string

@@ -122,12 +122,7 @@ export default function VehicleDetailPage() {
       Time: format(new Date(point.timestamp), 'HH:mm:ss'),
       Latitude: point.lat.toFixed(6),
       Longitude: point.lng.toFixed(6),
-      'Speed (km/h)': point.speed,
-      Stop: point.isStop ? 'Yes' : 'No',
-      Location: point.lat > 28.5 && point.lat < 28.8 ? 'Delhi NCR' :
-                point.lat > 19.0 && point.lat < 19.3 ? 'Mumbai' :
-                point.lat > 12.8 && point.lat < 13.1 ? 'Bangalore' :
-                point.lat > 18.4 && point.lat < 18.6 ? 'Pune' : vehicle.city
+      Location: point.location || 'Unknown Location'
     }));
 
     exportToCSV(exportData, `route-history-${vehicle.plateNumber}-${selectedDate}.csv`);

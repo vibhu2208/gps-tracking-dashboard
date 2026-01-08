@@ -117,10 +117,8 @@ export const getAllVehicleData = async (vehicleId: string): Promise<any[]> => {
             Timestamp: new Date(point.timestamp).toLocaleString(),
             Latitude: point.lat,
             Longitude: point.lng,
-            Speed: point.speed || 0,
-            Location: point.location || 'Unknown',
-            Status: point.status || 'Unknown',
-            IsStop: point.isStop ? 'Yes' : 'No'
+            Location: point.location || 'Unknown Location',
+            Status: point.status || 'Unknown'
           });
         });
       }

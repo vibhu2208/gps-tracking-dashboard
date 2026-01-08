@@ -24,5 +24,31 @@
     "city": "Gurugram",
     "ward": "20",
     "location": "Behrampur"
+  },
+  {
+    "id": "HR38T8618",
+    "name": "JCB HR38T8618",
+    "plateNumber": "HR38T8618",
+    "status": "idle",
+    "lastSeen": "2025-12-25T17:00:00Z",
+    "driver": "Ward 10 Operator",
+    "model": "JCB 3DX",
+    "color": "Yellow",
+    "city": "Gurugram",
+    "ward": "10",
+    "location": "Old industrial area khandsa road"
+  },
+  {
+    "id": "HR38T3206",
+    "name": "JCB HR38T3206",
+    "plateNumber": "HR38T3206",
+    "status": "idle",
+    "lastSeen": "2025-12-24T17:00:00Z",
+    "driver": "Ward 10 Operator",
+    "model": "JCB 3DX",
+    "color": "Yellow",
+    "city": "Gurugram",
+    "ward": "10",
+    "location": "Cancon Enclave"
   }
 ]
