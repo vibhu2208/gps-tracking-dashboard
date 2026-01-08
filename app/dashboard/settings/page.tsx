@@ -1,16 +1,25 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useAuth } from '@/contexts/AuthContext';
 import { getVehicles } from '@/lib/data';
 import { User, Settings as SettingsIcon, MapPin, Bell, Truck, CreditCard, Save } from 'lucide-react';
+import { Vehicle } from '@/types';
 
 type TabType = 'profile' | 'app' | 'tracking' | 'notifications' | 'fleet' | 'billing';
 
 export default function SettingsPage() {
   const { user } = useAuth();
   const [activeTab, setActiveTab] = useState<TabType>('profile');
-  const vehicles = getVehicles();
+  const [vehicles, setVehicles] = useState<Vehicle[]>([]);
+
+  useEffect(() => {
+    const loadVehicles = async () => {
+      const data = await getVehicles();
+      setVehicles(data);
+    };
+    loadVehicles();
+  }, []);
 
   const tabs = [
     { id: 'profile' as TabType, name: 'Profile', icon: User },

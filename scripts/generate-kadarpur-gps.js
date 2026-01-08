@@ -1,7 +1,7 @@
 /**
- * Generate Realistic GPS Data for JCB HR38F6826 in Kadarpur, Ward 20
+ * Generate Realistic GPS Data for JCB HR26DP0703 in Om Nagar, Ward 19
  * 
- * Generates CSV with GPS coordinates for a JCB operating strictly within Kadarpur
+ * Generates CSV with GPS coordinates for a JCB operating strictly within Om Nagar
  * following the specified daily operation pattern.
  * Uses Mapbox Directions API to generate realistic road-following routes.
  */
@@ -15,24 +15,21 @@ if (!process.env.NEXT_PUBLIC_MAPBOX_TOKEN && !process.env.MAPBOX_ACCESS_TOKEN) {
 }
 
 // Fixed Locations
-const DEPOT = { lat: 28.387882, lng: 77.091767 };
+const DEPOT = { lat: 28.449967, lng: 77.018736 };
 const STREETS = [
-  { id: 'S1', lat: 28.393138, lng: 77.092405, name: 'Street 1' },
-  { id: 'S2', lat: 28.390365, lng: 77.091585, name: 'Street 2' },
-  { id: 'S3', lat: 28.386860, lng: 77.093400, name: 'Street 3' },
-  { id: 'S4', lat: 28.385439, lng: 77.096412, name: 'Street 4' },
-  { id: 'S5', lat: 28.381727, lng: 77.091737, name: 'Street 5' },
-  { id: 'S6', lat: 28.382639, lng: 77.097631, name: 'Street 6' },
+  { id: 'S1', lat: 28.449227, lng: 77.019325, name: 'Street 1' },
+  { id: 'S2', lat: 28.449543, lng: 77.020870, name: 'Street 2' },
+  { id: 'S3', lat: 28.450236, lng: 77.020919, name: 'Street 3' },
 ];
 
 // Configuration
 const CONFIG = {
   MAPBOX_TOKEN: process.env.NEXT_PUBLIC_MAPBOX_TOKEN || process.env.MAPBOX_ACCESS_TOKEN,
-  VEHICLE: 'HR38F6826',
-  WARD: '20',
-  LOCATION: 'Kadarpur',
-  START_DATE: new Date('2025-08-25'),
-  END_DATE: new Date('2025-09-11'),
+  VEHICLE: 'HR26DP0703',
+  WARD: '19',
+  LOCATION: 'Om Nagar',
+  START_DATE: new Date('2025-10-13'),
+  END_DATE: new Date('2025-10-18'),
   WORK_START: 9, // 09:00
   WORK_END: 17,   // 17:00
   TRAVEL_START: 9 * 60 + 10, // 09:10 in minutes
@@ -637,7 +634,7 @@ async function generateDayData(date, street, dayOffset = 0) {
           vehicle: CONFIG.VEHICLE,
           ward: CONFIG.WARD,
           phase: 'WORKING',
-          location_name: `${CONFIG.LOCATION} - ${street.name}`,
+          location_name: CONFIG.LOCATION,
           latitude: allWorkPoints[workPointIndex].lat,
           longitude: allWorkPoints[workPointIndex].lng,
         });
@@ -674,7 +671,7 @@ async function generateDayData(date, street, dayOffset = 0) {
           vehicle: CONFIG.VEHICLE,
           ward: CONFIG.WARD,
           phase: 'BREAK',
-          location_name: `${CONFIG.LOCATION} - ${street.name}`,
+          location_name: CONFIG.LOCATION,
           latitude: breakPoints[i].lat,
           longitude: breakPoints[i].lng,
         });
@@ -796,9 +793,9 @@ function writeCSV(rows, outputPath) {
 
 // Main execution
 async function main() {
-  const outputPath = path.join(__dirname, '../data/kadarpur_hr38f6826_aug25_sep11_2025.csv');
+  const outputPath = path.join(__dirname, '../data/kadarpur_hr26dp0703_oct13_oct18_2025.csv');
 
-  console.log('🚀 Generating GPS data for JCB HR38F6826 in Kadarpur...');
+  console.log('🚀 Generating GPS data for JCB HR26DP0703 in Om Nagar...');
   console.log(`📅 Date range: ${CONFIG.START_DATE.toISOString().split('T')[0]} to ${CONFIG.END_DATE.toISOString().split('T')[0]}`);
   console.log(`📍 Location: ${CONFIG.LOCATION}, Ward ${CONFIG.WARD}`);
   console.log(`🏭 Depot: ${DEPOT.lat}, ${DEPOT.lng}`);

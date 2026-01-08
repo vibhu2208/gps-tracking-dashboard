@@ -5,11 +5,28 @@ import VehicleCard from '@/components/VehicleCard';
 import AlertCard from '@/components/AlertCard';
 import { useRouter } from 'next/navigation';
 import { Car, AlertTriangle, Activity, TrendingUp } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { Vehicle, Alert } from '@/types';
 
 export default function DashboardPage() {
-  const vehicles = getVehicles();
-  const alerts = getRecentAlerts(5);
   const router = useRouter();
+  const [vehicles, setVehicles] = useState<Vehicle[]>([]);
+  const [alerts, setAlerts] = useState<Alert[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const loadData = async () => {
+      setIsLoading(true);
+      const [vehiclesData, alertsData] = await Promise.all([
+        getVehicles(),
+        getRecentAlerts(5)
+      ]);
+      setVehicles(vehiclesData);
+      setAlerts(alertsData);
+      setIsLoading(false);
+    };
+    loadData();
+  }, []);
 
   const movingVehicles = vehicles.filter(v => v.status === 'moving').length;
   const idleVehicles = vehicles.filter(v => v.status === 'idle').length;
