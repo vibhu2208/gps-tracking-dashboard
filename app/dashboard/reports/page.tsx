@@ -311,7 +311,6 @@ export default function ReportsPage() {
             <button
               onClick={handleExportTrips}
               disabled={!selectedVehicle || !selectedDate || isExporting}
-              disabled={isExporting}
               className="w-full flex items-center justify-center gap-2 bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition disabled:opacity-50 disabled:cursor-not-allowed"
             >
               <Download className="w-5 h-5" />
@@ -418,7 +417,6 @@ export default function ReportsPage() {
             <button
               onClick={handleExportSummary}
               disabled={!selectedDate || isExporting}
-              disabled={isExporting}
               className="w-full flex items-center justify-center gap-2 bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 transition disabled:opacity-50 disabled:cursor-not-allowed"
             >
               <Download className="w-5 h-5" />
