@@ -6,15 +6,16 @@ import { getVehicleById, getRouteData, getAlertsByVehicle, getAvailableDates, ex
 import { RouteData } from '@/types';
 import EnhancedMap from '@/components/EnhancedMap';
 import AlertCard from '@/components/AlertCard';
-import { Calendar, Play, Pause, RotateCcw, Clock, Gauge, Route, ArrowLeft, Download, Briefcase } from 'lucide-react';
+import { Play, Pause, RotateCcw, Clock, Gauge, Route, ArrowLeft, Download, Briefcase } from 'lucide-react';
 import { format } from 'date-fns';
+import DatePicker from '@/components/DatePicker';
 
 export default function VehicleDetailPage() {
   const params = useParams();
   const router = useRouter();
   const vehicleId = params.id as string;
   
-  const vehicle = getVehicleById(vehicleId);
+  const [vehicle, setVehicle] = useState<any>(null);
   const [selectedDate, setSelectedDate] = useState('');
   const [routeData, setRouteData] = useState<RouteData | null>(null);
   const [availableDates, setAvailableDates] = useState<string[]>([]);
@@ -22,7 +23,23 @@ export default function VehicleDetailPage() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [playbackSpeed, setPlaybackSpeed] = useState<1 | 2 | 4>(1);
   const [isLoading, setIsLoading] = useState(true);
-  const alerts = getAlertsByVehicle(vehicleId);
+  const [alerts, setAlerts] = useState<any[]>([]);
+
+  useEffect(() => {
+    const loadVehicle = async () => {
+      const data = await getVehicleById(vehicleId);
+      setVehicle(data);
+    };
+    loadVehicle();
+  }, [vehicleId]);
+
+  useEffect(() => {
+    const loadAlerts = async () => {
+      const data = await getAlertsByVehicle(vehicleId);
+      setAlerts(data);
+    };
+    loadAlerts();
+  }, [vehicleId]);
 
   useEffect(() => {
     const loadDates = async () => {
@@ -96,7 +113,7 @@ export default function VehicleDetailPage() {
   };
 
   const handleExportRouteData = () => {
-    if (!routeData) return;
+    if (!routeData || !vehicle) return;
     
     const exportData = routeData.points.map(point => ({
       Vehicle: vehicle.name,
@@ -115,6 +132,16 @@ export default function VehicleDetailPage() {
 
     exportToCSV(exportData, `route-history-${vehicle.plateNumber}-${selectedDate}.csv`);
   };
+
+  if (!vehicle) {
+    return (
+      <div className="space-y-6">
+        <div className="text-center py-12">
+          <p className="text-gray-500">Loading vehicle data...</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="space-y-6">
@@ -145,21 +172,12 @@ export default function VehicleDetailPage() {
                   <Download className="w-4 h-4" />
                   Export Excel
                 </button>
-                <div className="flex items-center gap-2">
-                  <Calendar className="w-5 h-5 text-gray-400" />
-                  <select
-                    value={selectedDate}
-                    onChange={(e) => setSelectedDate(e.target.value)}
-                    className="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none"
-                    disabled={isLoading}
-                  >
-                    {availableDates.map((date) => (
-                      <option key={date} value={date}>
-                        {format(new Date(date), 'MMM dd, yyyy')}
-                      </option>
-                    ))}
-                  </select>
-                </div>
+                <DatePicker
+                  selectedDate={selectedDate}
+                  availableDates={availableDates}
+                  onChange={setSelectedDate}
+                  disabled={isLoading}
+                />
               </div>
             </div>
 

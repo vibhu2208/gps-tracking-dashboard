@@ -13,9 +13,9 @@
     "location": "Shyam Kunj"
   },
   {
-    "id": "HR38F6826",
-    "name": "JCB HR38F6826",
-    "plateNumber": "HR38F6826",
+    "id": "HP38F6826",
+    "name": "JCB HP38F6826",
+    "plateNumber": "HP38F6826",
     "status": "idle",
     "lastSeen": "2025-09-11T17:00:00Z",
     "driver": "Ward 20 Operator",
@@ -23,6 +23,6 @@
     "color": "Yellow",
     "city": "Gurugram",
     "ward": "20",
-    "location": "Kadarpur"
+    "location": "Behrampur"
   }
 ]

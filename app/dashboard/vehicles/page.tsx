@@ -4,13 +4,25 @@ import { getVehicles } from '@/lib/data';
 import VehicleCard from '@/components/VehicleCard';
 import { useRouter } from 'next/navigation';
 import { Search, Filter } from 'lucide-react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { Vehicle } from '@/types';
 
 export default function VehiclesPage() {
-  const vehicles = getVehicles();
   const router = useRouter();
+  const [vehicles, setVehicles] = useState<Vehicle[]>([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [statusFilter, setStatusFilter] = useState<string>('all');
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const loadVehicles = async () => {
+      setIsLoading(true);
+      const data = await getVehicles();
+      setVehicles(data);
+      setIsLoading(false);
+    };
+    loadVehicles();
+  }, []);
 
   const filteredVehicles = vehicles.filter((vehicle) => {
     const matchesSearch = vehicle.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -54,20 +66,28 @@ export default function VehiclesPage() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredVehicles.map((vehicle) => (
-            <VehicleCard
-              key={vehicle.id}
-              vehicle={vehicle}
-              onClick={() => router.push(`/dashboard/vehicles/${vehicle.id}`)}
-            />
-          ))}
-        </div>
-
-        {filteredVehicles.length === 0 && (
+        {isLoading ? (
           <div className="text-center py-12">
-            <p className="text-gray-500">No vehicles found matching your criteria</p>
+            <p className="text-gray-500">Loading vehicles...</p>
           </div>
+        ) : (
+          <>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {filteredVehicles.map((vehicle) => (
+                <VehicleCard
+                  key={vehicle.id}
+                  vehicle={vehicle}
+                  onClick={() => router.push(`/dashboard/vehicles/${vehicle.id}`)}
+                />
+              ))}
+            </div>
+
+            {filteredVehicles.length === 0 && (
+              <div className="text-center py-12">
+                <p className="text-gray-500">No vehicles found matching your criteria</p>
+              </div>
+            )}
+          </>
         )}
       </div>
     </div>

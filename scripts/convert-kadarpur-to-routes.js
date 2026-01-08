@@ -1,13 +1,15 @@
 /**
- * Convert Kadarpur CSV to routes.json format
+ * Convert Kadarpur CSV to routes.json format and MongoDB
  * 
  * Converts the Kadarpur GPS CSV to the JSON format expected by the dashboard
+ * Also saves to MongoDB for database storage
  */
 
 const fs = require('fs');
 const path = require('path');
+const { MongoClient } = require('mongodb');
 
-const csvFilePath = path.join(__dirname, '../data/kadarpur_hr38f6826_aug25_sep11_2025.csv');
+const csvFilePath = path.join(__dirname, '../data/kadarpur_hr26dp0703_oct13_oct18_2025.csv');
 const outputFilePath = path.join(__dirname, '../public/data/routes.json');
 
 // Convert IST timestamp to UTC ISO string
@@ -44,6 +46,59 @@ function calculateSpeed(lat1, lng1, lat2, lng2, timeDiffMinutes) {
   const distance = calculateDistance(lat1, lng1, lat2, lng2);
   const speed = (distance / timeDiffMinutes) * 60; // km/h
   return Math.round(speed);
+}
+
+async function saveToMongoDB(routes) {
+  const uri = 'mongodb+srv://krishnaupadhyay112211_db_user:Ram161003@gps-tracker.ozcq3tw.mongodb.net/';
+  const dbName = 'gps_tracker';
+  const client = new MongoClient(uri, { 
+    serverSelectionTimeoutMS: 10000,
+    connectTimeoutMS: 10000 
+  });
+  
+  try {
+    await client.connect();
+    console.log('\n📦 Saving to MongoDB...');
+    
+    const db = client.db(dbName);
+    const routesCollection = db.collection('routes');
+    
+    let totalPoints = 0;
+    let totalDays = 0;
+    
+    for (const [vehicleId, vehicleRoutes] of Object.entries(routes)) {
+      for (const [date, routeData] of Object.entries(vehicleRoutes)) {
+        const routeDoc = {
+          vehicleId,
+          date,
+          points: routeData.points || [],
+          summary: routeData.summary || {
+            totalDistance: 0,
+            drivingDuration: 0,
+            idleDuration: 0,
+            maxSpeed: 0
+          },
+          updatedAt: new Date()
+        };
+        
+        await routesCollection.updateOne(
+          { vehicleId, date },
+          { $set: routeDoc, $setOnInsert: { createdAt: new Date() } },
+          { upsert: true }
+        );
+        
+        totalPoints += (routeData.points || []).length;
+        totalDays++;
+      }
+    }
+    
+    console.log(`✅ Saved ${totalDays} route days with ${totalPoints} total points to MongoDB`);
+    
+  } catch (error) {
+    console.error('❌ MongoDB save error:', error);
+  } finally {
+    await client.close();
+  }
 }
 
 function parseCSV() {
@@ -204,6 +259,9 @@ function parseCSV() {
     const dates = Object.keys(routes[vehicle]);
     console.log(`🚗 Vehicle ${vehicle}: ${dates.length} days of data (${dates[0]} to ${dates[dates.length - 1]})`);
   }
+  
+  // Save to MongoDB
+  saveToMongoDB(existingRoutes);
 }
 
 parseCSV();

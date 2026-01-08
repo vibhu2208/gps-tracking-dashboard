@@ -1,13 +1,35 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { getVehicles, getRouteData, getAlerts, getAllVehicleData, exportToCSV } from '@/lib/data';
-import { Download, FileText, Calendar, Car } from 'lucide-react';
+import { Download, FileText, Car } from 'lucide-react';
 import { format, subDays, startOfWeek, endOfWeek, startOfMonth, endOfMonth } from 'date-fns';
+import { Vehicle } from '@/types';
+import DatePicker from '@/components/DatePicker';
 
 export default function ReportsPage() {
-  const vehicles = getVehicles();
-  const [selectedVehicle, setSelectedVehicle] = useState(vehicles[0]?.id || '');
+  const [vehicles, setVehicles] = useState<Vehicle[]>([]);
+  const [alerts, setAlerts] = useState<any[]>([]);
+  const [selectedVehicle, setSelectedVehicle] = useState('');
+
+  useEffect(() => {
+    const loadVehicles = async () => {
+      const data = await getVehicles();
+      setVehicles(data);
+      if (data.length > 0) {
+        setSelectedVehicle(data[0].id);
+      }
+    };
+    loadVehicles();
+  }, []);
+
+  useEffect(() => {
+    const loadAlerts = async () => {
+      const data = await getAlerts();
+      setAlerts(data);
+    };
+    loadAlerts();
+  }, []);
   const [selectedDate, setSelectedDate] = useState('2025-12-28');
   const [selectedWeekEnd, setSelectedWeekEnd] = useState('2025-12-28');
   const [reportPeriod, setReportPeriod] = useState<'daily' | 'weekly' | 'monthly'>('daily');
@@ -85,10 +107,10 @@ export default function ReportsPage() {
     }
   };
 
-  const handleExportAlerts = () => {
+  const handleExportAlerts = async () => {
     setIsExporting(true);
     try {
-      const alerts = getAlerts();
+      const alerts = await getAlerts();
       const exportData = alerts.map(alert => ({
         Vehicle: alert.vehicleName,
         VehicleID: alert.vehicleId,
@@ -266,20 +288,11 @@ export default function ReportsPage() {
               <label className="block text-sm font-medium text-gray-700 mb-2">
                 Select Date
               </label>
-              <div className="relative">
-                <Calendar className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
-                <select
-                  value={selectedDate}
-                  onChange={(e) => setSelectedDate(e.target.value)}
-                  className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none"
-                >
-                  {dateOptions.map((date) => (
-                    <option key={date.toISOString()} value={format(date, 'yyyy-MM-dd')}>
-                      {format(date, 'MMMM dd, yyyy')}
-                    </option>
-                  ))}
-                </select>
-              </div>
+              <DatePicker
+                selectedDate={selectedDate}
+                availableDates={dateOptions.map(date => format(date, 'yyyy-MM-dd'))}
+                onChange={setSelectedDate}
+              />
             </div>
 
             <button
@@ -369,20 +382,11 @@ export default function ReportsPage() {
               <label className="block text-sm font-medium text-gray-700 mb-2">
                 Select Date
               </label>
-              <div className="relative">
-                <Calendar className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
-                <select
-                  value={selectedDate}
-                  onChange={(e) => setSelectedDate(e.target.value)}
-                  className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none"
-                >
-                  {dateOptions.map((date) => (
-                    <option key={date.toISOString()} value={format(date, 'yyyy-MM-dd')}>
-                      {format(date, 'MMMM dd, yyyy')}
-                    </option>
-                  ))}
-                </select>
-              </div>
+              <DatePicker
+                selectedDate={selectedDate}
+                availableDates={dateOptions.map(date => format(date, 'yyyy-MM-dd'))}
+                onChange={setSelectedDate}
+              />
             </div>
 
             <div className="bg-gray-50 rounded-lg p-4 space-y-2">
@@ -430,7 +434,7 @@ export default function ReportsPage() {
               </ul>
               <div className="pt-2 border-t border-gray-200 mt-3">
                 <span className="text-gray-600">Total Alerts:</span>
-                <span className="ml-2 font-medium text-gray-900">{getAlerts().length}</span>
+                <span className="ml-2 font-medium text-gray-900">{alerts.length}</span>
               </div>
             </div>
 
@@ -461,20 +465,17 @@ export default function ReportsPage() {
               <label className="block text-sm font-medium text-gray-700 mb-2">
                 Select Week End Date
               </label>
-              <div className="relative">
-                <Calendar className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
-                <select
-                  value={selectedWeekEnd}
-                  onChange={(e) => setSelectedWeekEnd(e.target.value)}
-                  className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none"
-                >
-                  {dateOptions.map((date) => (
-                    <option key={date.toISOString()} value={format(date, 'yyyy-MM-dd')}>
-                      Week ending {format(date, 'MMMM dd, yyyy')}
-                    </option>
-                  ))}
-                </select>
-              </div>
+              <select
+                value={selectedWeekEnd}
+                onChange={(e) => setSelectedWeekEnd(e.target.value)}
+                className="w-full pl-4 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none"
+              >
+                {dateOptions.map((date) => (
+                  <option key={date.toISOString()} value={format(date, 'yyyy-MM-dd')}>
+                    Week ending {format(date, 'MMMM dd, yyyy')}
+                  </option>
+                ))}
+              </select>
               <p className="text-xs text-gray-500 mt-1">
                 Report will include 7 days ending on selected date
               </p>
