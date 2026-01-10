@@ -18,7 +18,9 @@ export default function VehiclesPage() {
     const loadVehicles = async () => {
       setIsLoading(true);
       const data = await getVehicles();
-      setVehicles(data);
+      // Shuffle vehicles array randomly
+      const shuffled = [...data].sort(() => Math.random() - 0.5);
+      setVehicles(shuffled);
       setIsLoading(false);
     };
     loadVehicles();
