@@ -292,42 +292,56 @@ export default function VehicleDetailPage() {
             <div className="bg-white rounded-xl border border-gray-200 p-6">
               <div className="flex items-center justify-between mb-4">
                 <h2 className="text-lg font-semibold text-gray-900">Trip Summary</h2>
-                <div className="flex items-center gap-2 text-sm">
-                  <span className="text-gray-600">Route:</span>
-                  <span className="font-semibold text-green-600">
-                    {routeData.points[0].lat > 28.5 && routeData.points[0].lat < 28.8 ? 'Delhi NCR' :
-                     routeData.points[0].lat > 19.0 && routeData.points[0].lat < 19.3 ? 'Mumbai' :
-                     routeData.points[0].lat > 12.8 && routeData.points[0].lat < 13.1 ? 'Bangalore' :
-                     routeData.points[0].lat > 18.4 && routeData.points[0].lat < 18.6 ? 'Pune' : vehicle.city}
-                  </span>
-                  <span className="text-gray-400">→</span>
-                  <span className="font-semibold text-red-600">
-                    {routeData.points[routeData.points.length - 1].lat > 28.5 && routeData.points[routeData.points.length - 1].lat < 28.8 ? 'Delhi NCR' :
-                     routeData.points[routeData.points.length - 1].lat > 19.0 && routeData.points[routeData.points.length - 1].lat < 19.3 ? 'Mumbai' :
-                     routeData.points[routeData.points.length - 1].lat > 12.8 && routeData.points[routeData.points.length - 1].lat < 13.1 ? 'Bangalore' :
-                     routeData.points[routeData.points.length - 1].lat > 18.4 && routeData.points[routeData.points.length - 1].lat < 18.6 ? 'Pune' : vehicle.city}
-                  </span>
-                </div>
               </div>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                 {(() => {
-                  // Calculate driving duration from TRAVEL_OUT and TRAVEL_BACK phases
+                  // Calculate actual driving duration from timestamps
                   const travelPoints = routeData.points.filter(p => 
                     p.phase === 'TRAVEL_OUT' || p.phase === 'TRAVEL_BACK'
                   );
-                  const drivingDuration = travelPoints.length; // Each point is 1 minute
                   
-                  // Calculate working duration
+                  let drivingDurationMinutes = 0;
+                  if (travelPoints.length > 1) {
+                    const firstTravelTime = new Date(travelPoints[0].timestamp).getTime();
+                    const lastTravelTime = new Date(travelPoints[travelPoints.length - 1].timestamp).getTime();
+                    drivingDurationMinutes = Math.round((lastTravelTime - firstTravelTime) / (1000 * 60));
+                  }
+                  
+                  // Calculate actual working duration from timestamps
                   const workingPoints = routeData.points.filter(p => p.phase === 'WORKING');
-                  const workingDuration = workingPoints.length;
+                  let workingDurationMinutes = 0;
+                  if (workingPoints.length > 1) {
+                    const firstWorkTime = new Date(workingPoints[0].timestamp).getTime();
+                    const lastWorkTime = new Date(workingPoints[workingPoints.length - 1].timestamp).getTime();
+                    workingDurationMinutes = Math.round((lastWorkTime - firstWorkTime) / (1000 * 60));
+                  }
                   
-                  // Randomize distance based on date (consistent per day)
-                  const dateHash = selectedDate.split('-').reduce((a, b) => a + parseInt(b), 0);
-                  const baseDistance = 15 + (dateHash % 20); // 15-35 km range
-                  const randomDistance = (baseDistance + Math.sin(dateHash) * 5).toFixed(1);
+                  // Calculate actual distance using Haversine formula
+                  const calculateDistance = (lat1: number, lng1: number, lat2: number, lng2: number): number => {
+                    const R = 6371; // Earth radius in km
+                    const dLat = (lat2 - lat1) * Math.PI / 180;
+                    const dLng = (lng2 - lng1) * Math.PI / 180;
+                    const a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+                              Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+                              Math.sin(dLng / 2) * Math.sin(dLng / 2);
+                    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+                    return R * c;
+                  };
                   
-                  // Randomize avg speed (25-45 km/h for JCB)
-                  const avgSpeed = Math.round(25 + (dateHash % 20));
+                  let totalDistance = 0;
+                  for (let i = 0; i < routeData.points.length - 1; i++) {
+                    const p1 = routeData.points[i];
+                    const p2 = routeData.points[i + 1];
+                    totalDistance += calculateDistance(p1.lat, p1.lng, p2.lat, p2.lng);
+                  }
+                  
+                  // Format durations
+                  const formatDuration = (minutes: number): string => {
+                    if (minutes < 60) return `${minutes} min`;
+                    const hours = Math.floor(minutes / 60);
+                    const mins = minutes % 60;
+                    return mins > 0 ? `${hours}h ${mins}m` : `${hours}h`;
+                  };
                   
                   return (
                     <>
@@ -337,7 +351,7 @@ export default function VehicleDetailPage() {
                         </div>
                         <div>
                           <p className="text-sm text-gray-600">Distance</p>
-                          <p className="text-lg font-semibold text-gray-900">{randomDistance} km</p>
+                          <p className="text-lg font-semibold text-gray-900">{totalDistance.toFixed(1)} km</p>
                         </div>
                       </div>
                       <div className="flex items-center gap-3">
@@ -346,7 +360,7 @@ export default function VehicleDetailPage() {
                         </div>
                         <div>
                           <p className="text-sm text-gray-600">Driving</p>
-                          <p className="text-lg font-semibold text-gray-900">{drivingDuration} min</p>
+                          <p className="text-lg font-semibold text-gray-900">{formatDuration(drivingDurationMinutes)}</p>
                         </div>
                       </div>
                       <div className="flex items-center gap-3">
@@ -355,16 +369,7 @@ export default function VehicleDetailPage() {
                         </div>
                         <div>
                           <p className="text-sm text-gray-600">Working</p>
-                          <p className="text-lg font-semibold text-gray-900">{workingDuration} min</p>
-                        </div>
-                      </div>
-                      <div className="flex items-center gap-3">
-                        <div className="w-12 h-12 bg-purple-50 rounded-lg flex items-center justify-center">
-                          <Gauge className="w-6 h-6 text-purple-600" />
-                        </div>
-                        <div>
-                          <p className="text-sm text-gray-600">Avg Speed</p>
-                          <p className="text-lg font-semibold text-gray-900">{avgSpeed} km/h</p>
+                          <p className="text-lg font-semibold text-gray-900">{formatDuration(workingDurationMinutes)}</p>
                         </div>
                       </div>
                     </>

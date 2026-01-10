@@ -110,7 +110,6 @@ export const getAllVehicleData = async (vehicleId: string): Promise<any[]> => {
           allDataPoints.push({
             Vehicle: vehicle?.name || vehicleId,
             PlateNumber: vehicle?.plateNumber || vehicleId,
-            Driver: vehicle?.driver || 'Unknown',
             Ward: vehicle?.ward || 'Unknown',
             City: vehicle?.city || 'Unknown',
             Date: date,

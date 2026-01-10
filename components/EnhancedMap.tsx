@@ -274,8 +274,8 @@ export default function EnhancedMap({
                   <strong style="color: #3B82F6;">${vehicleNumber}</strong>
                 </div>
                 <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
-                  <span>Speed:</span>
-                  <strong style="color: ${currentPoint.speed > overspeedThreshold ? '#EF4444' : '#10B981'}">${currentPoint.speed} km/h</strong>
+                  <span>Status:</span>
+                  <strong style="color: #10B981;">${displayStatus}</strong>
                 </div>
                 <div style="display: flex; justify-content: space-between;">
                   <span>Location:</span>
@@ -316,8 +316,8 @@ export default function EnhancedMap({
               <strong style="color: #3B82F6;">${vehicleNumber}</strong>
             </div>
             <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
-              <span>Speed:</span>
-              <strong style="color: ${currentPoint.speed > overspeedThreshold ? '#EF4444' : '#10B981'}">${currentPoint.speed} km/h</strong>
+              <span>Status:</span>
+              <strong style="color: #10B981;">${displayStatus}</strong>
             </div>
             <div style="display: flex; justify-content: space-between;">
               <span>Location:</span>

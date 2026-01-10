@@ -76,6 +76,7 @@ export default function ReportsPage() {
         return {
           Vehicle: vehicle?.name,
           PlateNumber: vehicle?.plateNumber,
+          Ward: vehicle?.ward || 'Unknown',
           Date: format(pointDate, 'yyyy-MM-dd'),
           Time: format(pointDate, 'HH:mm:ss'),
           Timestamp: format(pointDate, 'yyyy-MM-dd HH:mm:ss'),
@@ -357,7 +358,7 @@ export default function ReportsPage() {
                 <li>• All GPS coordinates and timestamps</li>
                 <li>• Speed data for every point</li>
                 <li>• Location and status information</li>
-                <li>• Driver and vehicle details</li>
+                <li>• Ward and vehicle details</li>
                 <li>• Complete journey history across all dates</li>
                 <li>• Stop/movement indicators</li>
               </ul>
@@ -571,7 +572,7 @@ export default function ReportsPage() {
               <ul className="space-y-1 text-gray-600">
                 <li>✓ GPS coordinates and timestamps</li>
                 <li>✓ Speed and distance metrics</li>
-                <li>✓ Driver and vehicle information</li>
+                <li>✓ Ward and vehicle information</li>
                 <li>✓ Alert history and severity</li>
                 <li>✓ Trip summaries and analytics</li>
               </ul>
