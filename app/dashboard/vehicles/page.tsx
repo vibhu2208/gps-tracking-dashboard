@@ -72,20 +72,20 @@ export default function VehiclesPage() {
           </div>
         ) : (
           <>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredVehicles.map((vehicle) => (
-            <VehicleCard
-              key={vehicle.id}
-              vehicle={vehicle}
-              onClick={() => router.push(`/dashboard/vehicles/${vehicle.id}`)}
-            />
-          ))}
-        </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {filteredVehicles.map((vehicle) => (
+                <VehicleCard
+                  key={vehicle.id}
+                  vehicle={vehicle}
+                  onClick={() => router.push(`/dashboard/vehicles/${vehicle.id}`)}
+                />
+              ))}
+            </div>
 
-        {filteredVehicles.length === 0 && (
-          <div className="text-center py-12">
-            <p className="text-gray-500">No vehicles found matching your criteria</p>
-          </div>
+            {filteredVehicles.length === 0 && (
+              <div className="text-center py-12">
+                <p className="text-gray-500">No vehicles found matching your criteria</p>
+              </div>
             )}
           </>
         )}

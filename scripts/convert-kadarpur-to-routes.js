@@ -8,13 +8,8 @@
 const fs = require('fs');
 const path = require('path');
 const { MongoClient } = require('mongodb');
-// Try .env.local first, then .env
-require('dotenv').config({ path: path.join(__dirname, '../.env.local') });
-if (!process.env.MONGODB_URI) {
-  require('dotenv').config({ path: path.join(__dirname, '../.env') });
-}
 
-const csvFilePath = path.join(__dirname, '../data/ward31_hr26ed7915_aug25_dec24_2025.csv');
+const csvFilePath = path.join(__dirname, '../data/kadarpur_hr38t3206_nov23_dec24_2025.csv');
 const outputFilePath = path.join(__dirname, '../public/data/routes.json');
 
 // Convert IST timestamp to UTC ISO string
@@ -54,8 +49,8 @@ function calculateSpeed(lat1, lng1, lat2, lng2, timeDiffMinutes) {
 }
 
 async function saveToMongoDB(routes) {
-  const uri = process.env.MONGODB_URI || 'mongodb+srv://krishnaupadhyay112211_db_user:Ram161003@gps-tracker.ozcq3tw.mongodb.net/';
-  const dbName = process.env.MONGODB_DB_NAME || 'gps_tracker';
+  const uri = 'mongodb+srv://krishnaupadhyay112211_db_user:Ram161003@gps-tracker.ozcq3tw.mongodb.net/';
+  const dbName = 'gps_tracker';
   const client = new MongoClient(uri, { 
     serverSelectionTimeoutMS: 10000,
     connectTimeoutMS: 10000 
@@ -77,7 +72,6 @@ async function saveToMongoDB(routes) {
           vehicleId,
           date,
           points: routeData.points || [],
-          locality: routeData.locality || null,
           summary: routeData.summary || {
             totalDistance: 0,
             drivingDuration: 0,
@@ -251,8 +245,14 @@ function parseCSV() {
     }
   }
   
-  // Skip JSON file write if it's too large - save directly to MongoDB
-  // The JSON file can become too large with many routes
+  // Ensure directory exists
+  const outputDir = path.dirname(outputFilePath);
+  if (!fs.existsSync(outputDir)) {
+    fs.mkdirSync(outputDir, { recursive: true });
+  }
+  
+  fs.writeFileSync(outputFilePath, JSON.stringify(existingRoutes, null, 2));
+  console.log(`✅ Routes data generated successfully at ${outputFilePath}`);
   console.log(`📊 Total vehicles: ${Object.keys(existingRoutes).length}`);
   
   for (const vehicle in routes) {
@@ -260,8 +260,8 @@ function parseCSV() {
     console.log(`🚗 Vehicle ${vehicle}: ${dates.length} days of data (${dates[0]} to ${dates[dates.length - 1]})`);
   }
   
-  // Save to MongoDB (only save the new routes, not all existing routes)
-  saveToMongoDB(routes);
+  // Save to MongoDB
+  saveToMongoDB(existingRoutes);
 }
 
 parseCSV();

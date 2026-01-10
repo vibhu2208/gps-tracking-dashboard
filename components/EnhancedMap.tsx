@@ -143,8 +143,8 @@ export default function EnhancedMap({
               const data = await response.json();
               if (data.routes && data.routes.length > 0 && data.routes[0].geometry) {
                 segmentCoordinates = data.routes[0].geometry.coordinates;
-          }
-        }
+              }
+            }
           } catch (error) {
             // If Directions API fails, try interpolating more points along the straight line
             const numIntermediatePoints = Math.max(3, Math.floor(distance / 5)); // Add point every ~5 meters
@@ -154,7 +154,7 @@ export default function EnhancedMap({
               const lng = startPoint.lng + (endPoint.lng - startPoint.lng) * progress;
               const lat = startPoint.lat + (endPoint.lat - startPoint.lat) * progress;
               segmentCoordinates.push([lng, lat]);
-        }
+            }
           }
         } else if (distance > 0) {
           // For short segments, add intermediate points to make lines more visible
@@ -173,27 +173,27 @@ export default function EnhancedMap({
 
         // Add source for this segment
         map.addSource(`route-segment-${i}`, {
-              type: 'geojson',
-              data: {
-                type: 'Feature',
-                properties: {},
-                geometry: {
-                  type: 'LineString',
+          type: 'geojson',
+          data: {
+            type: 'Feature',
+            properties: {},
+            geometry: {
+              type: 'LineString',
               coordinates: segmentCoordinates
-                }
-              }
-            });
+            }
+          }
+        });
 
         // Add layer for this segment with thicker, more visible lines
-            map.addLayer({
+        map.addLayer({
           id: `route-segment-${i}`,
-              type: 'line',
+          type: 'line',
           source: `route-segment-${i}`,
-              layout: {
-                'line-join': 'round',
-                'line-cap': 'round'
-              },
-              paint: {
+          layout: {
+            'line-join': 'round',
+            'line-cap': 'round'
+          },
+          paint: {
             'line-color': '#3B82F6',
             'line-width': 6, // Increased from 4 to 6 for better visibility
             'line-opacity': 0.9 // Increased from 0.8 to 0.9 for better visibility

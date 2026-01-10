@@ -131,7 +131,3 @@ async function checkAllVehicles() {
 
 checkAllVehicles();
 
-
-
-
-
