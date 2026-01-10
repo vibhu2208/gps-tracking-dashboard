@@ -6,7 +6,7 @@ import { getVehicleById, getRouteData, getAlertsByVehicle, getAvailableDates, ex
 import { RouteData } from '@/types';
 import EnhancedMap from '@/components/EnhancedMap';
 import AlertCard from '@/components/AlertCard';
-import { Play, Pause, RotateCcw, Clock, Gauge, Route, ArrowLeft, Download, Briefcase } from 'lucide-react';
+import { Play, Pause, RotateCcw, Clock, Gauge, Route, ArrowLeft, Download, Briefcase, Calendar, MapPin } from 'lucide-react';
 import { format } from 'date-fns';
 import DatePicker from '@/components/DatePicker';
 
@@ -139,61 +139,75 @@ export default function VehicleDetailPage() {
   }
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-8">
       <div className="flex items-center gap-4">
         <button
           onClick={() => router.push('/dashboard/vehicles')}
-          className="p-2 hover:bg-gray-100 rounded-lg transition"
+          className="p-3 hover:bg-gradient-to-br hover:from-blue-50 hover:to-indigo-50 rounded-xl transition-all border-2 border-transparent hover:border-blue-200"
         >
-          <ArrowLeft className="w-5 h-5 text-gray-600" />
+          <ArrowLeft className="w-5 h-5 text-gray-700" />
         </button>
-        <div>
-          <h1 className="text-2xl font-bold text-gray-900">{vehicle.name}</h1>
-          <p className="text-gray-600">{vehicle.plateNumber} • {vehicle.driver}</p>
+        <div className="flex-1">
+          <h1 className="text-3xl font-bold bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">{vehicle.name}</h1>
+          <p className="text-gray-600 mt-1 flex items-center gap-2">
+            <span className="font-semibold">{vehicle.plateNumber}</span>
+            <span>•</span>
+            <span>{vehicle.driver}</span>
+          </p>
+        </div>
+        <div className={`px-4 py-2 rounded-xl font-semibold text-sm ${
+          vehicle.status === 'moving' ? 'bg-gradient-to-r from-green-500 to-emerald-600 text-white' :
+          vehicle.status === 'idle' ? 'bg-gradient-to-r from-amber-500 to-orange-600 text-white' :
+          'bg-gradient-to-r from-gray-500 to-slate-600 text-white'
+        }`}>
+          {vehicle.status.toUpperCase()}
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        <div className="lg:col-span-2 space-y-6">
-          <div className="bg-white rounded-xl border border-gray-200 p-6">
-            <div className="flex items-center justify-between mb-4">
-              <h2 className="text-lg font-semibold text-gray-900">Route History</h2>
-              <div className="flex items-center gap-3">
-                <button
-                  onClick={handleExportRouteData}
-                  disabled={!routeData || isLoading}
-                  className="flex items-center gap-2 px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition disabled:opacity-50 disabled:cursor-not-allowed text-sm"
-                >
-                  <Download className="w-4 h-4" />
-                  Export Excel
-                </button>
-                <DatePicker
-                  selectedDate={selectedDate}
-                  availableDates={availableDates}
-                  onChange={setSelectedDate}
-                  disabled={isLoading}
-                />
-              </div>
-            </div>
-
-            {isLoading ? (
-              <div className="h-96 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
-                  <p className="text-gray-600">Loading route data...</p>
-                </div>
-              </div>
-            ) : routeData ? (
-              <>
-                <div className="h-96 mb-4">
-                  <EnhancedMap
-                    points={routeData.points}
-                    currentIndex={currentIndex}
-                    showPlayback={true}
-                    overspeedThreshold={80}
-                    vehicleNumber={vehicle.plateNumber}
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="lg:col-span-2 space-y-8">
+          <div className="bg-white rounded-2xl border-2 border-gray-200 shadow-sm overflow-visible">
+            <div className="bg-gradient-to-r from-slate-50 to-gray-50 px-6 py-5 border-b-2 border-gray-200 overflow-visible">
+              <div className="flex items-center justify-between">
+                <h2 className="text-xl font-bold text-gray-900">Route History</h2>
+                <div className="flex items-center gap-3 relative z-50">
+                  <button
+                    onClick={handleExportRouteData}
+                    disabled={!routeData || isLoading}
+                    className="flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-green-600 to-emerald-600 text-white rounded-xl hover:from-green-700 hover:to-emerald-700 transition-all shadow-md hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed text-sm font-semibold"
+                  >
+                    <Download className="w-4 h-4" />
+                    Export Excel
+                  </button>
+                  <DatePicker
+                    selectedDate={selectedDate}
+                    availableDates={availableDates}
+                    onChange={setSelectedDate}
+                    disabled={isLoading}
                   />
                 </div>
+              </div>
+            </div>
+            <div className="p-6">
+
+              {isLoading ? (
+                <div className="h-96 flex items-center justify-center">
+                  <div className="text-center">
+                    <div className="animate-spin rounded-full h-16 w-16 border-4 border-gray-200 border-t-blue-600 mx-auto mb-4"></div>
+                    <p className="text-gray-600 font-medium">Loading route data...</p>
+                  </div>
+                </div>
+              ) : routeData ? (
+                <>
+                  <div className="h-96 mb-6 rounded-xl overflow-hidden border-2 border-gray-200">
+                    <EnhancedMap
+                      points={routeData.points}
+                      currentIndex={currentIndex}
+                      showPlayback={true}
+                      overspeedThreshold={80}
+                      vehicleNumber={vehicle.plateNumber}
+                    />
+                  </div>
 
                 <div className="space-y-4">
                   <div className="flex items-center gap-2">
@@ -281,19 +295,23 @@ export default function VehicleDetailPage() {
                   )}
                 </div>
               </>
-            ) : (
-              <div className="text-center py-12">
-                <p className="text-gray-500">No route data available for this date</p>
-              </div>
-            )}
+              ) : (
+                <div className="text-center py-12">
+                  <p className="text-gray-500">No route data available for this date</p>
+                </div>
+              )}
+            </div>
           </div>
 
           {routeData && !isLoading && (
-            <div className="bg-white rounded-xl border border-gray-200 p-6">
-              <div className="flex items-center justify-between mb-4">
-                <h2 className="text-lg font-semibold text-gray-900">Trip Summary</h2>
+            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl border-2 border-blue-200 p-6 shadow-sm">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center shadow-lg">
+                  <Briefcase className="w-5 h-5 text-white" />
+                </div>
+                <h2 className="text-xl font-bold text-gray-900">Trip Summary</h2>
               </div>
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
                 {(() => {
                   // Calculate actual driving duration from timestamps
                   const travelPoints = routeData.points.filter(p => 
@@ -345,31 +363,37 @@ export default function VehicleDetailPage() {
                   
                   return (
                     <>
-                      <div className="flex items-center gap-3">
-                        <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center">
-                          <Route className="w-6 h-6 text-blue-600" />
-                        </div>
-                        <div>
-                          <p className="text-sm text-gray-600">Distance</p>
-                          <p className="text-lg font-semibold text-gray-900">{totalDistance.toFixed(1)} km</p>
-                        </div>
-                      </div>
-                      <div className="flex items-center gap-3">
-                        <div className="w-12 h-12 bg-green-50 rounded-lg flex items-center justify-center">
-                          <Clock className="w-6 h-6 text-green-600" />
-                        </div>
-                        <div>
-                          <p className="text-sm text-gray-600">Driving</p>
-                          <p className="text-lg font-semibold text-gray-900">{formatDuration(drivingDurationMinutes)}</p>
+                      <div className="bg-white rounded-xl p-4 border-2 border-blue-100 hover:border-blue-300 transition-all">
+                        <div className="flex items-center gap-3">
+                          <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-md">
+                            <Route className="w-6 h-6 text-white" />
+                          </div>
+                          <div>
+                            <p className="text-xs font-semibold text-gray-600 uppercase tracking-wide">Distance</p>
+                            <p className="text-xl font-bold text-gray-900">{totalDistance.toFixed(1)} km</p>
+                          </div>
                         </div>
                       </div>
-                      <div className="flex items-center gap-3">
-                        <div className="w-12 h-12 bg-orange-50 rounded-lg flex items-center justify-center">
-                          <Briefcase className="w-6 h-6 text-orange-600" />
+                      <div className="bg-white rounded-xl p-4 border-2 border-purple-100 hover:border-purple-300 transition-all">
+                        <div className="flex items-center gap-3">
+                          <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center shadow-md">
+                            <Calendar className="w-6 h-6 text-white" />
+                          </div>
+                          <div>
+                            <p className="text-xs font-semibold text-gray-600 uppercase tracking-wide">Date</p>
+                            <p className="text-xl font-bold text-gray-900">{format(new Date(selectedDate), 'MMM dd')}</p>
+                          </div>
                         </div>
-                        <div>
-                          <p className="text-sm text-gray-600">Working</p>
-                          <p className="text-lg font-semibold text-gray-900">{formatDuration(workingDurationMinutes)}</p>
+                      </div>
+                      <div className="bg-white rounded-xl p-4 border-2 border-green-100 hover:border-green-300 transition-all">
+                        <div className="flex items-center gap-3">
+                          <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center shadow-md">
+                            <MapPin className="w-6 h-6 text-white" />
+                          </div>
+                          <div>
+                            <p className="text-xs font-semibold text-gray-600 uppercase tracking-wide">City</p>
+                            <p className="text-xl font-bold text-gray-900">Gurugram</p>
+                          </div>
                         </div>
                       </div>
                     </>

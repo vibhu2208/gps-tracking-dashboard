@@ -80,16 +80,16 @@ export default function DatePicker({ selectedDate, availableDates, onChange, dis
         type="button"
         onClick={() => !disabled && setIsOpen(!isOpen)}
         disabled={disabled}
-        className="flex items-center gap-2 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none hover:bg-gray-50 transition disabled:opacity-50 disabled:cursor-not-allowed bg-white"
+        className="flex items-center gap-2 px-4 py-2.5 border-2 border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none hover:bg-gray-50 transition disabled:opacity-50 disabled:cursor-not-allowed bg-white font-semibold text-sm"
       >
-        <Calendar className="w-5 h-5 text-gray-400" />
+        <Calendar className="w-5 h-5 text-gray-600" />
         <span className="text-gray-900">
           {selectedDate ? format(new Date(selectedDate), 'MMM dd, yyyy') : 'Select date'}
         </span>
       </button>
 
       {isOpen && (
-        <div className="absolute top-full left-0 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg z-50 p-4 min-w-[320px]">
+        <div className="absolute top-full right-0 mt-2 bg-white border-2 border-blue-300 rounded-xl shadow-2xl z-[100] p-4 min-w-[320px]">
           {/* Calendar Header */}
           <div className="flex items-center justify-between mb-4">
             <button

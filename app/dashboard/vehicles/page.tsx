@@ -18,12 +18,18 @@ export default function VehiclesPage() {
     const loadVehicles = async () => {
       setIsLoading(true);
       const data = await getVehicles();
-      // Shuffle vehicles array randomly
-      const shuffled = [...data].sort(() => Math.random() - 0.5);
-      setVehicles(shuffled);
+      setVehicles(data);
       setIsLoading(false);
     };
     loadVehicles();
+  }, []);
+
+  // Shuffle vehicles only on client side after initial load to avoid hydration mismatch
+  useEffect(() => {
+    if (vehicles.length > 0) {
+      const shuffled = [...vehicles].sort(() => Math.random() - 0.5);
+      setVehicles(shuffled);
+    }
   }, []);
 
   const filteredVehicles = vehicles.filter((vehicle) => {
