@@ -14,6 +14,7 @@ interface DatePickerProps {
 export default function DatePicker({ selectedDate, availableDates, onChange, disabled = false }: DatePickerProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [currentMonth, setCurrentMonth] = useState(new Date(selectedDate || new Date()));
+  const [showHolidayPopup, setShowHolidayPopup] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   // Close dropdown when clicking outside
@@ -56,8 +57,18 @@ export default function DatePicker({ selectedDate, availableDates, onChange, dis
     return isSameDay(date, new Date(selectedDate));
   };
 
+  const isHoliday = (date: Date) => {
+    const month = date.getMonth();
+    const day = date.getDate();
+    return month === 9 && day === 20;
+  };
+
   const handleDateClick = (date: Date) => {
     const dateStr = format(date, 'yyyy-MM-dd');
+    if (isHoliday(date)) {
+      setShowHolidayPopup(true);
+      return;
+    }
     if (isDateAvailable(date)) {
       onChange(dateStr);
       setIsOpen(false);
@@ -127,6 +138,7 @@ export default function DatePicker({ selectedDate, availableDates, onChange, dis
               const isAvailable = isDateAvailable(day);
               const isSelected = isDateSelected(day);
               const isToday = isSameDay(day, new Date());
+              const holiday = isHoliday(day);
 
               return (
                 <button
@@ -134,16 +146,19 @@ export default function DatePicker({ selectedDate, availableDates, onChange, dis
                   type="button"
                   onClick={() => handleDateClick(day)}
                   disabled={!isAvailable || !isCurrentMonth}
+                  title={holiday && isCurrentMonth ? 'Diwali Holiday' : ''}
                   className={`
-                    aspect-square flex items-center justify-center text-sm rounded transition
+                    aspect-square flex items-center justify-center text-sm rounded transition relative
                     ${!isCurrentMonth ? 'text-gray-300' : ''}
-                    ${isSelected 
+                    ${holiday && isCurrentMonth
+                      ? 'bg-orange-500 text-white font-bold cursor-pointer hover:bg-orange-600'
+                      : isSelected 
                       ? 'bg-blue-600 text-white font-semibold' 
                       : isAvailable && isCurrentMonth
                       ? 'text-gray-900 hover:bg-blue-50 cursor-pointer'
                       : 'text-gray-400 cursor-not-allowed'
                     }
-                    ${isToday && !isSelected ? 'ring-2 ring-blue-300' : ''}
+                    ${isToday && !isSelected && !holiday ? 'ring-2 ring-blue-300' : ''}
                   `}
                 >
                   {format(day, 'd')}
@@ -157,6 +172,31 @@ export default function DatePicker({ selectedDate, availableDates, onChange, dis
             <p className="text-xs text-gray-500 text-center">
               {availableDates.length} date{availableDates.length !== 1 ? 's' : ''} available
             </p>
+          </div>
+        </div>
+      )}
+
+      {/* Holiday Popup */}
+      {showHolidayPopup && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-[200]">
+          <div className="bg-white rounded-2xl shadow-2xl p-8 max-w-md mx-4 transform transition-all">
+            <div className="text-center">
+              <div className="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-orange-100 mb-4">
+                <Calendar className="h-8 w-8 text-orange-600" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                🪔 Diwali Holiday
+              </h3>
+              <p className="text-gray-600 mb-6">
+                October 20th is Diwali Holiday. No data available for this day.
+              </p>
+              <button
+                onClick={() => setShowHolidayPopup(false)}
+                className="w-full bg-orange-500 text-white px-6 py-3 rounded-xl font-semibold hover:bg-orange-600 transition-colors"
+              >
+                Close
+              </button>
+            </div>
           </div>
         </div>
       )}
