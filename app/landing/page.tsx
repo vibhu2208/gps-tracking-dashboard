@@ -1,8 +1,171 @@
 'use client';
 
 import { useState } from 'react';
-import { MapPin, Shield, Clock, BarChart3, Zap, CheckCircle, Star, MessageCircle, Menu, X } from 'lucide-react';
+import { MapPin, Shield, Clock, BarChart3, Zap, CheckCircle, Star, MessageCircle, Menu, X, Send, Loader2 } from 'lucide-react';
 import Link from 'next/link';
+
+function ContactForm() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    company: '',
+    message: ''
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setSubmitStatus('success');
+        setFormData({ name: '', email: '', phone: '', company: '', message: '' });
+        setTimeout(() => setSubmitStatus('idle'), 5000);
+      } else {
+        setSubmitStatus('error');
+      }
+    } catch (error) {
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData(prev => ({
+      ...prev,
+      [e.target.name]: e.target.value
+    }));
+  };
+
+  return (
+    <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-xl border border-slate-700/50 rounded-3xl p-8 hover:border-blue-500/50 transition-all duration-500 animate-fade-in-up [animation-delay:0.4s]">
+      <h3 className="text-2xl font-bold mb-6 text-white">Send Us a Message</h3>
+      
+      <form onSubmit={handleSubmit} className="space-y-5">
+        <div>
+          <label htmlFor="name" className="block text-sm font-medium text-slate-300 mb-2">
+            Full Name *
+          </label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+            className="w-full px-4 py-3 bg-slate-900/50 border border-slate-700/50 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+            placeholder="John Doe"
+          />
+        </div>
+
+        <div>
+          <label htmlFor="email" className="block text-sm font-medium text-slate-300 mb-2">
+            Email Address *
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+            className="w-full px-4 py-3 bg-slate-900/50 border border-slate-700/50 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+            placeholder="john@example.com"
+          />
+        </div>
+
+        <div>
+          <label htmlFor="phone" className="block text-sm font-medium text-slate-300 mb-2">
+            Phone Number
+          </label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            value={formData.phone}
+            onChange={handleChange}
+            className="w-full px-4 py-3 bg-slate-900/50 border border-slate-700/50 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+            placeholder="+91 98765 43210"
+          />
+        </div>
+
+        <div>
+          <label htmlFor="company" className="block text-sm font-medium text-slate-300 mb-2">
+            Company Name
+          </label>
+          <input
+            type="text"
+            id="company"
+            name="company"
+            value={formData.company}
+            onChange={handleChange}
+            className="w-full px-4 py-3 bg-slate-900/50 border border-slate-700/50 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+            placeholder="Your Company"
+          />
+        </div>
+
+        <div>
+          <label htmlFor="message" className="block text-sm font-medium text-slate-300 mb-2">
+            Message *
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+            required
+            rows={5}
+            className="w-full px-4 py-3 bg-slate-900/50 border border-slate-700/50 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none"
+            placeholder="Tell us about your fleet tracking needs..."
+          />
+        </div>
+
+        {submitStatus === 'success' && (
+          <div className="bg-green-500/10 border border-green-500/30 rounded-xl p-4 text-green-400 text-sm">
+            ✓ Message sent successfully! We'll get back to you soon.
+          </div>
+        )}
+
+        {submitStatus === 'error' && (
+          <div className="bg-red-500/10 border border-red-500/30 rounded-xl p-4 text-red-400 text-sm">
+            ✗ Failed to send message. Please try again or email us directly.
+          </div>
+        )}
+
+        <button
+          type="submit"
+          disabled={isSubmitting}
+          className="w-full group px-6 py-4 bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 rounded-xl font-semibold text-white shadow-lg shadow-blue-500/30 hover:shadow-xl hover:shadow-blue-500/40 transition-all transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none flex items-center justify-center gap-2"
+        >
+          {isSubmitting ? (
+            <>
+              <Loader2 className="w-5 h-5 animate-spin" />
+              Sending...
+            </>
+          ) : (
+            <>
+              Send Message
+              <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </>
+          )}
+        </button>
+      </form>
+    </div>
+  );
+}
 
 export default function LandingPage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -29,8 +192,12 @@ export default function LandingPage() {
               <a href="#how-it-works" className="px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/5 rounded-full transition-all duration-200">How It Works</a>
               <a href="#pricing" className="px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/5 rounded-full transition-all duration-200">Pricing</a>
               <a href="#testimonials" className="px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/5 rounded-full transition-all duration-200">Testimonials</a>
-              <Link href="/dashboard" className="px-5 py-2 text-sm bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white rounded-full transition-all duration-200 font-medium shadow-lg shadow-blue-500/30">
-                Dashboard
+              <a href="#contact" className="px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/5 rounded-full transition-all duration-200">Contact</a>
+              <Link href="/login" className="px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/5 rounded-full transition-all duration-200">
+                Login
+              </Link>
+              <Link href="/signup" className="px-5 py-2 text-sm bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white rounded-full transition-all duration-200 font-medium shadow-lg shadow-blue-500/30">
+                Sign Up
               </Link>
             </div>
 
@@ -50,8 +217,12 @@ export default function LandingPage() {
               <a href="#how-it-works" className="block px-4 py-2 text-slate-300 hover:text-white hover:bg-white/5 rounded-full transition-all">How It Works</a>
               <a href="#pricing" className="block px-4 py-2 text-slate-300 hover:text-white hover:bg-white/5 rounded-full transition-all">Pricing</a>
               <a href="#testimonials" className="block px-4 py-2 text-slate-300 hover:text-white hover:bg-white/5 rounded-full transition-all">Testimonials</a>
-              <Link href="/dashboard" className="block px-4 py-2 bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white rounded-full text-center transition-all">
-                Dashboard
+              <a href="#contact" className="block px-4 py-2 text-slate-300 hover:text-white hover:bg-white/5 rounded-full transition-all">Contact</a>
+              <Link href="/login" className="block px-4 py-2 text-slate-300 hover:text-white hover:bg-white/5 rounded-full transition-all text-center">
+                Login
+              </Link>
+              <Link href="/signup" className="block px-4 py-2 bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white rounded-full text-center transition-all">
+                Sign Up
               </Link>
             </div>
           )}
@@ -944,6 +1115,106 @@ export default function LandingPage() {
               </div>
               <div className="text-gray-400">Journeys tracked in testing</div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Form Section */}
+      <section id="contact" className="relative py-32 px-6 overflow-hidden">
+        {/* Background Graphics */}
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-blue-950/10 to-transparent"></div>
+        <div className="absolute top-1/4 left-0 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-cyan-500/5 rounded-full blur-3xl"></div>
+        
+        <div className="max-w-7xl mx-auto relative">
+          <div className="text-center mb-16 animate-fade-in-up">
+            <div className="inline-block mb-4">
+              <span className="px-4 py-2 bg-gradient-to-r from-blue-500/10 to-cyan-500/10 border border-blue-500/20 rounded-full text-sm font-semibold text-blue-400 backdrop-blur-sm">
+                📧 Get In Touch
+              </span>
+            </div>
+            <h2 className="text-4xl md:text-6xl font-bold mb-6">
+              <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
+                Ready to Transform
+              </span>
+              <br />
+              <span className="bg-gradient-to-r from-white to-slate-300 bg-clip-text text-transparent">
+                Your Fleet Management?
+              </span>
+            </h2>
+            <p className="text-xl text-slate-400 max-w-3xl mx-auto">Drop us a message and our team will get back to you within 24 hours</p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            {/* Contact Info */}
+            <div className="space-y-8 animate-fade-in-up [animation-delay:0.2s]">
+              <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-xl border border-slate-700/50 rounded-3xl p-8 hover:border-blue-500/50 transition-all duration-500">
+                <h3 className="text-2xl font-bold mb-6 text-white">Why Choose Fleetzi?</h3>
+                <div className="space-y-6">
+                  <div className="flex items-start gap-4 group">
+                    <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-cyan-600 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform shadow-lg shadow-blue-500/30">
+                      <MapPin className="w-6 h-6 text-white" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-white mb-1">Real-Time Tracking</h4>
+                      <p className="text-slate-400 text-sm">Track your entire fleet with 1-second GPS updates</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start gap-4 group">
+                    <div className="w-12 h-12 bg-gradient-to-br from-green-600 to-emerald-600 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform shadow-lg shadow-green-500/30">
+                      <Shield className="w-6 h-6 text-white" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-white mb-1">Advanced Security</h4>
+                      <p className="text-slate-400 text-sm">Instant alerts for theft, overspeed, and violations</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start gap-4 group">
+                    <div className="w-12 h-12 bg-gradient-to-br from-purple-600 to-pink-600 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform shadow-lg shadow-purple-500/30">
+                      <BarChart3 className="w-6 h-6 text-white" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-white mb-1">Smart Analytics</h4>
+                      <p className="text-slate-400 text-sm">Detailed reports to optimize fuel and efficiency</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start gap-4 group">
+                    <div className="w-12 h-12 bg-gradient-to-br from-orange-600 to-red-600 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform shadow-lg shadow-orange-500/30">
+                      <Zap className="w-6 h-6 text-white" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-white mb-1">24/7 Support</h4>
+                      <p className="text-slate-400 text-sm">Round-the-clock assistance in local languages</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Contact Details */}
+              <div className="bg-gradient-to-br from-blue-500/10 to-cyan-500/10 backdrop-blur-xl border border-blue-500/30 rounded-3xl p-8">
+                <h3 className="text-xl font-bold mb-4 text-white">Contact Information</h3>
+                <div className="space-y-3">
+                  <div className="flex items-center gap-3 text-slate-300">
+                    <div className="w-8 h-8 bg-blue-500/20 rounded-lg flex items-center justify-center">
+                      <MessageCircle className="w-4 h-4 text-blue-400" />
+                    </div>
+                    <span>vaibhavsingh5373@gmail.com</span>
+                  </div>
+                  <div className="flex items-center gap-3 text-slate-300">
+                    <div className="w-8 h-8 bg-green-500/20 rounded-lg flex items-center justify-center">
+                      <MessageCircle className="w-4 h-4 text-green-400" />
+                    </div>
+                    <span>WhatsApp Support Available</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Contact Form */}
+            <ContactForm />
           </div>
         </div>
       </section>

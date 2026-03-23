@@ -5,5 +5,15 @@
     "password": "VIPIN@123",
     "name": "Vipin kundu",
     "role": "admin"
+  },
+  {
+    "id": "2",
+    "email": "testuser@fleetzi.in",
+    "password": "Test@123",
+    "name": "Test User",
+    "role": "user",
+    "phone": "+91-9876543210",
+    "timezone": "Asia/Kolkata",
+    "language": "en"
   }
 ]
