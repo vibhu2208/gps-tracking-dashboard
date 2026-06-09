@@ -33,74 +33,186 @@ export default function EnhancedMap({
   
   const [mapStyle, setMapStyle] = useState<'streets' | 'satellite'>('streets');
   const [isFullscreen, setIsFullscreen] = useState(false);
+  const [mapReady, setMapReady] = useState(false);
+  const skipNextStyleChange = useRef(true);
+
+  const clearRouteMarkers = () => {
+    startMarkerRef.current?.remove();
+    startMarkerRef.current = null;
+    endMarkerRef.current?.remove();
+    endMarkerRef.current = null;
+    stopMarkersRef.current.forEach(marker => marker.remove());
+    stopMarkersRef.current = [];
+  };
+
+  const clearPlaybackMarker = () => {
+    markerRef.current?.remove();
+    markerRef.current = null;
+    popupRef.current?.remove();
+    popupRef.current = null;
+  };
+
+  const buildPlaybackPopupHtml = (point: RoutePoint) => {
+    const locationName = point.location || 'Unknown Location';
+    const displayStatus = point.status === 'WORKING' || point.status === 'WorkingI'
+      ? 'WORKING'
+      : (point.status || 'Unknown');
+
+    return `
+      <div style="padding: 10px; min-width: 180px; font-family: system-ui, -apple-system, sans-serif;">
+        <div style="font-weight: 600; font-size: 14px; margin-bottom: 8px; color: #1f2937;">Current Position</div>
+        <div style="font-size: 12px; color: #4b5563; line-height: 1.6;">
+          <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+            <span>Vehicle:</span>
+            <strong style="color: #3B82F6;">${vehicleNumber}</strong>
+          </div>
+          <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+            <span>Status:</span>
+            <strong style="color: #10B981;">${displayStatus}</strong>
+          </div>
+          <div style="display: flex; justify-content: space-between;">
+            <span>Location:</span>
+            <strong style="color: #10B981;">${locationName}</strong>
+          </div>
+        </div>
+      </div>
+    `;
+  };
+
+  const createPlaybackMarker = (map: mapboxgl.Map, point: RoutePoint) => {
+    const jcbEl = document.createElement('div');
+    jcbEl.innerHTML = `
+      <div style="position: relative; width: 48px; height: 48px;">
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 48px; height: 48px; background: rgba(255, 255, 255, 0.95); border-radius: 50%; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); display: flex; align-items: center; justify-content: center; overflow: hidden; padding: 4px;">
+          <img src="/jcb.png" alt="JCB" style="width: 100%; height: 100%; object-fit: contain;" />
+        </div>
+        <div style="position: absolute; top: 0; left: 0; width: 48px; height: 48px; border: 2px solid #F59E0B; border-radius: 50%; animation: pulse 2s infinite;"></div>
+      </div>
+      <style>
+        @keyframes pulse {
+          0%, 100% { opacity: 1; transform: scale(1); }
+          50% { opacity: 0.5; transform: scale(1.1); }
+        }
+      </style>
+    `;
+    jcbEl.style.cursor = 'pointer';
+
+    markerRef.current = new mapboxgl.Marker({ element: jcbEl })
+      .setLngLat([point.lng, point.lat])
+      .addTo(map);
+
+    popupRef.current = new mapboxgl.Popup({ offset: 25, closeButton: false })
+      .setLngLat([point.lng, point.lat])
+      .setHTML(buildPlaybackPopupHtml(point))
+      .addTo(map);
+  };
+
+  const clearRouteLayers = (map: mapboxgl.Map) => {
+    for (let i = 0; i < points.length; i++) {
+      if (map.getLayer(`route-segment-${i}`)) {
+        map.removeLayer(`route-segment-${i}`);
+      }
+      if (map.getSource(`route-segment-${i}`)) {
+        map.removeSource(`route-segment-${i}`);
+      }
+      if (map.getLayer(`overspeed-${i}`)) {
+        map.removeLayer(`overspeed-${i}`);
+      }
+      if (map.getSource(`overspeed-${i}`)) {
+        map.removeSource(`overspeed-${i}`);
+      }
+    }
+    if (map.getLayer('route-normal')) map.removeLayer('route-normal');
+    if (map.getLayer('route-overspeed')) map.removeLayer('route-overspeed');
+    if (map.getSource('route')) map.removeSource('route');
+  };
 
   useEffect(() => {
-    if (!mapContainerRef.current || mapRef.current) return;
+    const container = mapContainerRef.current;
+    if (!container || mapRef.current) return;
 
-    try {
-      const map = new mapboxgl.Map({
-        container: mapContainerRef.current,
-        style: 'mapbox://styles/mapbox/streets-v12',
-        center: [77.2090, 28.6139],
-        zoom: 12,
-        attributionControl: false,
-      });
+    let map: mapboxgl.Map | null = null;
+    let cancelled = false;
 
-      map.addControl(new mapboxgl.NavigationControl(), 'top-right');
-      map.addControl(new mapboxgl.AttributionControl({ compact: true }), 'bottom-right');
+    const initMap = () => {
+      if (cancelled || !container.isConnected || mapRef.current) return;
 
-      mapRef.current = map;
+      try {
+        map = new mapboxgl.Map({
+          container,
+          style: 'mapbox://styles/mapbox/streets-v12',
+          center: [77.2090, 28.6139],
+          zoom: 12,
+          attributionControl: false,
+        });
 
-      return () => {
-        if (mapRef.current) {
-          mapRef.current.remove();
-          mapRef.current = null;
-        }
-      };
-    } catch (error) {
-      console.error('Error initializing map:', error);
-    }
+        map.addControl(new mapboxgl.NavigationControl(), 'top-right');
+        map.addControl(new mapboxgl.AttributionControl({ compact: true }), 'bottom-right');
+
+        map.on('load', () => {
+          map?.resize();
+          if (!cancelled) setMapReady(true);
+        });
+
+        mapRef.current = map;
+      } catch (error) {
+        console.error('Error initializing map:', error);
+      }
+    };
+
+    const frameId = requestAnimationFrame(initMap);
+
+    return () => {
+      cancelled = true;
+      cancelAnimationFrame(frameId);
+      setMapReady(false);
+      skipNextStyleChange.current = true;
+      clearRouteMarkers();
+      clearPlaybackMarker();
+      if (map) {
+        map.remove();
+      }
+      mapRef.current = null;
+    };
   }, []);
 
   useEffect(() => {
-    if (!mapRef.current) return;
+    const map = mapRef.current;
+    if (!map || !mapReady) return;
 
-    const styleUrl = mapStyle === 'streets' 
+    if (skipNextStyleChange.current) {
+      skipNextStyleChange.current = false;
+      return;
+    }
+
+    const styleUrl = mapStyle === 'streets'
       ? 'mapbox://styles/mapbox/streets-v12'
       : 'mapbox://styles/mapbox/satellite-streets-v12';
 
-    mapRef.current.setStyle(styleUrl);
-  }, [mapStyle]);
+    setMapReady(false);
+    const onStyleLoad = () => {
+      map.resize();
+      setMapReady(true);
+    };
+    map.once('style.load', onStyleLoad);
+    map.setStyle(styleUrl);
+
+    return () => {
+      map.off('style.load', onStyleLoad);
+    };
+  }, [mapStyle, mapReady]);
 
   useEffect(() => {
-    if (!mapRef.current || points.length === 0) return;
-
     const map = mapRef.current;
+    if (!map || !mapReady || points.length === 0) return;
 
-    if (startMarkerRef.current) startMarkerRef.current.remove();
-    if (endMarkerRef.current) endMarkerRef.current.remove();
-    if (markerRef.current) markerRef.current.remove();
-    stopMarkersRef.current.forEach(marker => marker.remove());
-    stopMarkersRef.current = [];
+    let cancelled = false;
 
-    map.on('load', async () => {
-      // Remove all existing route sources and layers
-      if (map.getSource('route')) {
-        map.removeLayer('route-normal');
-        map.removeLayer('route-overspeed');
-        map.removeSource('route');
-      }
+    const drawRoute = async () => {
+      if (cancelled || !mapRef.current || !map.isStyleLoaded()) return;
 
-      for (let i = 0; i < points.length; i++) {
-        if (map.getSource(`route-segment-${i}`)) {
-          map.removeLayer(`route-segment-${i}`);
-          map.removeSource(`route-segment-${i}`);
-        }
-        if (map.getSource(`overspeed-${i}`)) {
-          map.removeLayer(`overspeed-${i}`);
-          map.removeSource(`overspeed-${i}`);
-        }
-      }
+      clearRouteMarkers();
+      clearRouteLayers(map);
 
       // Create individual line segments for each consecutive point pair
       // This ensures forward and backward movements are both visible
@@ -143,6 +255,7 @@ export default function EnhancedMap({
             });
 
             const response = await fetch(url);
+            if (cancelled) return;
             if (response.ok) {
               const data = await response.json();
               if (data.routes && data.routes.length > 0 && data.routes[0].geometry) {
@@ -172,8 +285,7 @@ export default function EnhancedMap({
           }
         }
 
-        // Zig-zag variations are now baked into the CSV data, so we just display it as-is
-        // The map will show the realistic GPS tracking pattern from the data
+        if (cancelled || !mapRef.current) return;
 
         // Add source for this segment
         map.addSource(`route-segment-${i}`, {
@@ -204,6 +316,8 @@ export default function EnhancedMap({
           }
         });
       }
+
+      if (cancelled || !mapRef.current) return;
 
       const startEl = document.createElement('div');
       startEl.className = 'start-marker';
@@ -239,101 +353,47 @@ export default function EnhancedMap({
         .setPopup(new mapboxgl.Popup().setHTML('<strong>End Point</strong>'))
         .addTo(map);
 
-      // Stop markers removed - all traces are now shown as visible lines
-
-      if (showPlayback) {
-        const jcbEl = document.createElement('div');
-        jcbEl.innerHTML = `
-          <div style="position: relative; width: 48px; height: 48px;">
-            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 48px; height: 48px; background: rgba(255, 255, 255, 0.95); border-radius: 50%; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); display: flex; align-items: center; justify-content: center; overflow: hidden; padding: 4px;">
-              <img src="/jcb.png" alt="JCB" style="width: 100%; height: 100%; object-fit: contain;" />
-            </div>
-            <div style="position: absolute; top: 0; left: 0; width: 48px; height: 48px; border: 2px solid #F59E0B; border-radius: 50%; animation: pulse 2s infinite;"></div>
-          </div>
-          <style>
-            @keyframes pulse {
-              0%, 100% { opacity: 1; transform: scale(1); }
-              50% { opacity: 0.5; transform: scale(1.1); }
-            }
-          </style>
-        `;
-        jcbEl.style.cursor = 'pointer';
-
-        const currentPoint = points[currentIndex];
-        const locationName = currentPoint.location || 'Unknown Location';
-        const displayStatus = currentPoint.status === 'WORKING' ? 'WORKING' : (currentPoint.status || 'Unknown');
-
-        markerRef.current = new mapboxgl.Marker({ element: jcbEl })
-          .setLngLat([currentPoint.lng, currentPoint.lat])
-          .addTo(map);
-
-        popupRef.current = new mapboxgl.Popup({ offset: 25, closeButton: false })
-          .setLngLat([currentPoint.lng, currentPoint.lat])
-          .setHTML(`
-            <div style="padding: 10px; min-width: 180px; font-family: system-ui, -apple-system, sans-serif;">
-              <div style="font-weight: 600; font-size: 14px; margin-bottom: 8px; color: #1f2937;">Current Position</div>
-              <div style="font-size: 12px; color: #4b5563; line-height: 1.6;">
-                <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
-                  <span>Vehicle:</span>
-                  <strong style="color: #3B82F6;">${vehicleNumber}</strong>
-                </div>
-                <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
-                  <span>Status:</span>
-                  <strong style="color: #10B981;">${displayStatus}</strong>
-                </div>
-                <div style="display: flex; justify-content: space-between;">
-                  <span>Location:</span>
-                  <strong style="color: #10B981;">${locationName}</strong>
-                </div>
-              </div>
-            </div>
-          `)
-          .addTo(map);
-      }
+      if (cancelled || !mapRef.current) return;
 
       const bounds = new mapboxgl.LngLatBounds();
       points.forEach(point => bounds.extend([point.lng, point.lat]));
       map.fitBounds(bounds, { padding: 50 });
-    });
+    };
 
-    if (map.isStyleLoaded()) {
-      map.fire('load');
-    }
-  }, [points, overspeedThreshold, showPlayback]);
+    void drawRoute();
+
+    return () => {
+      cancelled = true;
+      clearRouteMarkers();
+      clearPlaybackMarker();
+      if (mapRef.current?.isStyleLoaded()) {
+        clearRouteLayers(mapRef.current);
+      }
+    };
+  }, [points, overspeedThreshold, mapReady]);
 
   useEffect(() => {
-    if (!mapRef.current || !showPlayback || !markerRef.current || !popupRef.current || points.length === 0) return;
+    const map = mapRef.current;
+    if (!map || !mapReady || points.length === 0) return;
+
+    if (!showPlayback) {
+      clearPlaybackMarker();
+      return;
+    }
 
     const currentPoint = points[currentIndex];
-    if (currentPoint) {
-      const locationName = currentPoint.location || 'Unknown Location';
-      const displayStatus = currentPoint.status === 'WorkingI' ? 'WORKING' : (currentPoint.status || 'Unknown');
+    if (!currentPoint) return;
 
+    if (!markerRef.current || !popupRef.current) {
+      createPlaybackMarker(map, currentPoint);
+    } else {
       markerRef.current.setLngLat([currentPoint.lng, currentPoint.lat]);
       popupRef.current.setLngLat([currentPoint.lng, currentPoint.lat]);
-      popupRef.current.setHTML(`
-        <div style="padding: 10px; min-width: 180px; font-family: system-ui, -apple-system, sans-serif;">
-          <div style="font-weight: 600; font-size: 14px; margin-bottom: 8px; color: #1f2937;">Current Position</div>
-          <div style="font-size: 12px; color: #4b5563; line-height: 1.6;">
-            <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
-              <span>Vehicle:</span>
-              <strong style="color: #3B82F6;">${vehicleNumber}</strong>
-            </div>
-            <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
-              <span>Status:</span>
-              <strong style="color: #10B981;">${displayStatus}</strong>
-            </div>
-            <div style="display: flex; justify-content: space-between;">
-              <span>Location:</span>
-              <strong style="color: #10B981;">${locationName}</strong>
-            </div>
-          </div>
-        </div>
-      `);
-      
-      mapRef.current.panTo([currentPoint.lng, currentPoint.lat], { duration: 500 });
+      popupRef.current.setHTML(buildPlaybackPopupHtml(currentPoint));
     }
-  }, [currentIndex, showPlayback, points, overspeedThreshold]);
+
+    map.panTo([currentPoint.lng, currentPoint.lat], { duration: 200 });
+  }, [currentIndex, showPlayback, points, mapReady, vehicleNumber]);
 
   const toggleFullscreen = () => {
     if (!mapContainerRef.current) return;
